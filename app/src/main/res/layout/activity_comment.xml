@@ -1,0 +1,74 @@
+<!--ListView嵌套ListView的时候，外层列表焦点被内层列表夺走，可以通过descendantFocusability强制组织内层列表抢夺焦点-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:descendantFocusability="blocksDescendants"-->
+    <LinearLayout
+        android:id="@+id/listview_head"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/red"
+        android:orientation="horizontal">
+        <!--<android.support.v7.widget.Toolbar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <ImageView
+            android:id="@+id/back_dongtai"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="动态详情"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+        <!--</android.support.v7.widget.Toolbar>-->
+    </LinearLayout>
+
+    <freestar.friends.util.view.XListView
+        android:id="@+id/commemt_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listview_head"/>
+    <!--弹出框-->
+    <LinearLayout
+        android:id="@+id/kj_pl_slu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/kj_pl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="写评论..."
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/kj_pl_fb"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_sumbit_d"
+            android:focusable="false"/>
+    </LinearLayout>
+
+    <freestar.friends.util.fly_heat.PeriscopeLayout
+        android:id="@+id/periscope"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/type_title"
+        android:layout_width="match_parent"
+        style="@style/Smile.TextView._Black"
+        android:text="天气好呀 多云转晴"
+        android:singleLine="true"
+       />
+    <TextView
+        android:id="@+id/type_time"
+        android:layout_marginTop="15dp"
+        android:text="20130240122"
+        style="@style/Smile.TextView._Gray"
+        android:textSize="12sp"
+        android:layout_below="@+id/type_title"
+        android:layout_alignParentStart="true">
+    </TextView>
+
+
+
+</RelativeLayout>

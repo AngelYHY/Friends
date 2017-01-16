@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/image_btn_press">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/slide_imag"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:onClick="slideimgClick"
+            android:src="@mipmap/ic_launcher" />
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/slide_imag"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="32dp"-->
+        <!--android:onClick="slideimgClick"-->
+        <!--android:src="@mipmap/ic_launcher"-->
+        <!--fresco:roundAsCircle="true" />-->
+
+        <TextView
+            android:id="@+id/slide_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/slide_imag"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/ripple_bg"
+            android:onClick="godfriendsClick">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:src="@drawable/homebb" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="15dp"
+                android:text="主页" />
+        </RelativeLayout>
+
+        <!--android:layout_marginTop="40dp"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/ripple_bg"
+            android:onClick="typesClick">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:src="@drawable/myfb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="15dp"
+                android:text="我的发布" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/ripple_bg"
+            android:onClick="collecClick">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:src="@drawable/mysc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="15dp"
+                android:text="我的收藏" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/ripple_bg"
+            android:onClick="concernClick">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:src="@drawable/mygz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="15dp"
+                android:text="我的关注" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="szClick"
+        android:paddingBottom="@dimen/dp_22"
+        android:paddingLeft="@dimen/dp_14">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/setting" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="2dp"
+            android:text="设置" />
+    </LinearLayout>
+</LinearLayout>

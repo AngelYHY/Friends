@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EEF1">
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/back_dongtai"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/tv_head_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="与我相关"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <freestar.friends.util.view.XListView
+        android:id="@+id/xListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rela"
+        android:cacheColorHint="#00000000" />
+    <!--弹出框-->
+    <LinearLayout
+        android:id="@+id/kj_pl_slu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/kj_pl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="写评论..."
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/kj_pl_fb"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/unsubmit" />
+    </LinearLayout>
+</RelativeLayout>

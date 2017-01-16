@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:background="@drawable/ripple_fr_bg"
+    android:padding="@dimen/dp_10"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPadding="10dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_chat_friend"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:focusable="false"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/text_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="80dp"
+        android:layout_toEndOf="@+id/img_chat_friend"
+        android:text="文庆"
+        android:textSize="20sp" />
+
+</android.support.v7.widget.CardView>

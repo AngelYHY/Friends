@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".util.profile.PersSignActivity">
+
+    <include layout="@layout/include_perssign" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText_perssign"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:gravity="left"
+            android:hint="快来输入个性签名吧" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最多50字"
+            android:textColor="#da1010"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/editText_perssign"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>

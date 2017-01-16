@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/ripple_fr_bg">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_concern"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="39dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+            fresco:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/tv_concern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/img_concern"
+        android:text="文庆"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

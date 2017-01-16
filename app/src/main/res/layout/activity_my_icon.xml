@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="freestar.friends.activities.MyIconActivity">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_myIcon"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        fresco:actualImageScaleType="focusCrop" />
+  </RelativeLayout>

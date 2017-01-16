@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_chat_friend"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:roundAsCircle="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你有没有。。"
+        android:textSize="15dp"
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/img_chat_friend"
+        android:layout_toEndOf="@+id/img_chat_friend"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="14dp" />
+</RelativeLayout>

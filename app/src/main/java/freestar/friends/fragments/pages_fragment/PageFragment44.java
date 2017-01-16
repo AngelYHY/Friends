@@ -1,0 +1,216 @@
+package freestar.friends.fragments.pages_fragment;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.exception.BmobException;
+import cn.bmob.v3.listener.FindListener;
+import freestar.friends.R;
+import freestar.friends.activities.PicItemActivity;
+import freestar.friends.activities.PublishPicture;
+import freestar.friends.bean.Atlas;
+import freestar.friends.util.recycler_and_fab.recyclerview.CommonAdapter;
+import freestar.friends.util.recycler_and_fab.recyclerview.DividerItemDecoration;
+import freestar.friends.util.recycler_and_fab.recyclerview.base.ViewHolder;
+import freestar.friends.util.recycler_and_fab.recyclerview.wrapper.HeaderAndFooterWrapper;
+import freestar.friends.util.recycler_and_fab.recyclerview.wrapper.LoadMoreWrapper;
+
+/**
+ * Created by Administrator on 2016/7/13 0013.
+ */
+public class PageFragment44 extends Fragment {
+    private List<Atlas> mDatas = new ArrayList<>();
+    private CommonAdapter<Atlas> mAdapter;
+    private LoadMoreWrapper mLoadMoreWrapper;
+    private HeaderAndFooterWrapper mHeaderAndFooterWrapper;
+
+    Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            if (msg.what == 1) {
+                mAdapter.notifyDataSetChanged();
+//                mRecyclerView.setAdapter(mAdapter);
+            } else if (msg.what == 2) {
+                mAdapter.notifyDataSetChanged();
+            }
+        }
+    };
+    private RecyclerView mRecyclerView;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.one, container, false);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+//        srlFragment1 = (SwipeRefreshLayout) view.findViewById(R.id.srl_fragment1);
+//        srlFragment1.setOnRefreshListener(this);
+        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab_btn);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), PublishPicture.class));
+            }
+        });
+        initData();
+        mHeaderAndFooterWrapper = new HeaderAndFooterWrapper(mAdapter);
+        initHeaderAndFooter();
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL_LIST));
+
+        mAdapter = new CommonAdapter<Atlas>(getContext(), R.layout.atlas_layout, mDatas) {
+
+            @Override
+            protected void convert(final ViewHolder holder, Atlas s, final int position) {
+                holder.setText(R.id.tv_time, s.getCreatedAt()).setSDV(R.id.iv_main, s.getMainPic()).setText(R.id.tv_disNum, s.getDisNum() + "com_icon").setText(R.id.tv_title, s.getTitle() + "(" + s.getNum() + " 图)");
+            }
+        };
+
+        HeaderAndFooterWrapper mHeaderAndFooterWrapper = new HeaderAndFooterWrapper(mAdapter);
+        mLoadMoreWrapper = new LoadMoreWrapper(mHeaderAndFooterWrapper);
+        mLoadMoreWrapper.setLoadMoreView(R.layout.default_loading);
+        mLoadMoreWrapper.setOnLoadMoreListener(new LoadMoreWrapper.OnLoadMoreListener() {
+            @Override
+            public void onLoadMoreRequested() {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Log.e("FreeStar", "PageFragment2→→→run:");
+//                        for (int i = 0; i < 7; i++) {
+////                            mDatas.add(new Article1("小邋遢，这有有个小邋遢，邋遢大王就是他." + count, R.mipmap.ic_test_0, "2016.02.0" + i, "" + count++));
+//
+//                        }
+//                        mLoadMoreWrapper.notifyDataSetChanged();
+                        BmobQuery<Atlas> query = new BmobQuery<>();
+                        query.addWhereEqualTo("kind", "动物");
+                        query.setLimit(10);
+                        query.findObjects(new FindListener<Atlas>() {
+                            @Override
+                            public void done(List<Atlas> list, BmobException e) {
+                                if (e == null) {
+                                    Log.e("FreeStar", "PageFragment2→→→done:" + list.size());
+                                    mDatas.addAll(list);
+                                    for (Atlas mData : mDatas) {
+                                        Log.e("FreeStar", "PageFragment2→→→done:" + mData.toString());
+                                    }
+                                } else {
+                                    Log.e("FreeStar", "PageFragment2→→→done:" + e.getMessage());
+                                }
+                            }
+                        });
+                        mLoadMoreWrapper.notifyDataSetChanged();
+                    }
+                }, 3000);
+            }
+        });
+
+        mRecyclerView.setAdapter(mLoadMoreWrapper);
+        mAdapter.setOnItemClickListener(new CommonAdapter.OnItemClickListener<Atlas>() {
+            @Override
+            public void onItemClick(View view, RecyclerView.ViewHolder holder, Atlas o, int position) {
+//                Toast.makeText(getContext(), "pos = " + position, Toast.LENGTH_SHORT).show();
+//                mAdapter.notifyItemRemoved(position);
+                startActivity(new Intent(getActivity(), PicItemActivity.class));
+            }
+
+            @Override
+            public boolean onItemLongClick(View view, RecyclerView.ViewHolder holder, Atlas o, int position) {
+                return false;
+            }
+        });
+        return view;
+    }
+
+    private void initHeaderAndFooter() {
+//        View header = LayoutInflater.from(getContext()).inflate(R.layout.default_loading, null);
+//        refresh();
+//        mHeaderAndFooterWrapper.addHeaderView(header);
+//        LoadMoreWrapper mLoadMoreWrapper = new LoadMoreWrapper(mHeaderAndFooterWrapper);
+//        mLoadMoreWrapper.setLoadMoreView(R.layout.default_loading);
+//        mLoadMoreWrapper.setOnLoadMoreListener(new LoadMoreWrapper.OnLoadMoreListener() {
+//            @Override
+//            public void onLoadMoreRequested() {
+//                new Handler().postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        for (int i = 0; i < 7; i++) {
+////                            mDatas.add(new Atlas("小邋遢，这有有个小邋遢，邋遢大王就是他." + count, R.mipmap.ic_test_0, "2016.02.0" + i, "" + count++));
+//                        }
+//                        PageFragment2.this.mLoadMoreWrapper.notifyDataSetChanged();
+//                    }
+//                }, 3000);
+//            }
+//        });
+//
+//        mHeaderAndFooterWrapper.addHeaderView(mLoadMoreWrapper);
+    }
+
+    private void refresh() {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                BmobQuery<Atlas> query = new BmobQuery<>();
+                query.addWhereEqualTo("kind", "动物");
+                query.setLimit(10);
+                query.findObjects(new FindListener<Atlas>() {
+                    @Override
+                    public void done(List<Atlas> list, BmobException e) {
+                        if (e == null) {
+                            Log.e("FreeStar", "PageFragment2→→→done:" + list.size());
+                            mDatas.addAll(list);
+                            for (Atlas mData : mDatas) {
+                                Log.e("FreeStar", "PageFragment2→→→done:" + mData.toString());
+                            }
+                        } else {
+                            Log.e("FreeStar", "PageFragment2→→→done:" + e.getMessage());
+                        }
+                    }
+                });
+                mLoadMoreWrapper.notifyDataSetChanged();
+            }
+        }, 2000);
+    }
+
+    private void initData() {
+        BmobQuery<Atlas> query = new BmobQuery<>();
+        query.addWhereEqualTo("kind", "其他");
+        query.setLimit(10);
+        query.findObjects(new FindListener<Atlas>() {
+            @Override
+            public void done(List<Atlas> list, BmobException e) {
+                if (e == null) {
+                    Log.e("FreeStar", "PageFragment2→→→done:" + list.size());
+                    mDatas.addAll(list);
+                    for (Atlas mData : mDatas) {
+                        Log.e("FreeStar", "PageFragment2→→→done:" + mData.toString());
+                    }
+//                    handler.sendEmptyMessage(1);
+                    mAdapter.notifyDataSetChanged();
+                } else {
+                    Log.e("FreeStar", "PageFragment2→→→done:" + e.getMessage());
+                }
+            }
+        });
+    }
+
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".util.profile.KingActivity">
+
+    <include layout="@layout/include_top_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ripple_bg"
+        android:onClick="messageClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.17"
+            android:gravity="center"
+            android:text="消息提醒" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ripple_bg"
+        android:onClick="qktpClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.17"
+            android:gravity="center"
+            android:text="清空图片缓存" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ripple_bg"
+        android:onClick="qkssClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.17"
+            android:gravity="center"
+            android:text="清空搜索记录" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:onClick="fankuiClick"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ripple_bg">
+        <!--android:onClick="iconClick">-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.17"
+            android:gravity="center"
+            android:text="反馈" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/ripple_bg"
+        android:onClick="bzClick">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.17"
+            android:gravity="center"
+            android:text="帮助" />
+    </RelativeLayout>
+</LinearLayout>

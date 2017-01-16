@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--弹出框-->
+    <LinearLayout
+        android:id="@+id/kj_pl_slu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <!--android:visibility="gone"-->
+        <EditText
+            android:id="@+id/kj_pl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="说点什么吧。。。。" />
+
+        <Button
+            android:id="@+id/kj_pl_fb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#cccc"
+            android:text="发送"
+            android:textSize="21dp" />
+    </LinearLayout>
+</RelativeLayout>

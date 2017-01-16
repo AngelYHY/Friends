@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4081</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bottom">#333333</color>
+    <color name="red">#DE051B</color>
+    <color name="gray_2">#AFAFAF</color>
+    <color name="gray_1">#C0C0C0</color>
+    <color name="backgroundColor">#E8E8E0</color>
+    <color name="backgroundColorPress">#DBDBD3</color>
+    <color name="yellow">#FF3B00</color>
+    <color name="red_press">#990000</color>
+    <color name="dark_gray">#4C535B</color>
+    <color name="dark_gray_press">#ff7e8a97</color>
+    <color name="cf">#CFCFCF</color>
+    <color name="dark_slate_gray">#2F4F4F</color>
+    <!--<color name="primaryDark">#5B3F36</color>-->
+    <color name="black">#CCCCCC</color>
+    <!--<color name="indicator_1">#55B3C2</color>-->
+    <!--<color name="indicator_2">#64A4A4</color>-->
+    <!--<color name="indicator_3">#66D7B9</color>-->
+    <!--<color name="indicator_4">#FDBC7D</color>-->
+    <color name="f6">#f6f6f6</color>
+    <color name="white">#ffffff</color>
+    <color name="bg">#E42001</color>
+    <color name="fbg">#B91900</color>
+    <color name="indicator_1">#B91900</color>
+    <color name="indicator_2">#B91900</color>
+    <color name="indicator_3">#B91900</color>
+    <color name="indicator_4">#B91900</color>
+    <color name="windowBackground">@android:color/white</color>
+    <!--<color name="primary">#785447</color>-->
+
+    <color name="color_ff">#F0F0F0</color>
+    <color name="color_00">#8A000000</color>
+
+    <color name="main_color">#5CB85C</color>
+    <color name="main_color_press">#5Ca00f</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <!--<color name="white">#fafafa</color>-->
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="photoPackDivider">#DDDDDD</color>
+
+    <color name="forget_toolbar">#2ea7e0</color>
+    <color name="scrim">#42000000</color>
+
+    <color name="path_orange">#FF9500</color>
+    <color name="path_blue">#1774E6</color>
+
+    <color name="theme_primary_text_inverted">#ffffff</color>
+    <color name="theme_secondary_text_inverted">#8affffff</color>
+
+    <color name="theme_primary">#DE051B</color>
+    <color name="search_layover_bg">#50000000</color>
+
+    <color name="separator_line">#ECECEC</color>
+    <color name="title">#222222</color>
+    <color name="subtitle">#999999</color>
+
+    <color name="theme_background">#FFFFFF</color>
+    <color name="theme_background_inverse">#212121</color>
+
+    <color name="theme_accent_1">#212121</color>
+
+    <color name="theme_primary_trans">#99212121</color>
+
+    <color name="theme_primary_text">#212121</color>
+    <color name="theme_secondary_text">#727272</color>
+    <color name="theme_icons">#FFFFFF</color>
+    <color name="theme_divider">#B6B6B6</color>
+
+    <color name="theme_primary_dark">#1976D2</color>
+    <color name="theme_primary_light">#BBDEFB</color>
+
+    <color name="base_color_text_black">#3e3e39</color>
+    <color name="base_color_text_gray">#898989</color>
+
+    <color name="material_red">#ffF44336</color>
+    <color name="material_green">#ff4CAF50</color>
+    <color name="material_blue">#ff03A9F4</color>
+    <color name="material_yellow">#ffFFEB3B</color>
+   </resources>

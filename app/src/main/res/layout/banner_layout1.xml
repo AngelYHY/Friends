@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <!--<com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/convenientBanner"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--app:canLoop="true" />-->
+    <!--//控制循环与否-->
+    <!--<com.example.administrator.kuang.util.auto_view_pager.banner.Banner-->
+    <!--android:id="@+id/banner"-->
+    <!--app:indicator_drawable_selected="@drawable/selected_radius"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp" />-->
+    <!--<freestar.friends.util.auto_view_pager.AutoPlayViewPager-->
+    <!--android:id="@+id/view_pager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp" />-->
+
+    <freestar.friends.util.Banner
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:indicator_drawable_selected="@drawable/selected_radius" />
+</LinearLayout>
