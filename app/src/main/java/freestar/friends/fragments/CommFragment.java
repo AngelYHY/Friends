@@ -19,8 +19,8 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import freestar.friends.R;
-import freestar.friends.fragments.communities.ArticleFragment;
-import freestar.friends.fragments.communities.PictureFragment;
+import freestar.friends.fragments.community.ArticleFragment;
+import freestar.friends.fragments.community.PictureFragment;
 
 /**
  * Created by Administrator on 2016/8/3 0003.

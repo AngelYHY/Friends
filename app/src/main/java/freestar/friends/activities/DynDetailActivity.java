@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -19,15 +22,17 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.listener.OnItemChildClickListener;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cn.bingoogolapple.photopicker.activity.BGAPhotoPreviewActivity;
 import cn.bingoogolapple.photopicker.widget.BGANinePhotoLayout;
 import cn.bmob.v3.BmobQuery;
@@ -38,22 +43,20 @@ import cn.bmob.v3.listener.SaveListener;
 import cn.bmob.v3.listener.UpdateListener;
 import freestar.friends.App;
 import freestar.friends.R;
+import freestar.friends.adapter.SayDisAdapter;
 import freestar.friends.bean.DisSay;
 import freestar.friends.bean.Message;
 import freestar.friends.bean.MessageLike;
 import freestar.friends.bean.User;
-import freestar.friends.util.abslistview.CommonAdapter;
-import freestar.friends.util.abslistview.ViewHolder;
 import freestar.friends.util.fly_heat.PeriscopeLayout;
 import freestar.friends.util.status_bar.BaseActivity;
-import freestar.friends.util.view.XListView;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
 
 /**
- * 詳情界面+listview（評論）
+ * 动态详情
  */
-public class DynDetailActivity extends BaseActivity implements XListView.IXListViewListener, BGANinePhotoLayout.Delegate {
+public class DynDetailActivity extends BaseActivity implements BGANinePhotoLayout.Delegate, SwipeRefreshLayout.OnRefreshListener, BaseQuickAdapter.RequestLoadMoreListener, View.OnClickListener {
 
     Message message;
 
@@ -63,26 +66,23 @@ public class DynDetailActivity extends BaseActivity implements XListView.IXListV
 
     BGANinePhotoLayout ninegridview;
 
-    ImageView zanbiao, pinglunbiao, comeback, sumbit_conments;
-    LinearLayout contain_layout;
-    EditText conments;
+    ImageView zanbiao, pinglunbiao;
 
-    CommonAdapter<DisSay> commentAdapter;//評論的適配器
-    List<DisSay> mList = new ArrayList<>();//数据源
     boolean flag;
     DisSay disSay;
 
-    @Bind(R.id.back_dongtai)
-    ImageView mBackDongtai;
-
     @Bind(R.id.kj_pl)
-    EditText mKjPl;
+    EditText conments;
     @Bind(R.id.kj_pl_fb)
-    ImageButton mKjPlFb;
+    ImageButton sumbit_conments;
     @Bind(R.id.kj_pl_slu)
-    LinearLayout mKjPlSlu;
+    LinearLayout contain_layout;
     @Bind(R.id.periscope)
     PeriscopeLayout mPeriscope;
+    @Bind(R.id.recycler_view)
+    RecyclerView mRecyclerView;
+    @Bind(R.id.swipeLayout)
+    SwipeRefreshLayout mSwipeLayout;
 
     private User user;
     private PeriscopeLayout periscope;
@@ -94,6 +94,7 @@ public class DynDetailActivity extends BaseActivity implements XListView.IXListV
     int i;
     private BGANinePhotoLayout mCurrentClickNpl;
     private static final int REQUEST_CODE_PERMISSION_PHOTO_PREVIEW = 1;
+    private SayDisAdapter mAdapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -108,16 +109,61 @@ public class DynDetailActivity extends BaseActivity implements XListView.IXListV
         user = new User();
         user.setObjectId(App.userId);
 
-        initView();
+        //加头布局
+        headView = LayoutInflater.from(this).inflate(R.layout.detail_layout, null);
+        mSwipeLayout.setOnRefreshListener(this);
+
         queryState();
+        onRefresh();
+
+        initRV();
+
+        initView();
         initSource();
-        initSourceAdapter();
-        initClick();
+    }
+
+    private void initRV() {
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.addOnItemTouchListener(new OnItemChildClickListener() {
+            @Override
+            public void onSimpleItemChildClick(BaseQuickAdapter adapter, View view, int i) {
+                DisSay s = (DisSay) adapter.getItem(i);
+                Intent intent;
+                switch (view.getId()) {
+                    case R.id.line_reply:
+                        contain_layout.setVisibility(View.VISIBLE);
+                        //弹开虚拟键盘和输入框
+                        InputMethodManagerup();
+                        flag = true;
+                        disSay = s;
+                        break;
+                    case R.id.sdv_head:
+                        intent = new Intent(DynDetailActivity.this, UserDataActivity.class);
+                        intent.putExtra("user", s.getCuser());
+                        Log.e("FreeStar", "SearchActivity→→→onClick:" + s.getCuser());
+                        startActivity(intent);
+                        break;
+                    case R.id.btn_name:
+                        intent = new Intent(DynDetailActivity.this, UserDataActivity.class);
+                        intent.putExtra("user", s.getFather_user());
+                        Log.e("FreeStar", "SearchActivity→→→onClick:" + s.getFather_user());
+                        startActivity(intent);
+                        break;
+                }
+
+            }
+        });
+
+        mAdapter = new SayDisAdapter();
+        mAdapter.addHeaderView(headView);
+
+        mAdapter.openLoadAnimation(2);
+        mAdapter.setAutoLoadMoreSize(2);
+        mAdapter.setOnLoadMoreListener(this);
+        mRecyclerView.setAdapter(mAdapter);
     }
 
     private void initView() {
-        //加头布局
-        headView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.detail_layout, null);
         //头像
         simpleDraweeView = (SimpleDraweeView) headView.findViewById(R.id.dongtai_touxiang);
         //昵称
@@ -132,23 +178,14 @@ public class DynDetailActivity extends BaseActivity implements XListView.IXListV
         pinglunbiao = (ImageView) headView.findViewById(R.id.dongtai_pinglun);
 //        //九宫格
         ninegridview = (BGANinePhotoLayout) headView.findViewById(R.id.ninegridview);
-        //返回
-        comeback = (ImageView) findViewById(R.id.back_dongtai);
+
         //心
         periscope = (PeriscopeLayout) findViewById(R.id.periscope);
-        //弹出框
-        contain_layout = (LinearLayout) findViewById(R.id.kj_pl_slu);
-        //提交按钮
-        sumbit_conments = (ImageButton) findViewById(R.id.kj_pl_fb);
-        //文本框
-        conments = (EditText) findViewById(R.id.kj_pl);
 
-//        conment_listview = (XListView) findViewById(R.id.commemt_listview);
-//        conment_listview.addHeaderView(headView);
-//
-//        conment_listview.setPullLoadEnable(true);
-//        conment_listview.setXListViewListener(this);
-//        handler = new Handler();
+        zanbiao.setOnClickListener(this);
+        pinglunbiao.setOnClickListener(this);
+        simpleDraweeView.setOnClickListener(this);
+
     }
 
     private void initSource() {
@@ -160,18 +197,10 @@ public class DynDetailActivity extends BaseActivity implements XListView.IXListV
         ArrayList<String> urls = (ArrayList<String>) message.getUrls();
 
         if (urls != null) {
-//            List<ImageInfo> imgs = new ArrayList<>();
-//            for (int j = 0; j < urls.size(); j++) {
-//                ImageInfo img = new ImageInfo();
-//                img.setBigImageUrl(urls.get(j));
-//                img.setThumbnailUrl(urls.get(j));
-//                imgs.add(img);
-//            }
             ninegridview.init(this);
             ninegridview.setVisibility(View.VISIBLE);
             ninegridview.setData(urls);
             ninegridview.setDelegate(this);
-//            viewHolder.nineGridView.setAdapter(new NineGridViewClickAdapter(context, imgs));
         } else {
             ninegridview.setVisibility(View.GONE);
         }
@@ -208,7 +237,7 @@ public class DynDetailActivity extends BaseActivity implements XListView.IXListV
         });
     }
 
-    private void initSourceAdapter() {
+    private void initData() {
         BmobQuery<DisSay> query = new BmobQuery<>();
         //根据message来找到评论
         query.addWhereEqualTo("message", new BmobPointer(message));
@@ -218,171 +247,23 @@ public class DynDetailActivity extends BaseActivity implements XListView.IXListV
         query.findObjects(new FindListener<DisSay>() {
             @Override
             public void done(List<DisSay> list, BmobException e) {
+                mSwipeLayout.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        mSwipeLayout.setRefreshing(false);
+                    }
+                });
                 if (e == null) {
-                    mList.addAll(list);
-                    if (commentAdapter == null) {
-                        initAdapter();
-                    } else {
-                        commentAdapter.notifyDataSetChanged();
-//                        conment_listview.stopRefresh();
+                    mAdapter.setNewData(list);
+                    if (list.size() < 10) {
+                        mAdapter.loadMoreEnd();
                     }
                 } else {
-                    Log.d("FreeStar", "DynDetailActivity→→→done" + e.getMessage());
+                    Log.e("FreeStar", "PageFragment1→→→done:" + e.getMessage());
                 }
             }
         });
         i++;
-    }
-
-    private void initAdapter() {
-        commentAdapter = new CommonAdapter<DisSay>(this, R.layout.dis_item_layout, mList) {
-            @Override
-            protected void convert(ViewHolder holder, final DisSay s, int position) {
-                User cuser = s.getCuser();
-                Log.e("FreeStar", "DynDetailActivity→→→convert:" + cuser.toString());
-                //赋值
-                holder.setSDV(R.id.sdv_head, cuser.getHeadUrl()).setText(R.id.tv_user_name, cuser.getNiname()).setText(R.id.tv_data, s.getCreatedAt()).setText(R.id.tv_disNum, s.getComment());
-                if (s.getComment_father_user() != null) {
-                    //评论的人
-                    DisSay atlasDis = s.getComment_father_user();
-                    //写说说的人
-                    User father_user = s.getFather_user();
-                    //是否显示
-                    holder.setVisible(R.id.line_father_comment, true).setText(R.id.btn_name, father_user.getNiname()).setText(R.id.tv_father_comment, "    " + atlasDis.getComment()).setText(R.id.tv_father_data, atlasDis.getCreatedAt());
-                } else {
-                    holder.setVisible(R.id.line_father_comment, false);
-                }
-                holder.setOnClickListener(R.id.line_reply, new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        contain_layout.setVisibility(View.VISIBLE);
-                        //弹开虚拟键盘和输入框
-                        InputMethodManagerup();
-                        flag = true;
-                        disSay = s;
-                    }
-                });
-                holder.setOnClickListener(R.id.sdv_head, new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(DynDetailActivity.this, UserDataActivity.class);
-                        intent.putExtra("user", s.getCuser());
-                        Log.e("FreeStar", "SearchActivity→→→onClick:" + s.getCuser());
-                        startActivity(intent);
-                    }
-                });
-                holder.setOnClickListener(R.id.btn_name, new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(DynDetailActivity.this, UserDataActivity.class);
-                        intent.putExtra("user", s.getFather_user());
-                        Log.e("FreeStar", "SearchActivity→→→onClick:" + s.getFather_user());
-                        startActivity(intent);
-                    }
-                });
-            }
-        };
-        conment_listview.setAdapter(commentAdapter);
-    }
-
-    private void initClick() {
-        zanbiao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //如果已经点过赞 再点一次就取消 减一
-                Log.e("FreeStar", "PicItemActivity→→→onClick:" + zanbiao.isSelected());
-                if (!zanbiao.isSelected()) {
-                    periscope.addHeart();
-                    periscope.addHeart();
-                    periscope.addHeart();
-                    zanbiao.setSelected(true);
-                    Log.e("FreeStar", "PicItemActivity→→→onClick:" + zanbiao.isSelected());
-                } else {
-                    zanbiao.setSelected(false);
-                    Log.e("FreeStar", "PicItemActivity→→→onClick:" + zanbiao.isSelected());
-                }
-            }
-        });
-
-        pinglunbiao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.e("FreeStar", "DynDetailActivity→→→onClick:pinglunbiao");
-                contain_layout.setVisibility(View.VISIBLE);
-                //弹开虚拟键盘和输入框
-                InputMethodManagerup();
-            }
-        });
-
-        simpleDraweeView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(DynDetailActivity.this, UserDataActivity.class);
-                intent.putExtra("user", message.getUser());
-                startActivity(intent);
-            }
-        });
-
-        sumbit_conments.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.e("FreeStar", "DynDetailActivity→→→onClick:进入点击事件");
-                if (!sumbit_conments.isSelected()) {
-                    sumbit_conments.setSelected(true);
-                } else {
-                    sumbit_conments.setSelected(false);
-                }
-                String context = conments.getText().toString().trim();
-                if (context.equals("")) {
-                    Toast.makeText(DynDetailActivity.this, "写写东西吧", Toast.LENGTH_SHORT).show();
-                    return;
-                } else {
-                    conments.setText("");
-                    Downkeyboard();
-                }
-                if (flag) {
-                    //人对人的评论
-                    DisSay ds = new DisSay(user, disSay, context, message, disSay.getCuser(), disSay.getCuser());
-//                    User cuser, DisSay comment_father_user, String comment, Message message,User father_user
-                    ds.save(new SaveListener<String>() {
-                        @Override
-                        public void done(String s, BmobException e) {
-                            Log.e("FreeStar", "DynDetailActivity→→→done:人对人评论");
-                            onRefresh();
-                        }
-                    });  //人对动态的评论
-                    flag = false;
-                } else {
-                    Log.e("FreeStar", "DynDetailActivity→→→onClick:人对动态的评论");
-                    DisSay dsf = new DisSay(context, user, message, message.getUser());
-                    message.increment("comNum");
-                    message.update(new UpdateListener() {
-                        @Override
-                        public void done(BmobException e) {
-                            if (e == null) {
-                                Log.e("FreeStar", "DynDetailActivity→→→done:评论数成功+1");
-                            } else {
-                                Log.e("FreeStar", "DynDetailActivity→→→done:评论数更新失败");
-                            }
-                        }
-                    });
-                    dsf.save(new SaveListener<String>() {
-                        @Override
-                        public void done(String s, BmobException e) {
-                            Log.e("FreeStar", "DynDetailActivity→→→done:+保存成功");
-                            onRefresh();
-                        }
-                    });
-
-                }
-            }
-        });
-        comeback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
     }
 
     //弹开虚拟键盘和输入框
@@ -399,18 +280,17 @@ public class DynDetailActivity extends BaseActivity implements XListView.IXListV
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Downkeyboard();
+        downKeyBoard();
         return super.onTouchEvent(event);
     }
 
-    public void Downkeyboard() {
+    public void downKeyBoard() {
         if (contain_layout.getVisibility() == View.VISIBLE) {
             contain_layout.setVisibility(View.GONE);
             InputMethodManager imm2 = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             imm2.hideSoftInputFromWindow(sumbit_conments.getWindowToken(), 0);
         }
     }
-
 
     @Override
     protected void onDestroy() {
@@ -470,28 +350,13 @@ public class DynDetailActivity extends BaseActivity implements XListView.IXListV
 
     @Override
     public void onRefresh() {
-        handler.postDelayed(new Runnable() {
+        mSwipeLayout.post(new Runnable() {
             @Override
             public void run() {
-                mList.clear();
-                i = 0;
-                initSourceAdapter();
-                onLoad();
-
+                mSwipeLayout.setRefreshing(true);
             }
-        }, 2000);
-
-    }
-
-    @Override
-    public void onLoadMore() {
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startQuery();
-                onLoad();
-            }
-        }, 2000);
+        });
+        initData();
     }
 
     private void startQuery() {
@@ -506,25 +371,18 @@ public class DynDetailActivity extends BaseActivity implements XListView.IXListV
             @Override
             public void done(List<DisSay> list, BmobException e) {
                 if (e == null) {
-                    if (list.size() == 0) {
-                        Toast.makeText(DynDetailActivity.this, "没有数据了", Toast.LENGTH_SHORT).show();
+                    if (list.size() < 10) {
+                        mAdapter.loadMoreEnd();
                     } else {
-                        mList.addAll(list);
-                        commentAdapter.notifyDataSetChanged();
+                        mAdapter.addData(list);
+                        mAdapter.loadMoreComplete();
                     }
-//                    conment_listview.stopLoadMore();
                 } else {
                     Log.d("FreeStar", "DynDetailActivity→→→done" + e.getMessage());
                 }
             }
         });
         i++;
-    }
-
-    private void onLoad() {
-        conment_listview.stopRefresh();
-        conment_listview.stopLoadMore();
-        conment_listview.setRefreshTime(new Date().toLocaleString());
     }
 
     @Override
@@ -562,5 +420,94 @@ public class DynDetailActivity extends BaseActivity implements XListView.IXListV
         } else {
             EasyPermissions.requestPermissions(this, "图片预览需要以下权限:\n\n1.访问设备上的照片", REQUEST_CODE_PERMISSION_PHOTO_PREVIEW, perms);
         }
+    }
+
+    //    , R.id.dongtai_zan, R.id.dongtai_pinglun, R.id.dongtai_touxiang
+    @OnClick({R.id.back_dongtai, R.id.kj_pl_fb})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.back_dongtai:
+                finish();
+                break;
+            case R.id.kj_pl_fb:
+                if (!sumbit_conments.isSelected()) {
+                    sumbit_conments.setSelected(true);
+                } else {
+                    sumbit_conments.setSelected(false);
+                }
+                String context = conments.getText().toString().trim();
+                if (context.equals("")) {
+                    Toast.makeText(DynDetailActivity.this, "写写东西吧", Toast.LENGTH_SHORT).show();
+                    return;
+                } else {
+                    conments.setText("");
+                    downKeyBoard();
+                }
+                if (flag) {
+                    //人对人的评论
+                    DisSay ds = new DisSay(user, disSay, context, message, disSay.getCuser(), disSay.getCuser());
+//                    User cuser, DisSay comment_father_user, String comment, Message message,User father_user
+                    ds.save(new SaveListener<String>() {
+                        @Override
+                        public void done(String s, BmobException e) {
+                            Log.e("FreeStar", "DynDetailActivity→→→done:人对人评论");
+                            onRefresh();
+                        }
+                    });  //人对动态的评论
+                    flag = false;
+                } else {
+                    Log.e("FreeStar", "DynDetailActivity→→→onClick:人对动态的评论");
+                    DisSay dsf = new DisSay(context, user, message, message.getUser());
+                    message.increment("comNum");
+                    message.update(new UpdateListener() {
+                        @Override
+                        public void done(BmobException e) {
+                            if (e == null) {
+                                Log.e("FreeStar", "DynDetailActivity→→→done:评论数成功+1");
+                            } else {
+                                Log.e("FreeStar", "DynDetailActivity→→→done:评论数更新失败");
+                            }
+                        }
+                    });
+                    dsf.save(new SaveListener<String>() {
+                        @Override
+                        public void done(String s, BmobException e) {
+                            Log.e("FreeStar", "DynDetailActivity→→→done:+保存成功");
+                            onRefresh();
+                        }
+                    });
+                }
+                break;
+            case R.id.dongtai_zan:
+                //如果已经点过赞 再点一次就取消 减一
+                Log.e("FreeStar", "PicItemActivity→→→onClick:" + zanbiao.isSelected());
+                if (!zanbiao.isSelected()) {
+                    periscope.addHeart();
+                    periscope.addHeart();
+                    periscope.addHeart();
+                    zanbiao.setSelected(true);
+                    Log.e("FreeStar", "PicItemActivity→→→onClick:" + zanbiao.isSelected());
+                } else {
+                    zanbiao.setSelected(false);
+                    Log.e("FreeStar", "PicItemActivity→→→onClick:" + zanbiao.isSelected());
+                }
+                break;
+            case R.id.dongtai_pinglun:
+                Log.e("FreeStar", "DynDetailActivity→→→onClick:pinglunbiao");
+                contain_layout.setVisibility(View.VISIBLE);
+                //弹开虚拟键盘和输入框
+                InputMethodManagerup();
+                break;
+            case R.id.dongtai_touxiang:
+                Intent intent = new Intent(DynDetailActivity.this, UserDataActivity.class);
+                intent.putExtra("user", message.getUser());
+                startActivity(intent);
+                break;
+        }
+    }
+
+    @Override
+    public void onLoadMoreRequested() {
+        startQuery();
     }
 }

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +23,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
@@ -42,13 +45,17 @@ import freestar.friends.util.abslistview.ViewHolder;
 import freestar.friends.util.view.XListView;
 
 /**
- * 暂时定为  与我相关
+ * 社区评论
  */
-public class CommentFragment1 extends Fragment implements XListView.IXListViewListener {
+public class CommunityDisFragment_test extends Fragment implements XListView.IXListViewListener, SwipeRefreshLayout.OnRefreshListener {
     XListView lv;
 
     ArrayList<Object> messageList = new ArrayList<>();
     EditText conments;
+    @Bind(R.id.recycler_view)
+    RecyclerView mRecyclerView;
+    @Bind(R.id.swipeLayout)
+    SwipeRefreshLayout mSwipeLayout;
     private User user;
     private CommonAdapter<Object> mAdapter;
     private Button sumbit_conments;
@@ -58,7 +65,7 @@ public class CommentFragment1 extends Fragment implements XListView.IXListViewLi
     ArrayList<Object> mDate = new ArrayList<>();
     int j;
 
-    public CommentFragment1() {
+    public CommunityDisFragment_test() {
 
     }
 
@@ -145,14 +152,14 @@ public class CommentFragment1 extends Fragment implements XListView.IXListViewLi
                             Log.e("FreeStar", "PageFragment1→→→onItemClick:" + article.toString() + i + "--------" + mDatas.size());
                             intent.putExtra("article", article);
                             intent.putExtra("user", ((ArticleDis) s).getArticle().getAuthor());
-                            Log.e("FreeStar", "CommentFragment1→→→onClick:+++" + ((ArticleDis) s).getAuthor());
+                            Log.e("FreeStar", "CommunityDisFragment→→→onClick:+++" + ((ArticleDis) s).getAuthor());
                             startActivity(intent);
                         } else if (s instanceof AtlasDis) {
                             Atlas atlas = ((AtlasDis) s).getAtlas();
                             Intent intent = new Intent(getActivity(), PicItemActivity.class);
                             Log.e("FreeStar", "PageFragment1→→→onItemClick:" + atlas.toString() + i + "--------" + mDatas.size());
                             intent.putExtra("atlas", atlas);
-                            Log.e("FreeStar", "CommentFragment1→→→onClick:6666" + ((AtlasDis) s).getAtlas().getAuthor().toString());
+                            Log.e("FreeStar", "CommunityDisFragment→→→onClick:6666" + ((AtlasDis) s).getAtlas().getAuthor().toString());
                             intent.putExtra("user", ((AtlasDis) s).getAtlas().getAuthor());
                             startActivity(intent);
                         }
@@ -183,18 +190,27 @@ public class CommentFragment1 extends Fragment implements XListView.IXListViewLi
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_comment, container, false);
+//        View view = inflater.inflate(R.layout.fragment_comment, container, false);
+        View view = inflater.inflate(R.layout.refresh_recycler_view, container, false);
+        ButterKnife.bind(this, view);
+        mSwipeLayout.setOnRefreshListener(this);
         user = new User();
         user.setObjectId(App.userId);
 
         initData();
+        initRV();
 
-        lv = (XListView) view.findViewById(R.id.lv_comment);
-        lv.setPullLoadEnable(true);
-        lv.setPullRefreshEnable(true);
-        lv.setXListViewListener(this);
+//        lv = (XListView) view.findViewById(R.id.lv_comment);
+//        lv.setPullLoadEnable(true);
+//        lv.setPullRefreshEnable(true);
+//        lv.setXListViewListener(this);
         mHandler = new Handler();
+
         return view;
+    }
+
+    private void initRV() {
+
     }
 
     private void initData() {
@@ -202,7 +218,7 @@ public class CommentFragment1 extends Fragment implements XListView.IXListViewLi
         //  查询 图集和作者  的信息
         BmobQuery<AtlasDis> query = new BmobQuery<>();
         query.addWhereEqualTo("author", user);
-        Log.e("FreeStar", "CommentFragment1→→→initData:" + "id" + user.getObjectId());
+        Log.e("FreeStar", "CommunityDisFragment→→→initData:" + "id" + user.getObjectId());
         query.include("cuser,atlas,author,atlas.author");
         query.setLimit(10);
         query.findObjects(new FindListener<AtlasDis>() {
@@ -211,7 +227,7 @@ public class CommentFragment1 extends Fragment implements XListView.IXListViewLi
                 if (e == null) {
                     if (list.size() > 0) {
                         for (AtlasDis atlasDis : list) {
-                            Log.e("FreeStar", "CommentFragment1→→→done:" + "id:" + atlasDis.getObjectId());
+                            Log.e("FreeStar", "CommunityDisFragment→→→done:" + "id:" + atlasDis.getObjectId());
                         }
                         messageList.addAll(list);
                         j++;
@@ -234,7 +250,7 @@ public class CommentFragment1 extends Fragment implements XListView.IXListViewLi
                 if (e == null) {
                     if (list.size() > 0) {
                         for (ArticleDis articleDis : list) {
-                            Log.e("FreeStar", "CommentFragment1→→→done:id:" + articleDis.getObjectId());
+                            Log.e("FreeStar", "CommunityDisFragment→→→done:id:" + articleDis.getObjectId());
                         }
                         messageList.addAll(list);
                         j++;
@@ -257,15 +273,13 @@ public class CommentFragment1 extends Fragment implements XListView.IXListViewLi
 
     @Override
     public void onRefresh() {
-        mHandler.postDelayed(new Runnable() {
+        mSwipeLayout.post(new Runnable() {
             @Override
             public void run() {
-                messageList.clear();
-                i = 0;
-                initData();
-
+                mSwipeLayout.setRefreshing(true);
             }
-        }, 2000);
+        });
+        initData();
     }
 
     private void onLoad() {

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:fresco="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="15dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginTop="15dp"
-    android:descendantFocusability="blocksDescendants"
-    android:orientation="vertical">
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="15dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="15dp"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:src="@mipmap/ic_launcher"
             fresco:actualImageScaleType="focusCrop"
             fresco:placeholderImage="@mipmap/ic_launcher"
-            fresco:roundAsCircle="true" />
+            fresco:roundAsCircle="true"/>
 
         <TextView
             android:id="@+id/tv_name_comment"
@@ -31,7 +31,7 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img_user_comment"
             android:text="评论人名字"
-            android:textSize="15sp" />
+            android:textSize="15sp"/>
 
         <TextView
             android:id="@+id/tv_time_comment"
@@ -42,7 +42,7 @@
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@id/img_user_comment"
             android:text="时间"
-            android:textSize="12sp" />
+            android:textSize="12sp"/>
 
         <ImageView
             android:id="@+id/btn_reply"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-           android:src="@mipmap/red_dis" />
+            android:src="@mipmap/red_dis"/>
         <!--android:text="回复"-->
         <!--android:textColor="@color/blue_semi_transparent_pressed"-->
         <!--android:textSize="20sp"-->
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/dp_10"
         android:text="评论内容"
-        android:textSize="15sp" />
+        android:textSize="15sp"/>
 
     <LinearLayout
         android:id="@+id/source"
@@ -80,7 +80,7 @@
             android:layout_margin="@dimen/dp_4"
             fresco:actualImageScaleType="focusCrop"
             fresco:placeholderImage="@mipmap/ic_launcher"
-            fresco:roundAsCircle="true" />
+            fresco:roundAsCircle="true"/>
 
         <TextView
             android:id="@+id/tv_user_message"
@@ -89,9 +89,9 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="@dimen/dp_10"
             android:singleLine="true"
-            android:textStyle="bold"
             android:text="这个是信息hahahahahahahaha title"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 

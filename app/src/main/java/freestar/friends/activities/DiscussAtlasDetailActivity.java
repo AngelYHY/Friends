@@ -115,6 +115,9 @@ public class DiscussAtlasDetailActivity extends BaseActivity implements View.OnC
                 });
                 if (e == null) {
                     mAdapter.setNewData(list);
+                    if (list.size() < 10) {
+                        mAdapter.loadMoreEnd();
+                    }
                 } else {
                     Log.e("FreeStar", "PageFragment1→→→done:" + e.getMessage());
                 }
@@ -136,7 +139,7 @@ public class DiscussAtlasDetailActivity extends BaseActivity implements View.OnC
             @Override
             public void done(List<AtlasDis> list, BmobException e) {
                 if (e == null) {
-                    if (list.size() == 0) {
+                    if (list.size() < 10) {
                         mAdapter.loadMoreEnd();
                     } else {
                         mAdapter.addData(list);

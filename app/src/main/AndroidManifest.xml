@@ -196,7 +196,7 @@
         <activity android:name=".activities.DiscussArticleDetailActivity" />
         <activity android:name=".util.profile.TaTypeActivity" />
         <activity android:name=".util.profile.TaCollectActivity" />
-        <activity android:name=".activities.SearchActivity3" />
+        <activity android:name=".activities.MyRelatedActivity" />
         <activity android:name=".util.profile.TaConcernActivity" />
         <activity android:name=".util.profile.ConcernActivity1" />
         <activity android:name=".util.profile.CollectActivity1" />

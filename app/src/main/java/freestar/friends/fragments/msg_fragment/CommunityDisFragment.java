@@ -1,7 +1,6 @@
 package freestar.friends.fragments.msg_fragment;
 
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,26 +10,27 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 import butterknife.ButterKnife;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
-import cn.bmob.v3.listener.SaveListener;
 import freestar.friends.App;
 import freestar.friends.R;
 import freestar.friends.activities.ArticleItemActivity;
+import freestar.friends.activities.DiscussActivity;
 import freestar.friends.activities.PicItemActivity;
+import freestar.friends.activities.UserDataActivity;
 import freestar.friends.bean.Article;
 import freestar.friends.bean.ArticleDis;
 import freestar.friends.bean.Atlas;
@@ -39,12 +39,13 @@ import freestar.friends.bean.User;
 import freestar.friends.util.TimeComparator;
 import freestar.friends.util.abslistview.CommonAdapter;
 import freestar.friends.util.abslistview.ViewHolder;
+import freestar.friends.util.view.XListView;
 
 /**
- * 暂时定为  与我相关
+ * 社区评论
  */
-public class CommentFragment2 extends Fragment implements View.OnClickListener {
-    ListView lv;
+public class CommunityDisFragment extends Fragment implements XListView.IXListViewListener {
+    XListView lv;
 
     ArrayList<Object> messageList = new ArrayList<>();
     EditText conments;
@@ -55,8 +56,9 @@ public class CommentFragment2 extends Fragment implements View.OnClickListener {
     private Object object;
     private Handler mHandler;
     ArrayList<Object> mDate = new ArrayList<>();
+    int j;
 
-    public CommentFragment2() {
+    public CommunityDisFragment() {
 
     }
 
@@ -71,22 +73,29 @@ public class CommentFragment2 extends Fragment implements View.OnClickListener {
             super.handleMessage(msg);
             if (msg.what == 1) {
                 if (start && end) {
-                    Collections.sort(messageList, new TimeComparator());
-                    if (mAdapter == null) {
-                        setAdapter();
-                    } else {
-                        mAdapter.notifyDataSetChanged();
+                    if (j != 0) {
+                        Collections.sort(messageList, new TimeComparator());
+                        if (mAdapter == null) {
+                            setAdapter();
+                        } else {
+                            mAdapter.notifyDataSetChanged();
+                            lv.stopRefresh();
+                        }
+                        start = false;
+                        end = false;
+                        j = 0;
                     }
-                    start = false;
-                    end = false;
                 }
             } else if (msg.what == 2) {
-                if (start || end) {
-                    Collections.sort(mDate, new TimeComparator());
-                    messageList.addAll(mDate);
-                    mAdapter.notifyDataSetChanged();
-                } else {
-                    Toast.makeText(getActivity(), "没有数据咯", Toast.LENGTH_SHORT).show();
+                if (start && end) {
+                    if (j != 0) {
+                        Collections.sort(mDate, new TimeComparator());
+                        messageList.addAll(mDate);
+                        mAdapter.notifyDataSetChanged();
+                    } else {
+                        Toast.makeText(getActivity(), "没有数据咯", Toast.LENGTH_SHORT).show();
+                    }
+                    lv.stopLoadMore();
                 }
             }
         }
@@ -112,13 +121,16 @@ public class CommentFragment2 extends Fragment implements View.OnClickListener {
                 holder.setOnClickListener(R.id.btn_reply, new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        contain_layout.setVisibility(View.VISIBLE);
-                        InputMethodManagerup();
-                        object = s;
-//                        Intent intent = new Intent(getActivity(), DiscussActivity.class);
+//                        contain_layout.setVisibility(View.VISIBLE);
+//                        InputMethodManagerup();
+//                        object = s;
+                        Intent intent = new Intent(getActivity(), DiscussActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putSerializable("bundle", (Serializable) s);
+                        intent.putExtras(bundle);
 //                        intent.putExtra("object", s);
-//                        Log.e("FreeStar", "SearchActivity→→→onClick:" + s.toString());
-//                        startActivity(intent);
+                        Log.e("FreeStar", "SearchActivity→→→onClick:" + s.toString());
+                        startActivity(intent);
 //                        if (s instanceof ArticleDis) {
 //                            articleDis = (ArticleDis) s;
 //                        }
@@ -132,66 +144,57 @@ public class CommentFragment2 extends Fragment implements View.OnClickListener {
                             Intent intent = new Intent(getActivity(), ArticleItemActivity.class);
                             Log.e("FreeStar", "PageFragment1→→→onItemClick:" + article.toString() + i + "--------" + mDatas.size());
                             intent.putExtra("article", article);
+                            intent.putExtra("user", ((ArticleDis) s).getArticle().getAuthor());
+                            Log.e("FreeStar", "CommunityDisFragment→→→onClick:+++" + ((ArticleDis) s).getAuthor());
                             startActivity(intent);
                         } else if (s instanceof AtlasDis) {
                             Atlas atlas = ((AtlasDis) s).getAtlas();
                             Intent intent = new Intent(getActivity(), PicItemActivity.class);
                             Log.e("FreeStar", "PageFragment1→→→onItemClick:" + atlas.toString() + i + "--------" + mDatas.size());
                             intent.putExtra("atlas", atlas);
+                            Log.e("FreeStar", "CommunityDisFragment→→→onClick:6666" + ((AtlasDis) s).getAtlas().getAuthor().toString());
+                            intent.putExtra("user", ((AtlasDis) s).getAtlas().getAuthor());
                             startActivity(intent);
                         }
                     }
                 });
+                holder.setOnClickListener(R.id.img_user_comment, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        User cuser = null;
+                        if (s instanceof ArticleDis) {
+                            ArticleDis articleDis = (ArticleDis) s;
+                            cuser = articleDis.getCuser();
 
+                        } else if (s instanceof AtlasDis) {
+                            AtlasDis atlasDis = (AtlasDis) s;
+                            cuser = atlasDis.getCuser();
+                        }
+                        Intent intent = new Intent(getActivity(), UserDataActivity.class);
+                        intent.putExtra("user", cuser);
+                        Log.e("FreeStar", "SearchActivity→→→onClick:" + cuser);
+                        startActivity(intent);
+                    }
+                });
             }
         };
         lv.setAdapter(mAdapter);
     }
 
-    //弹开虚拟键盘和输入框
-    private void InputMethodManagerup() {
-        Log.e("FreeStar", "CommunityDisFragment→→→InputMethodManagerup:执行弹出键盘");
-        InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
-        conments.setFocusable(true);
-        conments.setFocusableInTouchMode(true);
-        conments.requestFocus();
-        conments.requestFocusFromTouch();
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_comment1, container, false);
-        conments = (EditText) view.findViewById(R.id.kj_pl);
-        contain_layout = (LinearLayout) view.findViewById(R.id.kj_pl_slu);
-
-        sumbit_conments = (Button) view.findViewById(R.id.kj_pl_fb);
-
-        sumbit_conments.setOnClickListener(this);
+        View view = inflater.inflate(R.layout.fragment_comment, container, false);
+//        View view = inflater.inflate(R.layout.refresh_recycler_view, container, false);
         user = new User();
         user.setObjectId(App.userId);
-        Log.e("comment", "-------进入comment碎片:");
-        lv = (ListView) view.findViewById(R.id.lv_comment);
-//        lv = (XListView) view.findViewById(R.id.lv_comment);
-//        lv.setPullLoadEnable(true);
-//        lv.setXListViewListener(this);
-        mHandler = new Handler();
+
         initData();
-//        initListData();
-//        * Fragment中，注册
-//                * 接收MainActivity的Touch回调的对象
-//                * 重写其中的onTouchEvent函数，并进行该Fragment的逻辑处理
-//                */
-//        HomePageA.MyTouchListener myTouchListener = new HomePageA.MyTouchListener() {
-//            @Override
-//            public void onTouchEvent(MotionEvent event) {
-//                // 处理手势事件
-//                downKeyBoard();
-//            }
-//        };
-//
-//        // 将myTouchListener注册到分发列表
-//        ((HomePageA) this.getActivity()).registerMyTouchListener(myTouchListener);
+
+        lv = (XListView) view.findViewById(R.id.lv_comment);
+        lv.setPullLoadEnable(true);
+        lv.setPullRefreshEnable(true);
+        lv.setXListViewListener(this);
+        mHandler = new Handler();
         return view;
     }
 
@@ -200,18 +203,22 @@ public class CommentFragment2 extends Fragment implements View.OnClickListener {
         //  查询 图集和作者  的信息
         BmobQuery<AtlasDis> query = new BmobQuery<>();
         query.addWhereEqualTo("author", user);
-        query.include("cuser,atlas,author");
-//        query.order("-createdAt");
+        Log.e("FreeStar", "CommunityDisFragment→→→initData:" + "id" + user.getObjectId());
+        query.include("cuser,atlas,author,atlas.author");
         query.setLimit(10);
         query.findObjects(new FindListener<AtlasDis>() {
             @Override
             public void done(List<AtlasDis> list, BmobException e) {
                 if (e == null) {
                     if (list.size() > 0) {
+                        for (AtlasDis atlasDis : list) {
+                            Log.e("FreeStar", "CommunityDisFragment→→→done:" + "id:" + atlasDis.getObjectId());
+                        }
                         messageList.addAll(list);
-                        start = true;
-                        handler.sendEmptyMessage(1);
+                        j++;
                     }
+                    start = true;
+                    handler.sendEmptyMessage(1);
                 } else {
                     Log.e("ccc", "PageFragment1→→→done:" + e.getMessage());
                 }
@@ -220,22 +227,27 @@ public class CommentFragment2 extends Fragment implements View.OnClickListener {
 
         BmobQuery<ArticleDis> query1 = new BmobQuery<>();
         query1.addWhereEqualTo("author", user);
-        query1.include("cuser,article,author");
+        query1.include("cuser,article,author,article.author");
         query1.setLimit(10);
         query1.findObjects(new FindListener<ArticleDis>() {
             @Override
             public void done(List<ArticleDis> list, BmobException e) {
                 if (e == null) {
                     if (list.size() > 0) {
+                        for (ArticleDis articleDis : list) {
+                            Log.e("FreeStar", "CommunityDisFragment→→→done:id:" + articleDis.getObjectId());
+                        }
                         messageList.addAll(list);
-                        end = true;
-                        handler.sendEmptyMessage(1);
+                        j++;
                     }
+                    end = true;
+                    handler.sendEmptyMessage(1);
                 } else {
                     Log.e("ccc", "PageFragment1→→→done:" + e.getMessage());
                 }
             }
         });
+        i++;
     }
 
     @Override
@@ -244,84 +256,34 @@ public class CommentFragment2 extends Fragment implements View.OnClickListener {
         ButterKnife.unbind(this);
     }
 
-    public void Downkeyboard() {
-//        if (conments.getVisibility() == v.VISIBLE && sumbit_conments.getVisibility() == v.VISIBLE) {
-        if (contain_layout.getVisibility() == View.VISIBLE) {
-            Log.e("FreeStar", "CommunityDisFragment→→→downKeyBoard:lalallala ");
-            contain_layout.setVisibility(View.GONE);
-            InputMethodManager imm2 = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm2.hideSoftInputFromWindow(sumbit_conments.getWindowToken(), 0);
-        }
+    @Override
+    public void onRefresh() {
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                messageList.clear();
+                i = 0;
+                initData();
+
+            }
+        }, 2000);
+    }
+
+    private void onLoad() {
+        lv.stopRefresh();
+        lv.stopLoadMore();
+        lv.setRefreshTime(new Date().toLocaleString());
     }
 
     @Override
-    public void onClick(View view) {
-        Log.e("FreeStar", "DynDetailActivity→→→onClick:进入点击事件");
-        String context = conments.getText().toString().trim();
-        if (context.equals("")) {
-            Toast.makeText(getActivity(), "写写东西吧", Toast.LENGTH_SHORT).show();
-            return;
-        } else {
-            conments.setText("");
-            Downkeyboard();
-        }
-        if (object instanceof ArticleDis) {
-            ArticleDis articleDis = new ArticleDis(user, (ArticleDis) object, context, ((ArticleDis) object).getArticle(), ((AtlasDis) object).getCuser());
-            articleDis.save(new SaveListener<String>() {
-                @Override
-                public void done(String s, BmobException e) {
-                    if (e == null) {
-                        Log.e("FreeStar", "DiscussActivity→→→done:成功" + s);
-                    } else {
-                        Log.e("FreeStar", "DiscussActivity→→→done:" + e.getMessage());
-                    }
-                }
-            });
-        } else if (object instanceof AtlasDis) {
-            AtlasDis atlasDis = new AtlasDis(user, (AtlasDis) object, context, ((AtlasDis) object).getAtlas(), ((AtlasDis) object).getCuser());
-            atlasDis.save(new SaveListener<String>() {
-                @Override
-                public void done(String s, BmobException e) {
-                    if (e == null) {
-                        Log.e("FreeStar", "DiscussActivity→→→done:成功" + s);
-                    } else {
-                        Log.e("FreeStar", "DiscussActivity→→→done:" + e.getMessage());
-                    }
-                }
-            });
-        }
+    public void onLoadMore() {
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startQuery();
+            }
+        }, 2000);
     }
-//
-//    @Override
-//    public void onRefresh() {
-//        mHandler.postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                messageList.clear();
-//                initData();
-////                mAdapter.notifyDataSetChanged();
-//                onLoad();
-//            }
-//        }, 2000);
-//    }
-
-//    private void onLoad() {
-//        lv.stopRefresh();
-//        lv.stopLoadMore();
-//        lv.setRefreshTime(new Date().toLocaleString());
-//    }
-
-//    @Override
-//    public void onLoadMore() {
-//        mHandler.postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                startQuery();
-////                mAdapter.notifyDataSetChanged();
-//                onLoad();
-//            }
-//        }, 2000);
-//    }
 
     private void startQuery() {
 
@@ -340,8 +302,10 @@ public class CommentFragment2 extends Fragment implements View.OnClickListener {
                 if (e == null) {
                     if (list.size() > 0) {
                         mDate.addAll(list);
-                        handler.sendEmptyMessage(2);
+                        j++;
                     }
+                    start = true;
+                    handler.sendEmptyMessage(2);
                 } else {
                     Log.e("ccc", "PageFragment1→→→done:" + e.getMessage());
                 }
@@ -352,15 +316,17 @@ public class CommentFragment2 extends Fragment implements View.OnClickListener {
         query1.addWhereEqualTo("author", user);
         query1.include("cuser,article,author");
         query1.setLimit(10);
-        query.setSkip(10 * i);
+        query1.setSkip(10 * i);
         query1.findObjects(new FindListener<ArticleDis>() {
             @Override
             public void done(List<ArticleDis> list, BmobException e) {
                 if (e == null) {
                     if (list.size() > 0) {
-                        mDate.addAll(list);
-                        handler.sendEmptyMessage(2);
+                        messageList.addAll(list);
+                        j++;
                     }
+                    end = true;
+                    handler.sendEmptyMessage(2);
                 } else {
                     Log.e("ccc", "PageFragment1→→→done:" + e.getMessage());
                 }
@@ -368,6 +334,4 @@ public class CommentFragment2 extends Fragment implements View.OnClickListener {
         });
         i++;
     }
-
-
 }

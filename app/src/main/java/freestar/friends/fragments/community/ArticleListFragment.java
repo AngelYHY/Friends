@@ -1,4 +1,4 @@
-package freestar.friends.fragments.communities;
+package freestar.friends.fragments.community;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -115,6 +115,9 @@ public class ArticleListFragment extends Fragment implements SwipeRefreshLayout.
 
                 if (e == null) {
                     mAdapter.setNewData(list);
+                    if (list.size() < 15) {
+                        mAdapter.loadMoreEnd();
+                    }
                     Log.e("FreeStar", "PageFragment1→→→done:数据源改变");
                 } else {
                     Log.e("FreeStar", "PageFragment1→→→done:+++++++++" + e.getMessage());
@@ -190,7 +193,7 @@ public class ArticleListFragment extends Fragment implements SwipeRefreshLayout.
             public void done(List<Article> list, BmobException e) {
                 if (e == null) {
                     Log.e("FreeStar", "PageFragment1→→→done:" + list.size());
-                    if (list.size() == 0) {
+                    if (list.size() <15) {
                         mAdapter.loadMoreEnd();
                     } else {
                         mAdapter.addData(list);

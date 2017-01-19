@@ -31,7 +31,7 @@ import freestar.friends.App;
 import freestar.friends.R;
 import freestar.friends.activities.DynDetailActivity;
 import freestar.friends.activities.DyFabuActivity;
-import freestar.friends.activities.SearchActivity3;
+import freestar.friends.activities.MyRelatedActivity;
 import freestar.friends.activities.UserDataActivity;
 import freestar.friends.adapter.DynamicAdapter;
 import freestar.friends.bean.Message;
@@ -170,13 +170,9 @@ public class DynFragment extends Fragment implements BaseQuickAdapter.RequestLoa
                         });
                         if (e == null) {
                             mAdapter.setNewData(list);
-//                            mlist.addAll(list);
-//                            if (dongTaiAdapter == null) {
-//                                initAdapter();
-//                            } else {
-//                                dongTaiAdapter.notifyDataSetChanged();
-//                                xListView.stopRefresh();
-//                            }
+                            if (list.size() < 10) {
+                                mAdapter.loadMoreEnd();
+                            }
                         } else {
                             Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -224,7 +220,7 @@ public class DynFragment extends Fragment implements BaseQuickAdapter.RequestLoa
             @Override
             public void done(List<Message> list, BmobException e) {
                 if (e == null) {
-                    if (list.size() == 0) {
+                    if (list.size() < 15) {
                         mAdapter.loadMoreEnd();
                     } else {
                         mAdapter.addData(list);
@@ -261,7 +257,7 @@ public class DynFragment extends Fragment implements BaseQuickAdapter.RequestLoa
                 break;
             //与我有关
             case R.id.my_connection:
-                intent = new Intent(getActivity(), SearchActivity3.class);
+                intent = new Intent(getActivity(), MyRelatedActivity.class);
                 break;
             //我的说说
             case R.id.my_talk:

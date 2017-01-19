@@ -20,7 +20,7 @@ import java.util.List;
 import freestar.friends.R;
 import freestar.friends.activities.QurryFriendIdActivity;
 import freestar.friends.fragments.msg_fragment.ChatFragment;
-import freestar.friends.fragments.msg_fragment.CommentFragment1;
+import freestar.friends.fragments.msg_fragment.CommunityDisFragment_test;
 import freestar.friends.fragments.msg_fragment.SystemFragment;
 
 
@@ -41,7 +41,7 @@ public class MsgFragment extends Fragment {
 
         Adapter adapter = new Adapter(getFragmentManager());
         adapter.addFragment(new ChatFragment(), "聊天消息 ");
-        adapter.addFragment(new CommentFragment1(), "社区评论");
+        adapter.addFragment(new CommunityDisFragment_test(), "社区评论");
         adapter.addFragment(new SystemFragment(), "我的关注");
         vp.setAdapter(adapter);
         vp.setOffscreenPageLimit(2);

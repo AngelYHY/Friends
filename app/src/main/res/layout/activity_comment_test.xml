@@ -1,8 +1,9 @@
 <!--ListView嵌套ListView的时候，外层列表焦点被内层列表夺走，可以通过descendantFocusability强制组织内层列表抢夺焦点-->
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <!--android:descendantFocusability="blocksDescendants"-->
 
     <LinearLayout
@@ -43,7 +44,7 @@
         android:id="@+id/swipeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/listview_head">
+        android:layout_below="@+id/listview_head">
 
         <freestar.friends.widget.XRecyclerView
             android:id="@+id/recycler_view"
@@ -57,7 +58,7 @@
         android:id="@+id/kj_pl_slu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
         android:background="#ffffff"
         android:orientation="horizontal"
         android:visibility="gone">
@@ -82,9 +83,8 @@
     <freestar.friends.util.fly_heat.PeriscopeLayout
         android:id="@+id/periscope"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/listview_head"/>
-
-</RelativeLayout>
+        android:layout_height="match_parent"/>
+    <!--android:layout_below="@+id/listview_head"-->
+</LinearLayout>
 
 

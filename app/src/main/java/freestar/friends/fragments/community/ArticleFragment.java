@@ -1,4 +1,4 @@
-package freestar.friends.fragments.communities;
+package freestar.friends.fragments.community;
 
 import android.content.Context;
 import android.os.Bundle;

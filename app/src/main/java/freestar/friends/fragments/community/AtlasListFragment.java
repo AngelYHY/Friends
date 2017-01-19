@@ -1,4 +1,4 @@
-package freestar.friends.fragments.communities;
+package freestar.friends.fragments.community;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -114,6 +114,9 @@ public class AtlasListFragment extends Fragment implements SwipeRefreshLayout.On
 
                 if (e == null) {
                     mAdapter.setNewData(list);
+                    if (list.size() < 15) {
+                        mAdapter.loadMoreEnd();
+                    }
                     Log.e("FreeStar", "PageFragment1→→→done:数据源改变");
                 } else {
                     Log.e("FreeStar", "PageFragment1→→→done:+++++++++" + e.getMessage());
@@ -183,7 +186,7 @@ public class AtlasListFragment extends Fragment implements SwipeRefreshLayout.On
             public void done(List<Atlas> list, BmobException e) {
                 if (e == null) {
                     Log.e("FreeStar", "PageFragment1→→→done:" + list.size());
-                    if (list.size() == 0) {
+                    if (list.size() < 15) {
                         mAdapter.loadMoreEnd();
                     } else {
                         mAdapter.addData(list);

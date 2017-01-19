@@ -1,5 +1,7 @@
 package freestar.friends.bean;
 
+import com.chad.library.adapter.base.entity.MultiItemEntity;
+
 import java.io.Serializable;
 
 import cn.bmob.v3.BmobObject;
@@ -7,7 +9,7 @@ import cn.bmob.v3.BmobObject;
 /**
  * 评论列表类。。。。。一级评论 多级评论
  */
-public class DisSay extends BmobObject implements Serializable {
+public class DisSay extends BmobObject implements Serializable, MultiItemEntity {
     //当前评论的用户
     private User cuser;
     //当前评论表中的评论
@@ -20,8 +22,8 @@ public class DisSay extends BmobObject implements Serializable {
     //说说作者
     private User author;
 
-    public DisSay(User cuser, DisSay comment_father_user, String comment, Message message,User father_user) {
-        this.father_user=father_user;
+    public DisSay(User cuser, DisSay comment_father_user, String comment, Message message, User father_user) {
+        this.father_user = father_user;
         this.cuser = cuser;
         this.comment_father_user = comment_father_user;
         this.comment = comment;
@@ -86,10 +88,15 @@ public class DisSay extends BmobObject implements Serializable {
         this.author = author;
     }
 
-    public DisSay(String comment, User cuser, Message message,User author) {
-        this.author=author;
+    public DisSay(String comment, User cuser, Message message, User author) {
+        this.author = author;
         this.comment = comment;
         this.cuser = cuser;
         this.message = message;
+    }
+
+    @Override
+    public int getItemType() {
+        return getComment_father_user() == null ? 0 : 1;
     }
 }
