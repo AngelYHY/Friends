@@ -140,7 +140,7 @@ public class SearchActivity44 extends BaseActivity implements XListView.IXListVi
 //                }
 //                holder.setOnClickListener(R.id.line_reply, new View.OnClickListener() {
 //                    @Override
-//                    public void onClick(View view) {
+//                    public void onClick(View headView) {
 //                        Intent intent = new Intent(SearchActivity44.this, DiscussActivity.class);
 //                        intent.putExtra("object", s);
 //                        intent.putExtra("user", s.getAuthor());
@@ -151,7 +151,7 @@ public class SearchActivity44 extends BaseActivity implements XListView.IXListVi
 //                });
 //                holder.setOnClickListener(R.id.sdv_head, new View.OnClickListener() {
 //                    @Override
-//                    public void onClick(View view) {
+//                    public void onClick(View headView) {
 //                        Intent intent = new Intent(SearchActivity44.this, UserDataActivity.class);
 //                        intent.putExtra("user", s.getCuser());
 //                        Log.e("FreeStar", "SearchActivity→→→onClick:" + s.getCuser());
@@ -160,7 +160,7 @@ public class SearchActivity44 extends BaseActivity implements XListView.IXListVi
 //                });
 //                holder.setOnClickListener(R.id.sdv_father_head, new View.OnClickListener() {
 //                    @Override
-//                    public void onClick(View view) {
+//                    public void onClick(View headView) {
 //                        Intent intent = new Intent(SearchActivity44.this, UserDataActivity.class);
 //                        intent.putExtra("user", s.getFather_user());
 //                        Log.e("FreeStar", "SearchActivity→→→onClick:" + s.getFather_user());
@@ -210,7 +210,7 @@ public class SearchActivity44 extends BaseActivity implements XListView.IXListVi
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == RESC && resultCode == RESULT_OK) {
             String back = data.getStringExtra("OK");
-            Log.e("FreeStar", "SearchActivity1→→→onActivityResult:88888" + back);
+            Log.e("FreeStar", "DiscussAtlasDetailActivity→→→onActivityResult:88888" + back);
             if (back.equals("YES")) {
                 onRefresh();
                 Intent intent = new Intent();

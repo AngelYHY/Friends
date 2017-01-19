@@ -35,7 +35,7 @@ import cn.bmob.v3.listener.UpdateListener;
 import cn.bmob.v3.listener.UploadFileListener;
 import freestar.friends.App;
 import freestar.friends.R;
-import freestar.friends.activities.LoginA;
+import freestar.friends.activities.LoginActivity;
 import freestar.friends.bean.User;
 import freestar.friends.util.status_bar.StatusBarUtil;
 import freestar.friends.util.takephoto.app.TakePhotoFragmentActivity;
@@ -184,7 +184,7 @@ public class MyinfoActivity extends TakePhotoFragmentActivity {
     public void leaveClick(View view) {
         SharedPreferences preferences = getSharedPreferences("login", Context.MODE_PRIVATE);
         preferences.edit().clear().commit();
-        Intent intent = new Intent(this, LoginA.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish();

@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import freestar.friends.R;
-import freestar.friends.fragments.pages_fragment.AtlasListFragment;
 import freestar.friends.util.pager_and_indicator.ModelPagerAdapter;
 import freestar.friends.util.pager_and_indicator.PagerManager;
 import github.chenupt.springindicator.SpringIndicator;

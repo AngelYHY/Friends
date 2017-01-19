@@ -27,7 +27,7 @@ import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
 import freestar.friends.App;
 import freestar.friends.R;
-import freestar.friends.activities.ArticleItemActivity1;
+import freestar.friends.activities.ArticleItemActivity;
 import freestar.friends.activities.DiscussActivity;
 import freestar.friends.activities.PicItemActivity;
 import freestar.friends.activities.UserDataActivity;
@@ -141,7 +141,7 @@ public class CommentFragment1 extends Fragment implements XListView.IXListViewLi
                     public void onClick(View view) {
                         if (s instanceof ArticleDis) {
                             Article article = ((ArticleDis) s).getArticle();
-                            Intent intent = new Intent(getActivity(), ArticleItemActivity1.class);
+                            Intent intent = new Intent(getActivity(), ArticleItemActivity.class);
                             Log.e("FreeStar", "PageFragment1→→→onItemClick:" + article.toString() + i + "--------" + mDatas.size());
                             intent.putExtra("article", article);
                             intent.putExtra("user", ((ArticleDis) s).getArticle().getAuthor());

@@ -1,11 +1,13 @@
 package freestar.friends.bean;
 
+import com.chad.library.adapter.base.entity.MultiItemEntity;
+
 import cn.bmob.v3.BmobObject;
 
 /**
  * Created by Administrator on 2016/8/23 0023.
  */
-public class AtlasDis extends BmobObject {
+public class AtlasDis extends BmobObject implements MultiItemEntity {
     //当前评论的用户
     private User cuser;
     //当前评论表中的评论
@@ -147,5 +149,10 @@ public class AtlasDis extends BmobObject {
                 ", atlas=" + atlas +
                 ", father_user=" + father_user +
                 '}';
+    }
+
+    @Override
+    public int getItemType() {
+        return getComment_father_user() == null ? 0 : 1;
     }
 }

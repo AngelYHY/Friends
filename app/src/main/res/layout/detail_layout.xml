@@ -1,9 +1,7 @@
 <!--ListView嵌套ListView的时候，外层列表焦点被内层列表夺走，可以通过descendantFocusability强制组织内层列表抢夺焦点-->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
-
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:descendantFocusability="blocksDescendants">

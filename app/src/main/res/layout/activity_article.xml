@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,19 +19,19 @@
         <ImageButton
             android:id="@+id/ib_back"
             style="@style/head_imageBtn"
-            android:background="@mipmap/white_back" />
+            android:background="@mipmap/white_back"/>
 
         <ImageButton
             android:id="@+id/ib_collect"
             style="@style/head_imageBtn"
-            android:layout_alignParentRight="true" />
+            android:layout_alignParentRight="true"/>
 
         <TextView
             style="@style/white_button"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:text="摄友"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
     </RelativeLayout>
 
     <LinearLayout
@@ -53,7 +54,7 @@
             <ImageView
                 android:layout_width="@dimen/dp_40"
                 android:layout_height="@dimen/dp_40"
-                android:src="@mipmap/icon_menu_01_30x30" />
+                android:src="@mipmap/icon_menu_01_30x30"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -61,7 +62,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/dp_4"
                 android:text="写评论"
-                android:textColor="#D5C6C6" />
+                android:textColor="#D5C6C6"/>
         </LinearLayout>
 
         <RelativeLayout
@@ -83,13 +84,13 @@
                     android:gravity="bottom"
                     android:text="0"
                     android:textColor="#D5C6C6"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"/>
 
                 <ImageView
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:layout_gravity="top"
-                    android:src="@mipmap/com_icon" />
+                    android:src="@mipmap/com_icon"/>
             </LinearLayout>
 
         </RelativeLayout>
@@ -105,7 +106,7 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_centerInParent="true"
-                android:background="@drawable/selector_zan" />
+                android:background="@drawable/selector_zan"/>
         </RelativeLayout>
     </LinearLayout>
 
@@ -115,16 +116,18 @@
     <!--android:layout_height="match_parent"-->
     <!--android:layout_above="@id/line_bottom"-->
     <!--android:layout_below="@id/rela_head" />-->
-    <ListView
+
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/line_bottom"
         android:layout_below="@id/rela_head"
-        android:background="#000000" />
+        android:background="#000000"/>
 
     <freestar.friends.util.fly_heat.PeriscopeLayout
         android:id="@+id/periscope"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"/>
+
 </RelativeLayout>

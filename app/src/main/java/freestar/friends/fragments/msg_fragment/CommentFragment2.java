@@ -29,7 +29,7 @@ import cn.bmob.v3.listener.FindListener;
 import cn.bmob.v3.listener.SaveListener;
 import freestar.friends.App;
 import freestar.friends.R;
-import freestar.friends.activities.ArticleItemActivity1;
+import freestar.friends.activities.ArticleItemActivity;
 import freestar.friends.activities.PicItemActivity;
 import freestar.friends.bean.Article;
 import freestar.friends.bean.ArticleDis;
@@ -129,7 +129,7 @@ public class CommentFragment2 extends Fragment implements View.OnClickListener {
                     public void onClick(View view) {
                         if (s instanceof ArticleDis) {
                             Article article = ((ArticleDis) s).getArticle();
-                            Intent intent = new Intent(getActivity(), ArticleItemActivity1.class);
+                            Intent intent = new Intent(getActivity(), ArticleItemActivity.class);
                             Log.e("FreeStar", "PageFragment1→→→onItemClick:" + article.toString() + i + "--------" + mDatas.size());
                             intent.putExtra("article", article);
                             startActivity(intent);
@@ -256,7 +256,7 @@ public class CommentFragment2 extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        Log.e("FreeStar", "CommentActivity→→→onClick:进入点击事件");
+        Log.e("FreeStar", "DynDetailActivity→→→onClick:进入点击事件");
         String context = conments.getText().toString().trim();
         if (context.equals("")) {
             Toast.makeText(getActivity(), "写写东西吧", Toast.LENGTH_SHORT).show();

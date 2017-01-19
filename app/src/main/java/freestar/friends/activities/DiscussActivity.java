@@ -44,7 +44,7 @@ public class DiscussActivity extends BaseActivity {
     public Atlas atlas;
     private Article article;
     private User author;
-    Handler handler = new Handler(){
+    Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);

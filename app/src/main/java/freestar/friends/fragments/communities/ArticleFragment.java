@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 import freestar.friends.R;
-import freestar.friends.fragments.pages_fragment.ArticleListFragment;
 import freestar.friends.util.pager_and_indicator.ModelPagerAdapter;
 import freestar.friends.util.pager_and_indicator.PagerManager;
 import github.chenupt.springindicator.SpringIndicator;

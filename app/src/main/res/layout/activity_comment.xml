@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <!--android:descendantFocusability="blocksDescendants"-->
+
     <LinearLayout
         android:id="@+id/listview_head"
         android:layout_width="match_parent"
@@ -32,11 +33,25 @@
         <!--</android.support.v7.widget.Toolbar>-->
     </LinearLayout>
 
-    <freestar.friends.util.view.XListView
-        android:id="@+id/commemt_listview"
+    <!--<freestar.friends.util.view.XListView-->
+    <!--android:id="@+id/commemt_listview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/listview_head"/>-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/listview_head"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listview_head">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
     <!--弹出框-->
     <LinearLayout
         android:id="@+id/kj_pl_slu"
@@ -67,7 +82,8 @@
     <freestar.friends.util.fly_heat.PeriscopeLayout
         android:id="@+id/periscope"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listview_head"/>
 
 </RelativeLayout>
 

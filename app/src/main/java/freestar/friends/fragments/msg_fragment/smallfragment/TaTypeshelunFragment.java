@@ -17,9 +17,8 @@ import java.util.List;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
-import freestar.friends.App;
 import freestar.friends.R;
-import freestar.friends.activities.ArticleItemActivity1;
+import freestar.friends.activities.ArticleItemActivity;
 import freestar.friends.bean.Article;
 import freestar.friends.bean.User;
 
@@ -57,7 +56,7 @@ public class TaTypeshelunFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Article article = mDatas.get(i);
                 Log.e("TAG", "onItemClick: "+article.getUrlList());
-                Intent intent = new Intent(getActivity(),ArticleItemActivity1.class);
+                Intent intent = new Intent(getActivity(),ArticleItemActivity.class);
                 Log.e("FreeStar", "PageFragment1→→→onItemClick:" + article.toString() + i + "--------" + mDatas.size());
                 intent.putExtra("article", article);
                 startActivity(intent);

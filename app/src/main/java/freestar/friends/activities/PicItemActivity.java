@@ -152,7 +152,7 @@ public class PicItemActivity extends AppCompatActivity implements ViewPager.OnPa
                 startActivityForResult(intent, RESC);
                 break;
             case R.id.line_com_num:
-                intent = new Intent(this, SearchActivity1.class);
+                intent = new Intent(this, DiscussAtlasDetailActivity.class);
                 intent.putExtra("object", atlas);
                 startActivityForResult(intent, RESC);
                 break;
@@ -181,7 +181,7 @@ public class PicItemActivity extends AppCompatActivity implements ViewPager.OnPa
                     @Override
                     public void done(BmobException e) {
                         if (e == null) {
-                            Log.e("FreeStar", "ArticleItemActivity1→→→done:点赞成功+1");
+                            Log.e("FreeStar", "ArticleItemActivity→→→done:点赞成功+1");
                         }
                     }
                 });
@@ -190,9 +190,9 @@ public class PicItemActivity extends AppCompatActivity implements ViewPager.OnPa
                     @Override
                     public void done(String s, BmobException e) {
                         if (e == null) {
-                            Log.e("FreeStar", "ArticleItemActivity1→→→done:点赞记录生成");
+                            Log.e("FreeStar", "ArticleItemActivity→→→done:点赞记录生成");
                         } else {
-                            Log.e("FreeStar", "ArticleItemActivity1→→→done:失败" + e.getMessage());
+                            Log.e("FreeStar", "ArticleItemActivity→→→done:失败" + e.getMessage());
                         }
                     }
                 });
@@ -203,9 +203,9 @@ public class PicItemActivity extends AppCompatActivity implements ViewPager.OnPa
                     @Override
                     public void done(BmobException e) {
                         if (e == null) {
-                            Log.e("FreeStar", "ArticleItemActivity1→→→done:点赞-1");
+                            Log.e("FreeStar", "ArticleItemActivity→→→done:点赞-1");
                         } else {
-                            Log.e("FreeStar", "ArticleItemActivity1→→→done:失败" + e.getMessage());
+                            Log.e("FreeStar", "ArticleItemActivity→→→done:失败" + e.getMessage());
                         }
                     }
                 });
@@ -216,9 +216,9 @@ public class PicItemActivity extends AppCompatActivity implements ViewPager.OnPa
                     @Override
                     public void done(BmobException e) {
                         if (e == null) {
-                            Log.e("FreeStar", "ArticleItemActivity1→→→done:ok+删除记录");
+                            Log.e("FreeStar", "ArticleItemActivity→→→done:ok+删除记录");
                         } else {
-                            Log.e("FreeStar", "ArticleItemActivity1→→→done:删除失败" + e.getMessage());
+                            Log.e("FreeStar", "ArticleItemActivity→→→done:删除失败" + e.getMessage());
                         }
                     }
                 });
@@ -234,9 +234,9 @@ public class PicItemActivity extends AppCompatActivity implements ViewPager.OnPa
                     @Override
                     public void done(String s, BmobException e) {
                         if (e == null) {
-                            Log.e("FreeStar", "ArticleItemActivity1→→→done:生成收藏记录" + s);
+                            Log.e("FreeStar", "ArticleItemActivity→→→done:生成收藏记录" + s);
                         } else {
-                            Log.e("FreeStar", "ArticleItemActivity1→→→done:收藏失败");
+                            Log.e("FreeStar", "ArticleItemActivity→→→done:收藏失败");
                         }
                     }
                 });
@@ -248,9 +248,9 @@ public class PicItemActivity extends AppCompatActivity implements ViewPager.OnPa
                     @Override
                     public void done(BmobException e) {
                         if (e == null) {
-                            Log.e("FreeStar", "ArticleItemActivity1→→→done:删除记录成功");
+                            Log.e("FreeStar", "ArticleItemActivity→→→done:删除记录成功");
                         } else {
-                            Log.e("FreeStar", "ArticleItemActivity1→→→done:删除收藏记录失败");
+                            Log.e("FreeStar", "ArticleItemActivity→→→done:删除收藏记录失败");
                         }
                     }
                 });
@@ -304,14 +304,14 @@ public class PicItemActivity extends AppCompatActivity implements ViewPager.OnPa
                     if (list.size() > 0) {
                         for (int i = 0; i < list.size(); i++) {
                             LikeAtlas likeA = list.get(i);
-                            Log.e("FreeStar", "ArticleItemActivity1→→→done:" + likeA.getObjectId());
+                            Log.e("FreeStar", "ArticleItemActivity→→→done:" + likeA.getObjectId());
                             if (likeA.getSource().getObjectId().equals(atlas.getObjectId())) {
                                 Log.e("FreeStar", "MainActivity→→→done:" + likeA.getObjectId());
-                                Log.e("FreeStar", "ArticleItemActivity1→→→done:已点赞");
+                                Log.e("FreeStar", "ArticleItemActivity→→→done:已点赞");
                                 ibLike.setSelected(true);
                                 starLike = true;
                                 likeAtlas = likeA;
-                                Log.e("FreeStar", "ArticleItemActivity1→→→done:" + likeA.getObjectId());
+                                Log.e("FreeStar", "ArticleItemActivity→→→done:" + likeA.getObjectId());
                             }
                         }
                     }

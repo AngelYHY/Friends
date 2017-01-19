@@ -193,7 +193,7 @@ public class SearchActivity3 extends BaseActivity implements XListView.IXListVie
                 holder.setOnClickListener(R.id.source, new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(SearchActivity3.this, CommentActivity.class);
+                        Intent intent = new Intent(SearchActivity3.this, DynDetailActivity.class);
                         Bundle bundle = new Bundle();
                         bundle.putSerializable("message", s.getMessage());
                         intent.putExtras(bundle);
@@ -239,7 +239,7 @@ public class SearchActivity3 extends BaseActivity implements XListView.IXListVie
 
     @Override
     public void onClick(View view) {
-        Log.e("FreeStar", "CommentActivity→→→onClick:进入点击事件");
+        Log.e("FreeStar", "DynDetailActivity→→→onClick:进入点击事件");
         String context = conments.getText().toString().trim();
         if (context.equals("")) {
             Toast.makeText(SearchActivity3.this, "写写东西吧", Toast.LENGTH_SHORT).show();
@@ -252,7 +252,7 @@ public class SearchActivity3 extends BaseActivity implements XListView.IXListVie
         ds.save(new SaveListener<String>() {
             @Override
             public void done(String s, BmobException e) {
-                Log.e("FreeStar", "CommentActivity→→→done:人对人评论");
+                Log.e("FreeStar", "DynDetailActivity→→→done:人对人评论");
 //                initSourceAdapter();
                 Toast.makeText(SearchActivity3.this, "评论成功", Toast.LENGTH_SHORT).show();
             }

@@ -1,12 +1,14 @@
 package freestar.friends.bean;
 
 
+import com.chad.library.adapter.base.entity.MultiItemEntity;
+
 import java.util.List;
 
 import cn.bmob.v3.BmobObject;
 import cn.bmob.v3.datatype.BmobRelation;
 
-public class Message extends BmobObject {
+public class Message extends BmobObject implements MultiItemEntity {
     private String m_message;//??????
     //作者
     private User user; //?��˵˵����????
@@ -114,5 +116,10 @@ public class Message extends BmobObject {
                 ", comNum=" + comNum +
                 ", iszan=" + iszan +
                 '}';
+    }
+
+    @Override
+    public int getItemType() {
+        return getUrls() == null ? 0 : 1;
     }
 }

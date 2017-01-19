@@ -19,7 +19,7 @@ import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
 import freestar.friends.App;
 import freestar.friends.R;
-import freestar.friends.activities.CommentActivity;
+import freestar.friends.activities.DynDetailActivity;
 import freestar.friends.bean.Message;
 import freestar.friends.bean.User;
 import freestar.friends.util.profile.TypeActivity1;
@@ -54,7 +54,7 @@ public class ShuoshuoFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Message message = mDatas.get(i);
-                Intent intent = new Intent(getActivity(), CommentActivity.class);
+                Intent intent = new Intent(getActivity(), DynDetailActivity.class);
                 Log.e("FreeStar", "PageFragment1→→→onItemClick:" + message.toString() + i + "--------" + mDatas.size());
                 intent.putExtra("message", message);
                 startActivity(intent);

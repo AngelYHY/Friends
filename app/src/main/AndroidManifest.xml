@@ -112,7 +112,7 @@
         <activity android:name=".util.profile.ConcernActivity" />
         <activity android:name=".util.profile.SearchActivity" />
         <activity android:name=".util.takephoto.app.TakePhotoActivity" />
-        <activity android:name=".activities.CommentActivity" />
+        <activity android:name=".activities.DynDetailActivity" />
         <activity android:name=".activities.PhotoPickerActivity" />
         <activity android:name=".activities.PublishPicture" />
         <activity android:name=".activities.DyFabuActivity" />
@@ -131,7 +131,7 @@
             android:theme="@style/Translucent" />
         <activity android:name=".activities.ForgetPasswordActivity" />
         <activity
-            android:name=".activities.LoginA"
+            android:name=".activities.LoginActivity"
             android:theme="@style/LoginTheme" />
 
         <!-- 会话列表的固定写法  需加在的当前activity上 -->
@@ -190,11 +190,10 @@
         <activity android:name=".util.profile.HelpActivity" />
         <activity android:name=".util.profile.SetupMessage" />
         <activity android:name=".activities.PublishArticle" />
-        <activity android:name=".activities.ArticleItemActivity" />
         <activity android:name=".util.profile.EmailActivity" />
-        <activity android:name=".activities.SearchActivity1" />
-        <activity android:name=".activities.ArticleItemActivity1" />
-        <activity android:name=".activities.SearchActivity2" />
+        <activity android:name=".activities.DiscussAtlasDetailActivity" />
+        <activity android:name=".activities.ArticleItemActivity" />
+        <activity android:name=".activities.DiscussArticleDetailActivity" />
         <activity android:name=".util.profile.TaTypeActivity" />
         <activity android:name=".util.profile.TaCollectActivity" />
         <activity android:name=".activities.SearchActivity3" />

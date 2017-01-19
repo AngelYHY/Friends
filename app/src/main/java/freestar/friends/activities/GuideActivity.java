@@ -55,7 +55,7 @@ public class GuideActivity extends Activity implements View.OnClickListener {
             Intent i2 = new Intent(this, HomePageA.class);
             startActivity(i2);
         } else {
-            Intent intent = new Intent(this, LoginA.class);
+            Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         }
     }
@@ -110,8 +110,8 @@ public class GuideActivity extends Activity implements View.OnClickListener {
         // 初始化方式1：通过传入数据模型并结合Adapter的方式初始化
 //        mContentBanner.setAdapter(new BGABanner.Adapter() {
 //            @Override
-//            public void fillBannerItem(BGABanner banner, View view, Object model, int position) {
-//                ((ImageView) view).setImageResource((int) model);
+//            public void fillBannerItem(BGABanner banner, View headView, Object model, int position) {
+//                ((ImageView) headView).setImageResource((int) model);
 //            }
 //        });
 //        mContentBanner.setData(Arrays.asList(R.drawable.ic_guide_1, R.drawable.ic_guide_2, R.drawable.ic_guide_3), null);

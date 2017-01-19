@@ -33,7 +33,6 @@ public class Article extends BmobObject{
         return urlList;
     }
 
-
     public void setUrlList(List<String> urlList) {
         this.urlList = urlList;
     }

@@ -2,23 +2,26 @@ package freestar.friends.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.facebook.drawee.view.SimpleDraweeView;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.datatype.BmobPointer;
 import cn.bmob.v3.exception.BmobException;
@@ -26,122 +29,110 @@ import cn.bmob.v3.listener.FindListener;
 import cn.bmob.v3.listener.QueryListener;
 import freestar.friends.App;
 import freestar.friends.R;
-import freestar.friends.activities.CommentActivity;
+import freestar.friends.activities.DynDetailActivity;
 import freestar.friends.activities.DyFabuActivity;
 import freestar.friends.activities.SearchActivity3;
-import freestar.friends.adapter.DongtaiAdapter;
+import freestar.friends.activities.UserDataActivity;
+import freestar.friends.adapter.DynamicAdapter;
 import freestar.friends.bean.Message;
 import freestar.friends.bean.User;
 import freestar.friends.util.profile.MyinfoActivity;
 import freestar.friends.util.profile.TypeActivity1;
-import freestar.friends.util.view.XListView;
 
 /**
  * SwipeRefreshLayout.OnRefreshListener
  */
-public class DynFragment extends Fragment implements XListView.IXListViewListener {
-    View view, view1;
-    List<Message> mlist = new ArrayList<>();
-    DongtaiAdapter dongTaiAdapter;
-    SimpleDraweeView circleImageView;
-    XListView xListView;
-    Handler handler;
+public class DynFragment extends Fragment implements BaseQuickAdapter.RequestLoadMoreListener, SwipeRefreshLayout.OnRefreshListener, View.OnClickListener {
+
     int i;
-    //london
-    ImageView headview;
+
+    @Bind(R.id.recycler_view)
+    RecyclerView mRecyclerView;
+    @Bind(R.id.swipeLayout)
+    SwipeRefreshLayout mSwipeLayout;
+
     private String[] listId;
-    TextView my_connection, my_talk, my_give;
+    private DynamicAdapter mAdapter;
+    private SimpleDraweeView mTouxiang;
 
     public DynFragment() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_dynamiu, container, false);
+        View view = inflater.inflate(R.layout.fragment_dynamiu, container, false);
+        ButterKnife.bind(this, view);
         Log.d("FreeStar", "DynFragment→→→onCreateView");
+        mSwipeLayout.setOnRefreshListener(this);
         initview();
-        initSource();
+        onRefresh();
         return view;
     }
 
     private void initview() {
-        xListView = (XListView) view.findViewById(R.id.dy_listview);
         //头
-        view1 = LayoutInflater.from(getActivity()).inflate(R.layout.imageview, null);
-        headview = (ImageView) view1.findViewById(R.id.image_view);
-        //头像跳转
-        circleImageView = (SimpleDraweeView) view1.findViewById(R.id.touxiang);
+        View headView = LayoutInflater.from(getActivity()).inflate(R.layout.imageview, null);
+
+        mTouxiang = (SimpleDraweeView) headView.findViewById(R.id.touxiang);
+        TextView connection = (TextView) headView.findViewById(R.id.my_connection);
+        TextView talk = (TextView) headView.findViewById(R.id.my_talk);
+        TextView give = (TextView) headView.findViewById(R.id.my_give);
+
+        connection.setOnClickListener(this);
+        talk.setOnClickListener(this);
+        give.setOnClickListener(this);
+
         BmobQuery<User> query = new BmobQuery<>();
         query.getObject(App.userId, new QueryListener<User>() {
             @Override
             public void done(User user, BmobException e) {
                 if (e == null) {
-                    circleImageView.setImageURI(user.getHeadUrl());
+                    mTouxiang.setImageURI(user.getHeadUrl());
                 }
             }
         });
-        circleImageView.setOnClickListener(new View.OnClickListener() {
+
+        initRV(headView);
+    }
+
+    private void initRV(View headView) {
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        mRecyclerView.addOnItemTouchListener(new OnItemClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), MyinfoActivity.class);
+            public void onSimpleItemClick(BaseQuickAdapter adapter, View view, int i) {
+                Message message = (Message) adapter.getItem(i);
+                Intent intent = new Intent(getActivity(), DynDetailActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("message", message);
+                intent.putExtras(bundle);
                 startActivity(intent);
-                Log.d("FreeStar", "跳到个人中心界面--------------------------");
             }
-        });
-        //与我有关
-        my_connection = (TextView) view1.findViewById(R.id.my_connection);
-        my_connection.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), SearchActivity3.class);
-                startActivity(intent);
-                Log.d("FreeStar", "跳到与我有关界面--------------------------");
-            }
-        });
-        //我要发布
-        my_give = (TextView) view1.findViewById(R.id.my_give);
-        my_give.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), DyFabuActivity.class);
-                startActivity(intent);
-                Log.d("FreeStar", "跳到发布动态界面--------------------------");
-            }
-        });
-        //我的说说
-        my_talk = (TextView) view1.findViewById(R.id.my_talk);
-        my_talk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), TypeActivity1.class);
-                startActivity(intent);
-                Log.d("FreeStar", "跳到我之前发布动态界面--------------------------");
-            }
-        });
-        xListView.addHeaderView(view1);
-        xListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i - 2 != -1) {
-                    Intent intent = new Intent(getActivity(), CommentActivity.class);
-                    Bundle bundle = new Bundle();
-                    bundle.putSerializable("message", mlist.get(i - 2));
-                    intent.putExtras(bundle);
+            public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
+                if (view.getId() == R.id.dongtai_touxiang) {
+                    Intent intent = new Intent(getActivity(), UserDataActivity.class);
+                    intent.putExtra("user", ((Message) adapter.getItem(position)).getUser());
                     startActivity(intent);
                 }
             }
         });
-        //xlistview的刷新（属性）
-        xListView.setPullLoadEnable(true);
-        xListView.setXListViewListener(this);
-        handler = new Handler();
+
+        mAdapter = new DynamicAdapter(getActivity());
+
+        mAdapter.addHeaderView(headView);
+
+        mAdapter.openLoadAnimation(2);
+        mAdapter.setAutoLoadMoreSize(2);
+        mAdapter.setOnLoadMoreListener(this);
+        mRecyclerView.setAdapter(mAdapter);
     }
 
     //定义适配器----------------解决异步问题-------------------》
-    private void initAdapter() {
-        dongTaiAdapter = new DongtaiAdapter(getActivity(), mlist);
-        xListView.setAdapter(dongTaiAdapter);
-    }
+//    private void initAdapter() {
+//        dongTaiAdapter = new DongtaiAdapter(getActivity(), mlist);
+//        xListView.setAdapter(dongTaiAdapter);
+//    }
 
     //数据源----------------list<Message>---------------------》
     private void initSource() {
@@ -153,6 +144,7 @@ public class DynFragment extends Fragment implements XListView.IXListViewListene
         query.findObjects(new FindListener<User>() {
             @Override
             public void done(List<User> list, BmobException e) {
+
                 listId = new String[list.size() + 1];
                 for (int i = 0; i < list.size(); i++) {
                     listId[i] = list.get(i).getObjectId();
@@ -170,14 +162,21 @@ public class DynFragment extends Fragment implements XListView.IXListViewListene
                 query1.findObjects(new FindListener<Message>() {
                     @Override
                     public void done(List<Message> list, BmobException e) {
-                        if (e == null) {
-                            mlist.addAll(list);
-                            if (dongTaiAdapter == null) {
-                                initAdapter();
-                            } else {
-                                dongTaiAdapter.notifyDataSetChanged();
-                                xListView.stopRefresh();
+                        mSwipeLayout.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                mSwipeLayout.setRefreshing(false);
                             }
+                        });
+                        if (e == null) {
+                            mAdapter.setNewData(list);
+//                            mlist.addAll(list);
+//                            if (dongTaiAdapter == null) {
+//                                initAdapter();
+//                            } else {
+//                                dongTaiAdapter.notifyDataSetChanged();
+//                                xListView.stopRefresh();
+//                            }
                         } else {
                             Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
@@ -192,6 +191,7 @@ public class DynFragment extends Fragment implements XListView.IXListViewListene
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        ButterKnife.unbind(this);
     }
 
     /*
@@ -199,28 +199,13 @@ public class DynFragment extends Fragment implements XListView.IXListViewListene
      */
     @Override
     public void onRefresh() {
-        handler.postDelayed(new Runnable() {
+        mSwipeLayout.post(new Runnable() {
             @Override
             public void run() {
-                mlist.clear();
-                i = 0;
-                initSource();
-//                onLoad();
+                mSwipeLayout.setRefreshing(true);
             }
-        }, 2000);
-    }
-
-    @Override
-    public void onLoadMore() {
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startQuery();
-//                onLoad();
-            }
-
-        }, 2000);
-
+        });
+        initSource();
     }
 
     //加载
@@ -235,18 +220,16 @@ public class DynFragment extends Fragment implements XListView.IXListViewListene
         //根据时间来查询
         query1.order("-createdAt");
         query1.addWhereContainedIn("user", Arrays.asList(listId));
-        Log.e("FreeStar", "MainActivity→→→done:111111");
         query1.findObjects(new FindListener<Message>() {
             @Override
             public void done(List<Message> list, BmobException e) {
                 if (e == null) {
                     if (list.size() == 0) {
-                        Toast.makeText(getActivity(), "没有数据了", Toast.LENGTH_SHORT).show();
+                        mAdapter.loadMoreEnd();
                     } else {
-                        mlist.addAll(list);
-                        dongTaiAdapter.notifyDataSetChanged();
+                        mAdapter.addData(list);
+                        mAdapter.loadMoreComplete();
                     }
-                    xListView.stopLoadMore();
                 } else {
                     Log.e("FreeStar", "DynFragment→→→done:" + e.getMessage());
                     Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();
@@ -264,11 +247,39 @@ public class DynFragment extends Fragment implements XListView.IXListViewListene
             @Override
             public void done(User user, BmobException e) {
                 if (e == null) {
-                    circleImageView.setImageURI(user.getHeadUrl());
+                    mTouxiang.setImageURI(user.getHeadUrl());
                 }
             }
         });
     }
+
+    public void onClick(View view) {
+        Intent intent = null;
+        switch (view.getId()) {
+            case R.id.touxiang:
+                intent = new Intent(getActivity(), MyinfoActivity.class);
+                break;
+            //与我有关
+            case R.id.my_connection:
+                intent = new Intent(getActivity(), SearchActivity3.class);
+                break;
+            //我的说说
+            case R.id.my_talk:
+                intent = new Intent(getActivity(), TypeActivity1.class);
+                break;
+            //我要发布
+            case R.id.my_give:
+                intent = new Intent(getActivity(), DyFabuActivity.class);
+                break;
+        }
+        startActivity(intent);
+    }
+
+    @Override
+    public void onLoadMoreRequested() {
+        startQuery();
+    }
+
 }
 
 

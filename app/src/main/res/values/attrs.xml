@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <declare-styleable name="XRecyclerView">
+        <attr name="item_decoration" format="reference|boolean"/>
+    </declare-styleable>
+
     <declare-styleable name="SwipeLayout">
         <attr name="drag_edge">
             <flag name="left" value="1"/>

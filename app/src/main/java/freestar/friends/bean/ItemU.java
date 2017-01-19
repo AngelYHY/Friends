@@ -1,5 +1,7 @@
 package freestar.friends.bean;
 
+import com.chad.library.adapter.base.entity.MultiItemEntity;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -8,7 +10,7 @@ import cn.bmob.v3.BmobObject;
 /**
  * Created by Administrator on 2016/8/25 0025.
  */
-public class ItemU extends BmobObject implements Serializable {
+public class ItemU extends BmobObject implements Serializable, MultiItemEntity {
     private String url;
     private String context;
     private boolean isUrl;
@@ -102,5 +104,10 @@ public class ItemU extends BmobObject implements Serializable {
                 ", article=" + article +
                 ", list=" + list +
                 '}';
+    }
+
+    @Override
+    public int getItemType() {
+        return isUrl ? 0 : 1;
     }
 }
