@@ -145,13 +145,13 @@ public class XListView extends ListView implements AbsListView.OnScrollListener 
 		if (!mEnablePullLoad) {
 			mFooterView.hide();
 			mFooterView.setOnClickListener(null);
-			//make sure "pull up" don't show a line in bottom when listview with one page 
+			//make sure "pull up" don't show a line in bottom when listview with modefy_one page
 			setFooterDividersEnabled(false);
 		} else {
 			mPullLoading = false;
 			mFooterView.show();
 			mFooterView.setState(XListViewFooter.STATE_NORMAL);
-			//make sure "pull up" don't show a line in bottom when listview with one page  
+			//make sure "pull up" don't show a line in bottom when listview with modefy_one page
 			setFooterDividersEnabled(true);
 			// both "pull up" and "click" will invoke load more.
 			mFooterView.setOnClickListener(new OnClickListener() {
@@ -362,7 +362,7 @@ public class XListView extends ListView implements AbsListView.OnScrollListener 
 
 
 	/**
-	 * you can listen ListView.OnScrollListener or this one. it will invoke
+	 * you can listen ListView.OnScrollListener or this modefy_one. it will invoke
 	 * onXScrolling when header/footer scroll back.
 	 */
 	public interface OnXScrollListener extends OnScrollListener {

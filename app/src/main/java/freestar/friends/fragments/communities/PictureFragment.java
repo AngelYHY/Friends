@@ -14,10 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import freestar.friends.R;
-import freestar.friends.fragments.pages_fragment.PageP1;
-import freestar.friends.fragments.pages_fragment.PageP2;
-import freestar.friends.fragments.pages_fragment.PageP3;
-import freestar.friends.fragments.pages_fragment.PageP4;
+import freestar.friends.fragments.pages_fragment.AtlasListFragment;
 import freestar.friends.util.pager_and_indicator.ModelPagerAdapter;
 import freestar.friends.util.pager_and_indicator.PagerManager;
 import github.chenupt.springindicator.SpringIndicator;
@@ -97,12 +94,17 @@ public class PictureFragment extends Fragment {
         vp = (ScrollerViewPager) view.findViewById(R.id.vp_picture);
         SpringIndicator indicator = (SpringIndicator) view.findViewById(R.id.indicator);
         PagerManager manager = new PagerManager();
+        List<String> list = new ArrayList<>();
+        list.add("推荐");
+        list.add("风景");
+        list.add("动物");
+        list.add("其他");
         //设置指示器的文字
-        manager.setTitles(getTitles());
-        manager.addFragment(new PageP1());
-        manager.addFragment(new PageP2());
-        manager.addFragment(new PageP3());
-        manager.addFragment(new PageP4());
+        manager.setTitles(list);
+        manager.addFragment(AtlasListFragment.newInstance(list.get(0)));
+        manager.addFragment(AtlasListFragment.newInstance(list.get(1)));
+        manager.addFragment(AtlasListFragment.newInstance(list.get(2)));
+        manager.addFragment(AtlasListFragment.newInstance(list.get(3)));
         ModelPagerAdapter adapter = new ModelPagerAdapter(getActivity().getSupportFragmentManager(), manager);
         vp.setAdapter(adapter);
         vp.setOffscreenPageLimit(3);
@@ -112,12 +114,4 @@ public class PictureFragment extends Fragment {
         return view;
     }
 
-    public List<String> getTitles() {
-        ArrayList<String> list = new ArrayList<>();
-        list.add("推荐");
-        list.add("风景");
-        list.add("动物");
-        list.add("其他");
-        return list;
-    }
 }

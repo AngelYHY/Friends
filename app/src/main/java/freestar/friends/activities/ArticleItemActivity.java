@@ -42,7 +42,6 @@ import freestar.friends.util.status_bar.StatusBarUtil;
 
 public class ArticleItemActivity extends AppCompatActivity {
 
-
     @Bind(R.id.ib_back)
     ImageButton ibBack;
     @Bind(R.id.ib_collect)
@@ -68,7 +67,6 @@ public class ArticleItemActivity extends AppCompatActivity {
     private HeaderAndFooterWrapper mHeaderAndFooterWrapper;
     private ArrayList<Object> list1;
     private CommonAdapter<ItemU> mAdapter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

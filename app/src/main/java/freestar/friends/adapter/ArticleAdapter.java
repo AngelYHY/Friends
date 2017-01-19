@@ -1,24 +1,26 @@
 package freestar.friends.adapter;
 
-import android.support.v7.widget.RecyclerView;
-import android.view.ViewGroup;
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.BaseViewHolder;
+import com.facebook.drawee.view.SimpleDraweeView;
+
+import freestar.friends.R;
+import freestar.friends.bean.Article;
 
 /**
  * Created by Administrator on 2016/8/26 0026.
  */
-public class ArticleAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return null;
+public class ArticleAdapter extends BaseQuickAdapter<Article, BaseViewHolder> {
+
+    public ArticleAdapter() {
+        super(R.layout.article_layout, null);
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
-    }
-
-    @Override
-    public int getItemCount() {
-        return 0;
+    protected void convert(BaseViewHolder holder, Article item) {
+        holder.setText(R.id.tv_time, item.getCreatedAt())
+                .setText(R.id.tv_like, item.getLikeNum() + "赞")
+                .setText(R.id.tv_title, item.getTitle());
+        ((SimpleDraweeView) holder.getView(R.id.sdv_mainPic)).setImageURI(item.getMainPic());
     }
 }

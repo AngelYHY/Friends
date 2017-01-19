@@ -6,7 +6,6 @@
     <freestar.friends.util.view.XListView
         android:id="@+id/dy_listview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </freestar.friends.util.view.XListView>
+        android:layout_height="match_parent"/>
 </LinearLayout>
 

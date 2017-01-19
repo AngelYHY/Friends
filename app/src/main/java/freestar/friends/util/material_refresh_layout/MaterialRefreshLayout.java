@@ -80,7 +80,7 @@ public class MaterialRefreshLayout extends FrameLayout {
         }
 
         if (getChildCount() > 1) {
-            throw new RuntimeException("can only have one child widget");
+            throw new RuntimeException("can only have modefy_one child widget");
         }
 
         decelerateInterpolator = new DecelerateInterpolator(10);

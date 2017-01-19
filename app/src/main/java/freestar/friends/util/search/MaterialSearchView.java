@@ -596,7 +596,7 @@ public class MaterialSearchView extends FrameLayout implements Filter.FilterList
     }
 
     /**
-     * Ellipsize suggestions longer than one line.
+     * Ellipsize suggestions longer than modefy_one line.
      *
      * @param ellipsize
      */

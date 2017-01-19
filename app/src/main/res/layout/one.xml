@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/coor"
     android:layout_width="match_parent"
@@ -12,7 +13,7 @@
     <freestar.friends.util.view.XListView
         android:id="@+id/xlv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"/>
     <!--</android.support.v4.widget.SwipeRefreshLayout>-->
 
     <!--#FA598A-->
@@ -24,6 +25,6 @@
         android:layout_margin="16dp"
         android:src="@mipmap/ic_add"
         app:fab_colorNormal="@color/colorPrimary"
-        app:fab_type="mini" />
+        app:fab_type="mini"/>
 
 </android.support.design.widget.CoordinatorLayout>

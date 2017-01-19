@@ -139,7 +139,7 @@ public class CommFragment extends Fragment {
             FragmentTransaction fragmentTransaction = manager.beginTransaction();
             //隐藏oldfragment
             fragmentTransaction.hide(oldFragment);
-            Log.i("one", "one");
+            Log.i("modefy_one", "modefy_one");
             if (!newFragment.isAdded()) {
                 //没有添加过，添加
                 Log.i("two", "two");

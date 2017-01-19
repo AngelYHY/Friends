@@ -62,15 +62,15 @@ public class LoginA extends AppCompatActivity {
 //    private CardView cv;
 //    private FloatingActionButton fab;
 
-    private void initView() {
-        etUsername = (EditText) findViewById(R.id.et_username);
-        etPassword = (EditText) findViewById(R.id.et_password);
-        tvLogin = (TextView) findViewById(R.id.tv_login);
-        tvRemember = (TextView) findViewById(R.id.tv_remember);
-        ivCheck = (ImageView) findViewById(R.id.iv_check);
-        cv = (CardView) findViewById(R.id.cv_add);
-        fab = (FloatingActionButton) findViewById(R.id.fab_btn);
-    }
+//    private void initView() {
+//        etUsername = (EditText) findViewById(R.id.et_username);
+//        etPassword = (EditText) findViewById(R.id.et_password);
+//        tvLogin = (TextView) findViewById(R.id.tv_login);
+//        tvRemember = (TextView) findViewById(R.id.tv_remember);
+//        ivCheck = (ImageView) findViewById(R.id.iv_check);
+//        cv = (CardView) findViewById(R.id.cv_add);
+////        fab = (FloatingActionButton) findViewById(R.id.fab_btn);
+//    }
 
     private String count;
     private String psw;
