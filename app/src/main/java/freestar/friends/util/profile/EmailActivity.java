@@ -15,6 +15,7 @@ import freestar.friends.util.status_bar.BaseActivity;
 
 public class EmailActivity extends BaseActivity {
     EditText editText_email;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,26 +24,26 @@ public class EmailActivity extends BaseActivity {
     }
 
     //添加邮箱
-    public void emailtrueClick(View view){
-            final String email = editText_email.getText().toString();
-            User u = new User();
-            u.setEmail(email);
-            u.update(App.userId,new UpdateListener() {
-                @Override
-                public void done(BmobException e) {
-                    if (e==null){
-                        Toast.makeText(EmailActivity.this, "修改成功", Toast.LENGTH_SHORT).show();
-                        startActivityForResult(new Intent(EmailActivity.this,AnqActivity.class),1);
-                        finish();
-                    }else {
-                        Toast.makeText(EmailActivity.this, "修改失败"+e.getMessage(), Toast.LENGTH_SHORT).show();
-                    }
+    public void emailtrueClick(View view) {
+        final String email = editText_email.getText().toString();
+        User u = new User();
+        u.setEmail(email);
+        u.update(App.userId, new UpdateListener() {
+            @Override
+            public void done(BmobException e) {
+                if (e == null) {
+                    Toast.makeText(EmailActivity.this, "修改成功", Toast.LENGTH_SHORT).show();
+                    startActivityForResult(new Intent(EmailActivity.this, AnqActivity.class), 1);
+                    finish();
+                } else {
+                    Toast.makeText(EmailActivity.this, "修改失败" + e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
-            });
+            }
+        });
 
     }
 
-    public void btnvbackclick(View view){
+    public void btnvbackclick(View view) {
         finish();
     }
 }

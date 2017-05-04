@@ -1,17 +1,16 @@
 package freestar.friends.adapter;
 
 import com.chad.library.adapter.base.BaseMultiItemQuickAdapter;
-import com.chad.library.adapter.base.BaseViewHolder;
-import com.facebook.drawee.view.SimpleDraweeView;
 
 import freestar.friends.R;
 import freestar.friends.bean.ArticleDis;
 import freestar.friends.bean.User;
+import freestar.friends.util.MyViewHolder;
 
 /**
  * Created by freestar on 2017/1/18 0018.
  */
-public class DiscussArticleDetailAdapter extends BaseMultiItemQuickAdapter<ArticleDis, BaseViewHolder> {
+public class DiscussArticleDetailAdapter extends BaseMultiItemQuickAdapter<ArticleDis, MyViewHolder> {
 
     public DiscussArticleDetailAdapter() {
         super(null);
@@ -20,16 +19,16 @@ public class DiscussArticleDetailAdapter extends BaseMultiItemQuickAdapter<Artic
     }
 
     @Override
-    protected void convert(BaseViewHolder holder, ArticleDis item) {
+    protected void convert(MyViewHolder holder, ArticleDis item) {
         User cuser = item.getCuser();
-        holder.setText(R.id.tv_user_name, cuser.getNiname())
+        holder.setSDV(R.id.sdv_head, cuser.getHeadUrl())
+                .setText(R.id.tv_user_name, cuser.getNiname())
                 .setText(R.id.tv_data, item.getCreatedAt())
                 .setText(R.id.tv_disNum, item.getComment())
                 .addOnClickListener(R.id.line_reply)
                 .addOnClickListener(R.id.sdv_head)
                 .addOnClickListener(R.id.btn_name);
 
-        ((SimpleDraweeView) holder.getView(R.id.sdv_head)).setImageURI(cuser.getHeadUrl());
         if (holder.getItemViewType() == 1) {
             ArticleDis articleDis = item.getComment_father_user();
             User father_user = item.getFather_user();

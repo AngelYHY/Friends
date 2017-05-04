@@ -3,7 +3,6 @@ package freestar.friends.util.profile;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,9 +23,8 @@ import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
 import freestar.friends.R;
-import freestar.friends.activities.UserDataActivity;
+import freestar.friends.activity.UserDataActivity;
 import freestar.friends.bean.User;
-import freestar.friends.fragments.msg_fragment.MyBaseAdapter;
 import freestar.friends.util.status_bar.BaseActivity;
 
 public class SearchActivity extends BaseActivity {
@@ -36,7 +34,7 @@ public class SearchActivity extends BaseActivity {
     ListView lvs; //搜索list
     EditText et;//搜索et
     List<User> friendList;
-    MyBaseAdapter adapter;
+//    MyBaseAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,10 +68,10 @@ public class SearchActivity extends BaseActivity {
                 if(e==null){
 
                     friendList=  list;
-                    Log.e("friendList","-----friendList:"+friendList.toString());
-                    adapter=new  MyBaseAdapter(friendList,SearchActivity.this);
-                    lvs.setAdapter(adapter);
-                    adapter.notifyDataSetChanged();
+//                    Log.e("friendList","-----friendList:"+friendList.toString());
+//                    adapter=new  MyBaseAdapter(friendList,SearchActivity.this);
+//                    lvs.setAdapter(adapter);
+//                    adapter.notifyDataSetChanged();
                 }
 
             }
@@ -171,11 +169,6 @@ public class SearchActivity extends BaseActivity {
         Intent intent = new Intent(this,SearchActivity.class);
         startActivity(intent);
     }
-
-
-
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="#f1eef1"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_bg"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tv_title_ss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/iv_ss"
+            android:layout_below="@+id/time_ss"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:text="天气好呀 多云转晴"/>
+
+        <TextView
+            android:id="@+id/time_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_ss"
+            android:layout_alignStart="@+id/tv_niname_ss"
+            android:text="2016-01-01"/>
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:id="@+id/iv_ss"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginStart="25dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:src="@mipmap/ic_launcher"/>-->
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_ss"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            fresco:roundAsCircle="true"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_niname_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_ss"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/iv_ss"
+            android:text="大小姐"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

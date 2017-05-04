@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context="freestar.friends.activities.ConversationActivity">
+    tools:context="freestar.friends.activity.ConversationActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/conversation_toolbar"

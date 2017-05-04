@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.RectF;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -46,6 +47,7 @@ public class WaveSideBarView extends View {
     private Paint mWavePaint = new Paint();
 
     private float mTextSize;
+    private float mLargeTextSize;
     private int mTextColor;
     private int mWaveColor;
     private int mTextColorChoose;
@@ -64,11 +66,10 @@ public class WaveSideBarView extends View {
     private int mCenterY; //中心点Y
 
     // 贝塞尔曲线的分布半径
-    private int mRadius = 105;
+    private int mRadius;
 
     // 圆形半径
-    private int mBallRadius = mRadius + 15;
-
+    private int mBallRadius;
     // 用于过渡效果计算
     ValueAnimator mRatioAnimator;
 
@@ -98,16 +99,20 @@ public class WaveSideBarView extends View {
         mLetters = Arrays.asList(context.getResources().getStringArray(R.array.waveSideBarLetters));
 
         mTextColor = Color.parseColor("#969696");
-        mWaveColor =  Color.parseColor("#be69be91");
+        mWaveColor = Color.parseColor("#be69be91");
         mTextColorChoose = context.getResources().getColor(android.R.color.white);
         mTextSize = context.getResources().getDimensionPixelSize(R.dimen.textSize_sidebar);
+        mLargeTextSize = context.getResources().getDimensionPixelSize(R.dimen.large_textSize_sidebar);
         mPadding = context.getResources().getDimensionPixelSize(R.dimen.textSize_sidebar_padding);
         if (attrs != null) {
             TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.WaveSideBarView);
             mTextColor = a.getColor(R.styleable.WaveSideBarView_sidebarTextColor, mTextColor);
             mTextColorChoose = a.getColor(R.styleable.WaveSideBarView_sidebarChooseTextColor, mTextColorChoose);
             mTextSize = a.getFloat(R.styleable.WaveSideBarView_sidebarTextSize, mTextSize);
+            mLargeTextSize = a.getFloat(R.styleable.WaveSideBarView_sidebarLargeTextSize, mLargeTextSize);
             mWaveColor = a.getColor(R.styleable.WaveSideBarView_sidebarBackgroundColor, mWaveColor);
+            mRadius = a.getInt(R.styleable.WaveSideBarView_sidebarRadius, context.getResources().getDimensionPixelSize(R.dimen.radius_sidebar));
+            mBallRadius = a.getInt(R.styleable.WaveSideBarView_sidebarBallRadius, context.getResources().getDimensionPixelSize(R.dimen.ball_radius_sidebar));
             a.recycle();
         }
 
@@ -119,7 +124,7 @@ public class WaveSideBarView extends View {
         mTextPaint.setAntiAlias(true);
         mTextPaint.setColor(mTextColorChoose);
         mTextPaint.setStyle(Paint.Style.FILL);
-        mTextPaint.setTextSize(150);
+        mTextPaint.setTextSize(mLargeTextSize);
         mTextPaint.setTextAlign(Paint.Align.CENTER);
     }
 
@@ -167,8 +172,8 @@ public class WaveSideBarView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        mHeight = getHeight();
-        mWidth = getWidth();
+        mHeight = MeasureSpec.getSize(heightMeasureSpec);
+        mWidth = getMeasuredWidth();
         mItemHeight = (mHeight - mPadding) / mLetters.size();
         mPosX = mWidth - 1.6f * mTextSize;
     }
@@ -290,7 +295,9 @@ public class WaveSideBarView extends View {
 
         mBallPath.reset();
         mBallPath.addCircle(mBallCentreX, mCenterY, mBallRadius, Path.Direction.CW);
-        mBallPath.op(mWavePath, Path.Op.DIFFERENCE);
+        if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.KITKAT) {
+            mBallPath.op(mWavePath, Path.Op.DIFFERENCE);
+        }
 
         mBallPath.close();
         canvas.drawPath(mBallPath, mWavePaint);

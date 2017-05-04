@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 4322
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -33,7 +33,7 @@
                     "endOffset": 9213
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 132,
                         "startColumn": 4,
@@ -53,7 +53,7 @@
                     "endOffset": 9280
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 262,
                         "startColumn": 4,
@@ -72,7 +72,7 @@
                     "endOffset": 9338
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 263,
                         "startColumn": 4,
@@ -91,7 +91,7 @@
                     "endOffset": 9393
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 264,
                         "startColumn": 4,
@@ -110,7 +110,7 @@
                     "endOffset": 9454
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 265,
                         "startColumn": 4,
@@ -129,7 +129,7 @@
                     "endOffset": 9508
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 266,
                         "startColumn": 4,
@@ -148,7 +148,7 @@
                     "endOffset": 9554
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 267,
                         "startColumn": 4,
@@ -167,7 +167,7 @@
                     "endOffset": 9616
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 268,
                         "startColumn": 4,
@@ -186,7 +186,7 @@
                     "endOffset": 9663
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 269,
                         "startColumn": 4,
@@ -205,7 +205,7 @@
                     "endOffset": 9732
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 270,
                         "startColumn": 4,
@@ -224,7 +224,7 @@
                     "endOffset": 9789
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 271,
                         "startColumn": 4,
@@ -243,7 +243,7 @@
                     "endOffset": 9838
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 272,
                         "startColumn": 4,
@@ -262,7 +262,7 @@
                     "endOffset": 9884
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 273,
                         "startColumn": 4,
@@ -281,7 +281,7 @@
                     "endOffset": 9937
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 274,
                         "startColumn": 4,
@@ -300,7 +300,7 @@
                     "endOffset": 9990
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 275,
                         "startColumn": 4,
@@ -319,7 +319,7 @@
                     "endOffset": 10043
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 276,
                         "startColumn": 4,
@@ -338,7 +338,7 @@
                     "endOffset": 10098
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 277,
                         "startColumn": 4,
@@ -357,7 +357,7 @@
                     "endOffset": 10145
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 278,
                         "startColumn": 4,
@@ -376,7 +376,7 @@
                     "endOffset": 10198
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 279,
                         "startColumn": 4,
@@ -395,7 +395,7 @@
                     "endOffset": 10247
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 280,
                         "startColumn": 4,
@@ -414,7 +414,7 @@
                     "endOffset": 10301
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 281,
                         "startColumn": 4,
@@ -433,7 +433,7 @@
                     "endOffset": 10354
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 282,
                         "startColumn": 4,
@@ -452,7 +452,7 @@
                     "endOffset": 10448
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 283,
                         "startColumn": 4,
@@ -471,7 +471,7 @@
                     "endOffset": 10509
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 284,
                         "startColumn": 4,
@@ -490,7 +490,7 @@
                     "endOffset": 10565
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 285,
                         "startColumn": 4,
@@ -509,7 +509,7 @@
                     "endOffset": 10629
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 286,
                         "startColumn": 4,
@@ -528,7 +528,7 @@
                     "endOffset": 10681
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 287,
                         "startColumn": 4,
@@ -547,7 +547,7 @@
                     "endOffset": 10746
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 288,
                         "startColumn": 4,
@@ -566,7 +566,7 @@
                     "endOffset": 10810
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 289,
                         "startColumn": 4,
@@ -585,7 +585,7 @@
                     "endOffset": 10875
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 290,
                         "startColumn": 4,
@@ -604,7 +604,7 @@
                     "endOffset": 10945
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 291,
                         "startColumn": 4,
@@ -623,7 +623,7 @@
                     "endOffset": 11014
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 292,
                         "startColumn": 4,
@@ -642,7 +642,7 @@
                     "endOffset": 11080
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 293,
                         "startColumn": 4,
@@ -661,7 +661,7 @@
                     "endOffset": 11128
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 294,
                         "startColumn": 4,
@@ -680,7 +680,7 @@
                     "endOffset": 11184
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 295,
                         "startColumn": 4,
@@ -699,7 +699,7 @@
                     "endOffset": 11261
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 296,
                         "startColumn": 4,
@@ -718,7 +718,7 @@
                     "endOffset": 11319
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 297,
                         "startColumn": 4,
@@ -737,7 +737,7 @@
                     "endOffset": 11376
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 298,
                         "startColumn": 4,
@@ -756,7 +756,7 @@
                     "endOffset": 11424
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 299,
                         "startColumn": 4,
@@ -775,7 +775,7 @@
                     "endOffset": 11477
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 300,
                         "startColumn": 4,
@@ -794,7 +794,7 @@
                     "endOffset": 11526
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 301,
                         "startColumn": 4,
@@ -813,7 +813,7 @@
                     "endOffset": 11580
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 302,
                         "startColumn": 4,
@@ -832,7 +832,7 @@
                     "endOffset": 11635
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 303,
                         "startColumn": 4,
@@ -851,7 +851,7 @@
                     "endOffset": 11689
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 304,
                         "startColumn": 4,
@@ -870,7 +870,7 @@
                     "endOffset": 12623
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 320,
                         "startColumn": 4,
@@ -889,7 +889,7 @@
                     "endOffset": 12685
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 321,
                         "startColumn": 4,
@@ -908,7 +908,7 @@
                     "endOffset": 12727
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 322,
                         "startColumn": 4,
@@ -927,7 +927,7 @@
                     "endOffset": 12764
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 323,
                         "startColumn": 4,
@@ -946,7 +946,7 @@
                     "endOffset": 12807
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 324,
                         "startColumn": 4,
@@ -965,7 +965,7 @@
                     "endOffset": 12846
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 325,
                         "startColumn": 4,
@@ -984,7 +984,7 @@
                     "endOffset": 12887
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 326,
                         "startColumn": 4,
@@ -1003,7 +1003,7 @@
                     "endOffset": 12927
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 327,
                         "startColumn": 4,
@@ -1022,7 +1022,7 @@
                     "endOffset": 12980
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 328,
                         "startColumn": 4,
@@ -1041,7 +1041,7 @@
                     "endOffset": 13035
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 329,
                         "startColumn": 4,
@@ -1060,7 +1060,7 @@
                     "endOffset": 13087
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 330,
                         "startColumn": 4,
@@ -1079,7 +1079,7 @@
                     "endOffset": 13137
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 331,
                         "startColumn": 4,
@@ -1098,7 +1098,7 @@
                     "endOffset": 13188
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 332,
                         "startColumn": 4,
@@ -1117,7 +1117,7 @@
                     "endOffset": 13230
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 333,
                         "startColumn": 4,
@@ -1136,7 +1136,7 @@
                     "endOffset": 13271
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 334,
                         "startColumn": 4,
@@ -1155,7 +1155,7 @@
                     "endOffset": 13309
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 335,
                         "startColumn": 4,
@@ -1174,7 +1174,7 @@
                     "endOffset": 13346
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 336,
                         "startColumn": 4,
@@ -1193,7 +1193,7 @@
                     "endOffset": 13382
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 337,
                         "startColumn": 4,
@@ -1212,7 +1212,7 @@
                     "endOffset": 13430
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 338,
                         "startColumn": 4,
@@ -1231,7 +1231,7 @@
                     "endOffset": 13473
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 339,
                         "startColumn": 4,
@@ -1250,7 +1250,7 @@
                     "endOffset": 13518
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 340,
                         "startColumn": 4,
@@ -1269,7 +1269,7 @@
                     "endOffset": 13556
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 341,
                         "startColumn": 4,
@@ -1288,7 +1288,7 @@
                     "endOffset": 13594
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 342,
                         "startColumn": 4,
@@ -1307,7 +1307,7 @@
                     "endOffset": 13632
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 343,
                         "startColumn": 4,
@@ -1326,7 +1326,7 @@
                     "endOffset": 13670
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 344,
                         "startColumn": 4,
@@ -1345,7 +1345,7 @@
                     "endOffset": 13708
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 345,
                         "startColumn": 4,
@@ -1364,7 +1364,7 @@
                     "endOffset": 13746
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 346,
                         "startColumn": 4,
@@ -1383,7 +1383,7 @@
                     "endOffset": 13784
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 347,
                         "startColumn": 4,
@@ -1402,7 +1402,7 @@
                     "endOffset": 13822
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 348,
                         "startColumn": 4,
@@ -1421,7 +1421,7 @@
                     "endOffset": 13860
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 349,
                         "startColumn": 4,
@@ -1440,7 +1440,7 @@
                     "endOffset": 13898
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 350,
                         "startColumn": 4,
@@ -1459,7 +1459,7 @@
                     "endOffset": 13948
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 351,
                         "startColumn": 4,
@@ -1478,7 +1478,7 @@
                     "endOffset": 13987
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 352,
                         "startColumn": 4,
@@ -1497,7 +1497,7 @@
                     "endOffset": 14024
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 353,
                         "startColumn": 4,
@@ -1516,7 +1516,7 @@
                     "endOffset": 14061
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 354,
                         "startColumn": 4,
@@ -1535,7 +1535,7 @@
                     "endOffset": 14098
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 355,
                         "startColumn": 4,
@@ -1554,7 +1554,7 @@
                     "endOffset": 14150
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 356,
                         "startColumn": 4,
@@ -1573,7 +1573,7 @@
                     "endOffset": 14186
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 357,
                         "startColumn": 4,
@@ -1592,7 +1592,7 @@
                     "endOffset": 14222
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 358,
                         "startColumn": 4,
@@ -1611,7 +1611,7 @@
                     "endOffset": 14260
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 359,
                         "startColumn": 4,
@@ -1630,7 +1630,7 @@
                     "endOffset": 14301
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 360,
                         "startColumn": 4,
@@ -1649,7 +1649,7 @@
                     "endOffset": 14348
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 361,
                         "startColumn": 4,
@@ -1668,7 +1668,7 @@
                     "endOffset": 14389
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 362,
                         "startColumn": 4,
@@ -1687,7 +1687,7 @@
                     "endOffset": 14434
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 363,
                         "startColumn": 4,
@@ -1706,7 +1706,7 @@
                     "endOffset": 14472
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 364,
                         "startColumn": 4,
@@ -1725,7 +1725,7 @@
                     "endOffset": 14509
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 365,
                         "startColumn": 4,
@@ -1744,7 +1744,7 @@
                     "endOffset": 14553
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 366,
                         "startColumn": 4,
@@ -1763,7 +1763,7 @@
                     "endOffset": 14590
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 367,
                         "startColumn": 4,
@@ -1782,7 +1782,7 @@
                     "endOffset": 14628
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 368,
                         "startColumn": 4,
@@ -1801,7 +1801,7 @@
                     "endOffset": 14673
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 369,
                         "startColumn": 4,
@@ -1820,7 +1820,7 @@
                     "endOffset": 14709
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 370,
                         "startColumn": 4,
@@ -1839,7 +1839,7 @@
                     "endOffset": 14756
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 371,
                         "startColumn": 4,
@@ -1858,7 +1858,7 @@
                     "endOffset": 14809
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 372,
                         "startColumn": 4,
@@ -1877,7 +1877,7 @@
                     "endOffset": 14849
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 373,
                         "startColumn": 4,
@@ -1896,7 +1896,7 @@
                     "endOffset": 14911
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 374,
                         "startColumn": 4,
@@ -1915,7 +1915,7 @@
                     "endOffset": 14981
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 375,
                         "startColumn": 4,
@@ -1934,7 +1934,7 @@
                     "endOffset": 15052
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 376,
                         "startColumn": 4,
@@ -1953,7 +1953,7 @@
                     "endOffset": 15102
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 377,
                         "startColumn": 4,
@@ -1972,7 +1972,7 @@
                     "endOffset": 15150
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 378,
                         "startColumn": 4,
@@ -1991,7 +1991,7 @@
                     "endOffset": 15211
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 379,
                         "startColumn": 4,
@@ -2010,7 +2010,7 @@
                     "endOffset": 15268
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 380,
                         "startColumn": 4,
@@ -2029,7 +2029,7 @@
                     "endOffset": 15323
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 381,
                         "startColumn": 4,
@@ -2048,7 +2048,7 @@
                     "endOffset": 15380
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 382,
                         "startColumn": 4,
@@ -2067,7 +2067,7 @@
                     "endOffset": 15435
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 383,
                         "startColumn": 4,
@@ -2086,7 +2086,7 @@
                     "endOffset": 15487
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 384,
                         "startColumn": 4,
@@ -2105,7 +2105,7 @@
                     "endOffset": 15528
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 385,
                         "startColumn": 4,
@@ -2124,7 +2124,7 @@
                     "endOffset": 15580
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 386,
                         "startColumn": 4,
@@ -2143,7 +2143,7 @@
                     "endOffset": 15622
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 387,
                         "startColumn": 4,
@@ -2162,7 +2162,7 @@
                     "endOffset": 15694
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 388,
                         "startColumn": 4,
@@ -2181,7 +2181,7 @@
                     "endOffset": 15769
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 389,
                         "startColumn": 4,
@@ -2200,7 +2200,7 @@
                     "endOffset": 15848
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 390,
                         "startColumn": 4,
@@ -2219,7 +2219,7 @@
                     "endOffset": 15920
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 391,
                         "startColumn": 4,
@@ -2238,7 +2238,7 @@
                     "endOffset": 15992
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 392,
                         "startColumn": 4,
@@ -2257,7 +2257,7 @@
                     "endOffset": 16062
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 393,
                         "startColumn": 4,
@@ -2276,7 +2276,7 @@
                     "endOffset": 16133
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 394,
                         "startColumn": 4,
@@ -2295,7 +2295,7 @@
                     "endOffset": 16200
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 395,
                         "startColumn": 4,
@@ -2314,7 +2314,7 @@
                     "endOffset": 16274
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 396,
                         "startColumn": 4,
@@ -2333,7 +2333,7 @@
                     "endOffset": 16343
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 397,
                         "startColumn": 4,
@@ -2352,7 +2352,7 @@
                     "endOffset": 16406
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 398,
                         "startColumn": 4,
@@ -2371,7 +2371,7 @@
                     "endOffset": 16486
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 399,
                         "startColumn": 4,
@@ -2390,7 +2390,7 @@
                     "endOffset": 16557
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 400,
                         "startColumn": 4,
@@ -2409,7 +2409,7 @@
                     "endOffset": 16628
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 401,
                         "startColumn": 4,
@@ -2428,7 +2428,7 @@
                     "endOffset": 16695
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 402,
                         "startColumn": 4,
@@ -2447,7 +2447,7 @@
                     "endOffset": 16764
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 403,
                         "startColumn": 4,
@@ -2466,7 +2466,7 @@
                     "endOffset": 16838
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 404,
                         "startColumn": 4,
@@ -2485,7 +2485,7 @@
                     "endOffset": 16882
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 405,
                         "startColumn": 4,
@@ -2504,7 +2504,7 @@
                     "endOffset": 16942
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 406,
                         "startColumn": 4,
@@ -2523,7 +2523,7 @@
                     "endOffset": 17004
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 407,
                         "startColumn": 4,
@@ -2542,7 +2542,7 @@
                     "endOffset": 17059
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 408,
                         "startColumn": 4,
@@ -2561,7 +2561,7 @@
                     "endOffset": 17103
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 409,
                         "startColumn": 4,
@@ -2580,7 +2580,7 @@
                     "endOffset": 17151
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 410,
                         "startColumn": 4,
@@ -2599,7 +2599,7 @@
                     "endOffset": 17212
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 411,
                         "startColumn": 4,
@@ -2618,7 +2618,7 @@
                     "endOffset": 17275
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 412,
                         "startColumn": 4,
@@ -2637,7 +2637,7 @@
                     "endOffset": 17338
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 413,
                         "startColumn": 4,
@@ -2656,7 +2656,7 @@
                     "endOffset": 17382
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 414,
                         "startColumn": 4,
@@ -2675,7 +2675,7 @@
                     "endOffset": 17463
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 415,
                         "startColumn": 4,
@@ -2694,7 +2694,7 @@
                     "endOffset": 17544
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 416,
                         "startColumn": 4,
@@ -2713,7 +2713,7 @@
                     "endOffset": 17616
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 417,
                         "startColumn": 4,
@@ -2732,7 +2732,7 @@
                     "endOffset": 17705
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 418,
                         "startColumn": 4,
@@ -2751,7 +2751,7 @@
                     "endOffset": 17793
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 419,
                         "startColumn": 4,
@@ -2770,7 +2770,7 @@
                     "endOffset": 17871
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 420,
                         "startColumn": 4,
@@ -2789,7 +2789,7 @@
                     "endOffset": 17952
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 421,
                         "startColumn": 4,
@@ -2808,7 +2808,7 @@
                     "endOffset": 18038
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 422,
                         "startColumn": 4,
@@ -2827,7 +2827,7 @@
                     "endOffset": 18099
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 423,
                         "startColumn": 4,
@@ -2846,7 +2846,7 @@
                     "endOffset": 18153
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 424,
                         "startColumn": 4,
@@ -2865,7 +2865,7 @@
                     "endOffset": 18205
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 425,
                         "startColumn": 4,
@@ -2884,7 +2884,7 @@
                     "endOffset": 18271
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 426,
                         "startColumn": 4,
@@ -2903,7 +2903,7 @@
                     "endOffset": 18345
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 427,
                         "startColumn": 4,
@@ -2922,7 +2922,7 @@
                     "endOffset": 18410
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 428,
                         "startColumn": 4,
@@ -2941,7 +2941,7 @@
                     "endOffset": 18470
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 429,
                         "startColumn": 4,
@@ -2960,7 +2960,7 @@
                     "endOffset": 18532
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 430,
                         "startColumn": 4,
@@ -2979,7 +2979,7 @@
                     "endOffset": 18587
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 431,
                         "startColumn": 4,
@@ -2998,7 +2998,7 @@
                     "endOffset": 18637
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 432,
                         "startColumn": 4,
@@ -3017,7 +3017,7 @@
                     "endOffset": 18682
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 433,
                         "startColumn": 4,
@@ -3036,7 +3036,7 @@
                     "endOffset": 18731
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 434,
                         "startColumn": 4,
@@ -3055,7 +3055,7 @@
                     "endOffset": 18792
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 435,
                         "startColumn": 4,
@@ -3074,7 +3074,7 @@
                     "endOffset": 18853
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 436,
                         "startColumn": 4,
@@ -3093,7 +3093,7 @@
                     "endOffset": 18911
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 437,
                         "startColumn": 4,
@@ -3112,7 +3112,7 @@
                     "endOffset": 18969
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 438,
                         "startColumn": 4,
@@ -3131,7 +3131,7 @@
                     "endOffset": 19030
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 439,
                         "startColumn": 4,
@@ -3150,7 +3150,7 @@
                     "endOffset": 19094
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 440,
                         "startColumn": 4,
@@ -3169,7 +3169,7 @@
                     "endOffset": 19156
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 441,
                         "startColumn": 4,
@@ -3188,7 +3188,7 @@
                     "endOffset": 19214
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 442,
                         "startColumn": 4,
@@ -3207,7 +3207,7 @@
                     "endOffset": 19275
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 443,
                         "startColumn": 4,
@@ -3226,7 +3226,7 @@
                     "endOffset": 19333
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 444,
                         "startColumn": 4,
@@ -3245,7 +3245,7 @@
                     "endOffset": 19372
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 445,
                         "startColumn": 4,
@@ -3264,7 +3264,7 @@
                     "endOffset": 19424
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 446,
                         "startColumn": 4,
@@ -3283,7 +3283,7 @@
                     "endOffset": 19483
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 447,
                         "startColumn": 4,
@@ -3302,7 +3302,7 @@
                     "endOffset": 19535
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 448,
                         "startColumn": 4,
@@ -3321,7 +3321,7 @@
                     "endOffset": 19584
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 449,
                         "startColumn": 4,
@@ -3340,7 +3340,7 @@
                     "endOffset": 19641
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 450,
                         "startColumn": 4,
@@ -3359,7 +3359,7 @@
                     "endOffset": 19705
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 451,
                         "startColumn": 4,
@@ -3378,7 +3378,7 @@
                     "endOffset": 19774
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 452,
                         "startColumn": 4,
@@ -3397,7 +3397,7 @@
                     "endOffset": 19834
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 453,
                         "startColumn": 4,
@@ -3416,7 +3416,7 @@
                     "endOffset": 19892
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 454,
                         "startColumn": 4,
@@ -3435,7 +3435,7 @@
                     "endOffset": 19950
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 455,
                         "startColumn": 4,
@@ -3454,7 +3454,7 @@
                     "endOffset": 20009
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 456,
                         "startColumn": 4,
@@ -3473,7 +3473,7 @@
                     "endOffset": 20079
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 457,
                         "startColumn": 4,
@@ -3492,7 +3492,7 @@
                     "endOffset": 20139
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 458,
                         "startColumn": 4,
@@ -3511,7 +3511,7 @@
                     "endOffset": 20205
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 459,
                         "startColumn": 4,
@@ -3530,7 +3530,7 @@
                     "endOffset": 20280
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 460,
                         "startColumn": 4,
@@ -3549,7 +3549,7 @@
                     "endOffset": 20336
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 461,
                         "startColumn": 4,
@@ -3568,7 +3568,7 @@
                     "endOffset": 20403
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 462,
                         "startColumn": 4,
@@ -3587,7 +3587,7 @@
                     "endOffset": 20481
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 463,
                         "startColumn": 4,
@@ -3606,7 +3606,7 @@
                     "endOffset": 20546
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 464,
                         "startColumn": 4,
@@ -3625,7 +3625,7 @@
                     "endOffset": 20601
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 465,
                         "startColumn": 4,
@@ -3644,7 +3644,7 @@
                     "endOffset": 20668
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 466,
                         "startColumn": 4,
@@ -3663,7 +3663,7 @@
                     "endOffset": 20728
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 467,
                         "startColumn": 4,
@@ -3682,7 +3682,7 @@
                     "endOffset": 20802
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 468,
                         "startColumn": 4,
@@ -3701,7 +3701,7 @@
                     "endOffset": 20851
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 469,
                         "startColumn": 4,
@@ -3720,7 +3720,7 @@
                     "endOffset": 20909
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 470,
                         "startColumn": 4,
@@ -3739,7 +3739,7 @@
                     "endOffset": 20958
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 471,
                         "startColumn": 4,
@@ -3758,7 +3758,7 @@
                     "endOffset": 21016
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 472,
                         "startColumn": 4,
@@ -3777,7 +3777,7 @@
                     "endOffset": 21073
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 473,
                         "startColumn": 4,
@@ -3796,7 +3796,7 @@
                     "endOffset": 21122
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 474,
                         "startColumn": 4,
@@ -3815,7 +3815,7 @@
                     "endOffset": 21185
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 475,
                         "startColumn": 4,
@@ -3834,7 +3834,7 @@
                     "endOffset": 21241
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 476,
                         "startColumn": 4,
@@ -3853,7 +3853,7 @@
                     "endOffset": 21290
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 477,
                         "startColumn": 4,
@@ -3872,7 +3872,7 @@
                     "endOffset": 21347
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 478,
                         "startColumn": 4,
@@ -3891,7 +3891,7 @@
                     "endOffset": 21412
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 479,
                         "startColumn": 4,
@@ -3910,7 +3910,7 @@
                     "endOffset": 21466
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 480,
                         "startColumn": 4,
@@ -3929,7 +3929,7 @@
                     "endOffset": 21530
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 481,
                         "startColumn": 4,
@@ -3948,7 +3948,7 @@
                     "endOffset": 21579
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 482,
                         "startColumn": 4,
@@ -3967,7 +3967,7 @@
                     "endOffset": 21627
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 483,
                         "startColumn": 4,
@@ -3986,7 +3986,7 @@
                     "endOffset": 21678
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 484,
                         "startColumn": 4,
@@ -4005,7 +4005,7 @@
                     "endOffset": 21727
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 485,
                         "startColumn": 4,
@@ -4024,7 +4024,7 @@
                     "endOffset": 21790
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 486,
                         "startColumn": 4,
@@ -4043,7 +4043,7 @@
                     "endOffset": 21855
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 487,
                         "startColumn": 4,
@@ -4062,7 +4062,7 @@
                     "endOffset": 21915
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 488,
                         "startColumn": 4,
@@ -4081,7 +4081,7 @@
                     "endOffset": 21973
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 489,
                         "startColumn": 4,
@@ -4100,7 +4100,7 @@
                     "endOffset": 22035
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 490,
                         "startColumn": 4,
@@ -4119,7 +4119,7 @@
                     "endOffset": 22092
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 491,
                         "startColumn": 4,
@@ -4138,7 +4138,7 @@
                     "endOffset": 22137
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 492,
                         "startColumn": 4,
@@ -4157,7 +4157,7 @@
                     "endOffset": 22187
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 493,
                         "startColumn": 4,
@@ -4176,7 +4176,7 @@
                     "endOffset": 22245
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 494,
                         "startColumn": 4,
@@ -4195,7 +4195,7 @@
                     "endOffset": 22321
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 495,
                         "startColumn": 4,
@@ -4214,7 +4214,7 @@
                     "endOffset": 22370
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 496,
                         "startColumn": 4,
@@ -4233,7 +4233,7 @@
                     "endOffset": 22425
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 497,
                         "startColumn": 4,
@@ -4252,7 +4252,7 @@
                     "endOffset": 22466
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 498,
                         "startColumn": 4,
@@ -4271,7 +4271,7 @@
                     "endOffset": 22518
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 499,
                         "startColumn": 4,
@@ -4290,7 +4290,7 @@
                     "endOffset": 22579
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 500,
                         "startColumn": 4,
@@ -4309,7 +4309,7 @@
                     "endOffset": 22640
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 501,
                         "startColumn": 4,
@@ -4328,7 +4328,7 @@
                     "endOffset": 22709
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 502,
                         "startColumn": 4,
@@ -4347,7 +4347,7 @@
                     "endOffset": 22773
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 503,
                         "startColumn": 4,
@@ -4366,7 +4366,7 @@
                     "endOffset": 22838
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 504,
                         "startColumn": 4,
@@ -4385,7 +4385,7 @@
                     "endOffset": 22912
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 505,
                         "startColumn": 4,
@@ -4404,7 +4404,7 @@
                     "endOffset": 22990
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 506,
                         "startColumn": 4,
@@ -4423,7 +4423,7 @@
                     "endOffset": 23037
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 507,
                         "startColumn": 4,
@@ -4442,7 +4442,7 @@
                     "endOffset": 23087
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 508,
                         "startColumn": 4,
@@ -4461,7 +4461,7 @@
                     "endOffset": 23146
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 509,
                         "startColumn": 4,
@@ -4480,7 +4480,7 @@
                     "endOffset": 23203
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 510,
                         "startColumn": 4,
@@ -4499,7 +4499,7 @@
                     "endOffset": 23257
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 511,
                         "startColumn": 4,
@@ -4518,7 +4518,7 @@
                     "endOffset": 23308
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 512,
                         "startColumn": 4,
@@ -4537,7 +4537,7 @@
                     "endOffset": 23359
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 513,
                         "startColumn": 4,
@@ -4556,7 +4556,7 @@
                     "endOffset": 23409
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 514,
                         "startColumn": 4,
@@ -4575,7 +4575,7 @@
                     "endOffset": 23472
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 515,
                         "startColumn": 4,
@@ -4594,7 +4594,7 @@
                     "endOffset": 23515
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 516,
                         "startColumn": 4,
@@ -4613,7 +4613,7 @@
                     "endOffset": 23552
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 517,
                         "startColumn": 4,
@@ -4632,7 +4632,7 @@
                     "endOffset": 23608
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 518,
                         "startColumn": 4,
@@ -4651,7 +4651,7 @@
                     "endOffset": 23671
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 519,
                         "startColumn": 4,
@@ -4671,7 +4671,7 @@
                     "endOffset": 24302
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 520,
                         "startColumn": 4,
@@ -4692,7 +4692,7 @@
                     "endOffset": 24524
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 529,
                         "startColumn": 4,
@@ -4713,7 +4713,7 @@
                     "endOffset": 24732
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 533,
                         "startColumn": 4,
@@ -4734,7 +4734,7 @@
                     "endOffset": 25000
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 537,
                         "startColumn": 4,
@@ -4755,7 +4755,7 @@
                     "endOffset": 25495
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 542,
                         "startColumn": 4,
@@ -4776,7 +4776,7 @@
                     "endOffset": 25578
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 551,
                         "startColumn": 4,
@@ -4797,7 +4797,7 @@
                     "endOffset": 25660
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 554,
                         "startColumn": 4,
@@ -4818,7 +4818,7 @@
                     "endOffset": 25838
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 557,
                         "startColumn": 4,
@@ -4839,7 +4839,7 @@
                     "endOffset": 25921
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 560,
                         "startColumn": 4,
@@ -4860,7 +4860,7 @@
                     "endOffset": 26209
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 563,
                         "startColumn": 4,
@@ -4881,7 +4881,7 @@
                     "endOffset": 26291
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 568,
                         "startColumn": 4,
@@ -4902,7 +4902,7 @@
                     "endOffset": 26753
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 571,
                         "startColumn": 4,
@@ -4923,7 +4923,7 @@
                     "endOffset": 27007
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 579,
                         "startColumn": 4,
@@ -4944,7 +4944,7 @@
                     "endOffset": 27259
                 },
                 "from": {
-                    "file": "D:\\freestar\\freestar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "file": "E:\\FreeStar\\Friends\\Rong_Cloud_Android_IMKit_SDK_v2_6_9_stable\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 584,
                         "startColumn": 4,

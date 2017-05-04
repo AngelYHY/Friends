@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageView_tuji"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_title_tuji"
+        style="@style/Smile.TextView._Black"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@+id/imageView_tuji"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/imageView_tuji"
+        android:text="天气好呀 多云转晴"/>
+
+    <TextView
+        android:id="@+id/time_tuji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_tuji"
+        android:layout_alignStart="@+id/tv_title_tuji"
+        android:text="2016-8-32"/>
+
+    <TextView
+        android:id="@+id/num_tuji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/time_tuji"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:text="5"/>
+
+</RelativeLayout>

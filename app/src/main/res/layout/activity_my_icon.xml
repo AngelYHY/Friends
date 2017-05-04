@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context="freestar.friends.activities.MyIconActivity">
+    tools:context="freestar.friends.activity.MyIconActivity">
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/img_myIcon"
         android:layout_width="400dp"

@@ -56,8 +56,6 @@ public class PersSignActivity extends BaseActivity {
                     intent.putExtra("OK", perssign);
                     setResult(RESULT_OK, intent);
                     Log.e("FreeStar", "PersSignActivity→→→done:修改了");
-//                    startActivity(intent);
-//                    startActivityForResult(new Intent(PersSignActivity.this,MyinfoActivity.class),1);
                     finish();
 
                 } else {
@@ -68,7 +66,6 @@ public class PersSignActivity extends BaseActivity {
     }
 
     public void btnvbackclick(View view) {
-
         finish();
     }
 }

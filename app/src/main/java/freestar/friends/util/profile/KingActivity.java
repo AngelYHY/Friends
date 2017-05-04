@@ -28,12 +28,7 @@ public class KingActivity extends BaseActivity {
     TextView tvAdd;
     @Bind(R.id.layout_action)
     RelativeLayout layoutAction;
-    //    @Bind(R.id.switch1)
-//    Switch switch1;
-//    @Bind(R.id.switch2)
-//    Switch switch2;
-//    @Bind(R.id.switch3)
-//    Switch switch3;
+
     private boolean aSwitchStart;
     private boolean aswitch_collectStart;
     private boolean aswitch_concernStart;

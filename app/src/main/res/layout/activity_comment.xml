@@ -1,9 +1,8 @@
-<!--ListView嵌套ListView的时候，外层列表焦点被内层列表夺走，可以通过descendantFocusability强制组织内层列表抢夺焦点-->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <!--android:descendantFocusability="blocksDescendants"-->
 
     <LinearLayout
         android:id="@+id/listview_head"
@@ -32,12 +31,6 @@
             android:textSize="18sp"/>
         <!--</android.support.v7.widget.Toolbar>-->
     </LinearLayout>
-
-    <!--<freestar.friends.util.view.XListView-->
-    <!--android:id="@+id/commemt_listview"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:layout_below="@+id/listview_head"/>-->
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipeLayout"

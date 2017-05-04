@@ -1,92 +1,73 @@
 package freestar.friends.util.profile;
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.widget.ListView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import freestar.friends.R;
-import freestar.friends.fragments.msg_fragment.smallfragment.CollectShelunFragment;
-import freestar.friends.fragments.msg_fragment.smallfragment.CollectTujiFragment;
+import freestar.friends.adapter.MyPagerAdapter;
+import freestar.friends.bean.User;
+import freestar.friends.fragment.dynamic.smallfragment.CollectAtlasFragment;
+import freestar.friends.fragment.dynamic.smallfragment.CollectArticleFragment;
 import freestar.friends.util.status_bar.BaseActivity;
 
-public class CollectActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener, ViewPager.OnPageChangeListener {
-    private ListView listView_collec;
+public class CollectActivity extends BaseActivity {
 
+    @Bind(R.id.tv_publish)
+    TextView tvPublish;
+    @Bind(R.id.toolbar_msgFragment)
+    Toolbar toolbarMsgFragment;
+    @Bind(R.id.tabs_msgFragment)
+    TabLayout tabLayout;
+    @Bind(R.id.appbar_msgFragment)
+    AppBarLayout appbarMsgFragment;
+    @Bind(R.id.viewpager_msgFragment)
     ViewPager vp;
-    private ArrayList<Fragment> fragmentList;
-    RadioGroup rg;
+    @Bind(R.id.main_content)
+    CoordinatorLayout mainContent;
+    private User user;
+    static String id;
+
+    public static String getId() {
+        return id;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_collect);
-        fragmentList = new ArrayList<>();
-        fragmentList.add(new CollectShelunFragment());
-        fragmentList.add(new CollectTujiFragment());
-
-        vp = (ViewPager) findViewById(R.id.viewpager_collect);
-
-        rg = (RadioGroup) findViewById(R.id.group);
-
-        rg.setOnCheckedChangeListener(this);
-        //vp:页面切换事件
-        vp.addOnPageChangeListener(this);
-//适配器找到 fragment
-        vp.setAdapter(new MyFragmentPagerAdapter(getSupportFragmentManager(), fragmentList));
-
-
-    }
-
-    @Override
-    public void onCheckedChanged(RadioGroup radioGroup, int i) {
-
-    }
-
-    @Override
-    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-    }
-
-    @Override
-    public void onPageSelected(int position) {
-        RadioButton radioButton = (RadioButton) rg.getChildAt(position);
-
-        //radiobutton状态：checked
-        radioButton.setChecked(true);
-    }
-
-    @Override
-    public void onPageScrollStateChanged(int state) {
-
-    }
-
-    class MyFragmentPagerAdapter extends FragmentPagerAdapter {
-        List<Fragment> fragmentList;
-
-        public MyFragmentPagerAdapter(FragmentManager fragmentManager, List<Fragment> fragmentList) {
-            super(fragmentManager);
-            this.fragmentList = fragmentList;
-
+        setContentView(R.layout.my_collect_);
+        ButterKnife.bind(this);
+        tabLayout.setupWithViewPager(vp);
+        Intent intent = getIntent();
+        user = (User) intent.getSerializableExtra("user");
+        Log.e("FreeStar", "TypeActivity1→→→onCreate:" + user);
+        if (user != null) {
+            id = user.getObjectId();
+            tvPublish.setText("主人的收藏");
         }
 
+        List<Fragment> fragments = new ArrayList<>();
+        List<String> titles = new ArrayList<>();
+        fragments.add(new CollectArticleFragment());
+        fragments.add(new CollectAtlasFragment());
 
-        @Override
-        public Fragment getItem(int position) {
-            return fragmentList.get(position);
-        }
+        titles.add("收藏的摄论");
+        titles.add("收藏的图集");
 
-        @Override
-        public int getCount() {
-            return (fragmentList == null) ? 0 : fragmentList.size();
-        }
+        vp.setAdapter(new MyPagerAdapter(getSupportFragmentManager(), fragments, titles));
     }
+
 }

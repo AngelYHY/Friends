@@ -1,17 +1,16 @@
 package freestar.friends.adapter;
 
 import com.chad.library.adapter.base.BaseMultiItemQuickAdapter;
-import com.chad.library.adapter.base.BaseViewHolder;
-import com.facebook.drawee.view.SimpleDraweeView;
 
 import freestar.friends.R;
 import freestar.friends.bean.ItemU;
+import freestar.friends.util.MyViewHolder;
 
 /**
  * Created by freestar on 2017/1/18 0018.
  */
 
-public class ArticleDetailAdapter extends BaseMultiItemQuickAdapter<ItemU, BaseViewHolder> {
+public class ArticleDetailAdapter extends BaseMultiItemQuickAdapter<ItemU, MyViewHolder> {
 
     public ArticleDetailAdapter() {
         super(null);
@@ -23,10 +22,10 @@ public class ArticleDetailAdapter extends BaseMultiItemQuickAdapter<ItemU, BaseV
     }
 
     @Override
-    protected void convert(BaseViewHolder holder, ItemU item) {
+    protected void convert(MyViewHolder holder, ItemU item) {
         switch (holder.getItemViewType()) {
             case 0:
-                ((SimpleDraweeView)holder.getView(R.id.sdv_pic)).setImageURI(item.getUrl());
+                holder.setSDV(R.id.sdv_pic, item.getUrl());
                 break;
             case 1:
                 holder.setText(R.id.tv_context, item.getContext());

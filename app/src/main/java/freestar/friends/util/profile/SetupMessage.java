@@ -83,7 +83,6 @@ public class SetupMessage extends AppCompatActivity {
         switch6.setChecked(aswitch6Start);
     }
 
-
     public void btnvbackclick(View view) {
         finish();
     }

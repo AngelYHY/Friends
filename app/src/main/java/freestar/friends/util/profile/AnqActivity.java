@@ -11,7 +11,7 @@ import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.QueryListener;
 import freestar.friends.App;
 import freestar.friends.R;
-import freestar.friends.activities.ForgetPasswordActivity;
+import freestar.friends.activity.ForgetPasswordActivity;
 import freestar.friends.bean.User;
 import freestar.friends.util.status_bar.BaseActivity;
 

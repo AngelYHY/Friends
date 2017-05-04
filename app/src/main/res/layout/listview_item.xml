@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<freestar.friends.fragments.msg_fragment.util.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:fresco="http://schemas.android.com/tools"
-    xmlns:swipe="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/swipe"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:descendantFocusability="blocksDescendants"
-    swipe:leftEdgeSwipeOffset="0dp"
-    swipe:rightEdgeSwipeOffset="0dp">
+<freestar.friends.fragment.dynamic.util.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                    xmlns:fresco="http://schemas.android.com/tools"
+                                                    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+                                                    android:id="@+id/swipe"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:descendantFocusability="blocksDescendants"
+                                                    swipe:leftEdgeSwipeOffset="0dp"
+                                                    swipe:rightEdgeSwipeOffset="0dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -77,4 +77,4 @@
             android:textSize="20sp" />
 
     </android.support.v7.widget.CardView>
-</freestar.friends.fragments.msg_fragment.util.SwipeLayout>
+</freestar.friends.fragment.dynamic.util.SwipeLayout>

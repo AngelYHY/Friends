@@ -51,7 +51,6 @@ public class FragmentRevealExample extends Fragment implements View.OnClickListe
                 centerX = img_search.getLeft() + img_search.getWidth() / 2;
                 centerY = img_search.getTop() + img_search.getHeight() / 2;
 
-
                 SupportAnimator mRevealAnimator = ViewAnimationUtils.createCircularReveal(
                         edit_lay, centerX, centerY, 20,
                         PdUtil.hypo(edit_lay.getWidth(), edit_lay.getHeight()));
@@ -95,7 +94,6 @@ public class FragmentRevealExample extends Fragment implements View.OnClickListe
 
         return rootView;
     }
-
 
     public boolean onBackPressed() {
         SupportAnimator mRevealAnimator = ViewAnimationUtils.createCircularReveal(content, centerX, centerY, 20, PdUtil.hypo(content.getWidth(), content.getHeight()));

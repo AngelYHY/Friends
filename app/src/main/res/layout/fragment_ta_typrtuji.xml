@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="freestar.friends.fragments.msg_fragment.smallfragment.TaTyprtujiFragment">
+    tools:context="freestar.friends.fragment.dynamic.smallfragment.TaTyprtujiFragment">
 
     <!-- TODO: Update blank fragment layout -->
 

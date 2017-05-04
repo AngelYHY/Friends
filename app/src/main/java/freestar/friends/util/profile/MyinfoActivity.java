@@ -35,14 +35,14 @@ import cn.bmob.v3.listener.UpdateListener;
 import cn.bmob.v3.listener.UploadFileListener;
 import freestar.friends.App;
 import freestar.friends.R;
-import freestar.friends.activities.LoginActivity;
+import freestar.friends.activity.LoginActivity;
 import freestar.friends.bean.User;
 import freestar.friends.util.status_bar.StatusBarUtil;
 import freestar.friends.util.takephoto.app.TakePhotoFragmentActivity;
 import freestar.friends.util.takephoto.compress.CompressConfig;
 import freestar.friends.util.takephoto.model.CropOptions;
 
-public class MyinfoActivity extends TakePhotoFragmentActivity {
+public class MyInfoActivity extends TakePhotoFragmentActivity {
 
     public static final int NAME = 1;
     private TextView textView_niname, textView_sex, textView_br, textView_gex;
@@ -103,7 +103,7 @@ public class MyinfoActivity extends TakePhotoFragmentActivity {
                 if (e == null) {
                     Log.e("FreeStar", "MyinfoActivity→→→done:性别更新成功");
                 } else {
-                    Toast.makeText(MyinfoActivity.this, "性别更新失败" + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MyInfoActivity.this, "性别更新失败" + e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -112,7 +112,7 @@ public class MyinfoActivity extends TakePhotoFragmentActivity {
     public void birClick(View view) {
         final TextView text = (TextView) findViewById(R.id.textView_bir);
         final java.util.Calendar c = java.util.Calendar.getInstance();
-        DatePickerDialog dialog = new DatePickerDialog(MyinfoActivity.this, new DatePickerDialog.OnDateSetListener() {
+        DatePickerDialog dialog = new DatePickerDialog(MyInfoActivity.this, new DatePickerDialog.OnDateSetListener() {
 
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
@@ -130,7 +130,7 @@ public class MyinfoActivity extends TakePhotoFragmentActivity {
                             if (e == null) {
                                 Log.e("FreeStar", "MyinfoActivity→→→done:出生日期修改成功");
                             } else {
-                                Toast.makeText(MyinfoActivity.this, "出生日期修改失败" + e.getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MyInfoActivity.this, "出生日期修改失败" + e.getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
@@ -250,7 +250,7 @@ public class MyinfoActivity extends TakePhotoFragmentActivity {
 //                        x.image().bind(set_avator, user.getHeadUrl(), App.imageOptions);
                     }
                 } else {
-                    Toast.makeText(MyinfoActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MyInfoActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                     Log.e("FreeStar", "MyinfoActivity→→→done:失败");
                 }
             }
@@ -323,7 +323,7 @@ public class MyinfoActivity extends TakePhotoFragmentActivity {
             public void onClick(DialogInterface dialog, int which) {
                 //这的which表示数组的下标
                 kind = path[which];
-                Toast.makeText(MyinfoActivity.this, "类别为：" + path[which], Toast.LENGTH_SHORT).show();
+                Toast.makeText(MyInfoActivity.this, "类别为：" + path[which], Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -399,7 +399,7 @@ public class MyinfoActivity extends TakePhotoFragmentActivity {
                 if (e == null) {
                     Log.e("FreeStar", "MyinfoActivity→→→done:ok");
                 } else {
-                    Toast.makeText(MyinfoActivity.this, "修改失败" + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MyInfoActivity.this, "修改失败" + e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -20,15 +20,15 @@ import io.rong.imkit.RongIM;
  * Created by Administrator on 2016/8/10 0010.
  */
 public class App extends Application {
-//    private static String url = "http://10.50.7.43:8080/RongYun/";
-        private static String url = "http://10.50.7.42:8080/FreeStar/Login_user";
+    //    private static String url = "http://10.50.7.43:8080/RongYun/";
+    private static String url = "http://10.50.7.42:8080/FreeStar/Login_user";
 
     public static User user;
     public static String userId = "";
     public static String token = "";
-    public static String  headUrl="";
-    public static String  phoneNum="";
-    public static String  niname="";
+    public static String headUrl = "";
+    public static String phoneNum = "";
+    public static String niname = "";
     public static ImageOptions imageOptions;
 
     public String getToken() {
@@ -55,7 +55,7 @@ public class App extends Application {
         return user;
     }
 
-    public static  void setUser(User user) {
+    public static void setUser(User user) {
         App.user = user;
     }
 
