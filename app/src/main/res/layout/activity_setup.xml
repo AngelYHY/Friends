@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".util.profile.KingActivity">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".activity.setting.KingActivity">
 
-    <include layout="@layout/include_top_bar" />
-
+    <include layout="@layout/include_top_bar"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -21,7 +20,7 @@
             android:layout_marginLeft="15dp"
             android:layout_weight="0.17"
             android:gravity="center"
-            android:text="消息提醒" />
+            android:text="消息提醒"/>
 
     </RelativeLayout>
 
@@ -37,7 +36,7 @@
             android:layout_marginLeft="15dp"
             android:layout_weight="0.17"
             android:gravity="center"
-            android:text="清空图片缓存" />
+            android:text="清空图片缓存"/>
 
 
     </RelativeLayout>
@@ -54,17 +53,17 @@
             android:layout_marginLeft="15dp"
             android:layout_weight="0.17"
             android:gravity="center"
-            android:text="清空搜索记录" />
+            android:text="清空搜索记录"/>
 
 
     </RelativeLayout>
 
 
     <RelativeLayout
-        android:onClick="fankuiClick"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@drawable/ripple_bg">
+        android:background="@drawable/ripple_bg"
+        android:onClick="fankuiClick">
         <!--android:onClick="iconClick">-->
 
         <TextView
@@ -73,7 +72,7 @@
             android:layout_marginLeft="15dp"
             android:layout_weight="0.17"
             android:gravity="center"
-            android:text="反馈" />
+            android:text="反馈"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -88,6 +87,6 @@
             android:layout_marginLeft="15dp"
             android:layout_weight="0.17"
             android:gravity="center"
-            android:text="帮助" />
+            android:text="帮助"/>
     </RelativeLayout>
 </LinearLayout>

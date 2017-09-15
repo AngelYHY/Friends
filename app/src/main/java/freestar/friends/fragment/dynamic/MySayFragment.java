@@ -1,4 +1,4 @@
-package freestar.friends.fragment.dynamic.smallfragment;
+package freestar.friends.fragment.dynamic;
 
 
 import android.content.Intent;

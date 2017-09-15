@@ -1,4 +1,4 @@
-package freestar.friends.util.profile;
+package freestar.friends.activity;
 
 
 import android.content.Intent;
@@ -20,10 +20,13 @@ import butterknife.ButterKnife;
 import freestar.friends.R;
 import freestar.friends.adapter.MyPagerAdapter;
 import freestar.friends.bean.User;
-import freestar.friends.fragment.dynamic.smallfragment.CollectAtlasFragment;
-import freestar.friends.fragment.dynamic.smallfragment.CollectArticleFragment;
+import freestar.friends.fragment.dynamic.CollectArticleFragment;
+import freestar.friends.fragment.dynamic.CollectAtlasFragment;
 import freestar.friends.util.status_bar.BaseActivity;
 
+/**
+ * 我的收藏
+ */
 public class CollectActivity extends BaseActivity {
 
     @Bind(R.id.tv_publish)

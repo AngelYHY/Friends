@@ -45,7 +45,7 @@ public class ModelPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        if(pagerManager.hasTitles()){
+        if (pagerManager.hasTitles()) {
             return pagerManager.getTitle(position);
         }
         return super.getPageTitle(position);

@@ -19,11 +19,14 @@ import butterknife.ButterKnife;
 import freestar.friends.R;
 import freestar.friends.adapter.MyPagerAdapter;
 import freestar.friends.bean.User;
-import freestar.friends.fragment.dynamic.smallfragment.ArticleFragment;
-import freestar.friends.fragment.dynamic.smallfragment.MySayFragment;
-import freestar.friends.fragment.dynamic.smallfragment.AtlasFragment;
+import freestar.friends.fragment.dynamic.PublishArticleFragment;
+import freestar.friends.fragment.dynamic.PublishAtlasFragment;
+import freestar.friends.fragment.dynamic.MySayFragment;
 import freestar.friends.util.status_bar.BaseActivity;
 
+/**
+ * 我的发布
+ */
 public class MyPublishActivity extends BaseActivity {
 
     @Bind(R.id.toolbar_msgFragment)
@@ -61,8 +64,8 @@ public class MyPublishActivity extends BaseActivity {
         List<Fragment> fragments = new ArrayList<>();
         List<String> titles = new ArrayList<>();
         fragments.add(new MySayFragment());
-        fragments.add(new AtlasFragment());
-        fragments.add(new ArticleFragment());
+        fragments.add(new PublishAtlasFragment());
+        fragments.add(new PublishArticleFragment());
         titles.add("我的说说");
         titles.add("我的图集");
         titles.add("我的摄论");

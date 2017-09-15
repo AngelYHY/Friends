@@ -34,6 +34,9 @@ import freestar.friends.R;
 import freestar.friends.bean.User;
 import freestar.friends.util.Judge;
 
+/**
+ * 登陆界面
+ */
 public class LoginActivity extends AppCompatActivity {
 
     @Bind(R.id.et_username)

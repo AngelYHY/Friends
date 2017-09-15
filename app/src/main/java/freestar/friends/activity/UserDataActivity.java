@@ -24,10 +24,12 @@ import cn.bmob.v3.listener.UpdateListener;
 import freestar.friends.App;
 import freestar.friends.R;
 import freestar.friends.bean.User;
-import freestar.friends.util.profile.CollectActivity;
 import freestar.friends.util.status_bar.StatusBarUtil;
 import io.rong.imkit.RongIM;
 
+/**
+ * 个人资料
+ */
 public class UserDataActivity extends AppCompatActivity {
     @Bind(R.id.img_back_userData)
     ImageView img_back;

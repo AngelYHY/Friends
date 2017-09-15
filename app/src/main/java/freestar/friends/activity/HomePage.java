@@ -42,9 +42,8 @@ import freestar.friends.bean.User;
 import freestar.friends.fragment.CommFragment;
 import freestar.friends.fragment.DynFragment;
 import freestar.friends.fragment.MsgFragment;
-import freestar.friends.util.profile.CollectActivity;
-import freestar.friends.util.profile.MyInfoActivity;
-import freestar.friends.util.profile.SetupActivity;
+import freestar.friends.activity.setting.MyInfoActivity;
+import freestar.friends.activity.setting.SettingActivity;
 import freestar.friends.util.status_bar.BaseActivity;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
@@ -52,6 +51,9 @@ import io.rong.imlib.model.UserInfo;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
 
+/**
+ * 主界面
+ */
 public class HomePage extends BaseActivity implements EasyPermissions.PermissionCallbacks{
     RelativeLayout layout;
     FragmentManager fragmentManager;
@@ -263,7 +265,7 @@ public class HomePage extends BaseActivity implements EasyPermissions.Permission
 
     //设置
     public void szClick(View view) {
-        startActivity(new Intent(this, SetupActivity.class));
+        startActivity(new Intent(this, SettingActivity.class));
     }
 
     //主页

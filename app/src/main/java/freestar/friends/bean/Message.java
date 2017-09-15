@@ -9,13 +9,12 @@ import cn.bmob.v3.BmobObject;
 import cn.bmob.v3.datatype.BmobRelation;
 
 public class Message extends BmobObject implements MultiItemEntity {
-    private String m_message;//??????
-    //作者
-    private User user; //?��˵˵����????
-    List<String> urls;//??ͼ��
-    private Integer likeNum;//????
-    private Integer comNum;//??????
-    private boolean iszan;//?????
+    private String m_message;
+    private User user;
+    List<String> urls;
+    private Integer likeNum;
+    private Integer comNum;
+    private boolean iszan;
     private BmobRelation likeUser;
 
     public BmobRelation getLikeUser() {
@@ -57,7 +56,7 @@ public class Message extends BmobObject implements MultiItemEntity {
         this.m_message = m_message;
     }
 
-    //??????
+    //
     public boolean iszan() {
         return iszan;
     }
@@ -66,7 +65,7 @@ public class Message extends BmobObject implements MultiItemEntity {
         this.iszan = iszan;
     }
 
-    //????
+    //
     public Integer getLikeNum() {
         return likeNum;
     }
@@ -75,7 +74,7 @@ public class Message extends BmobObject implements MultiItemEntity {
         this.likeNum = likeNum;
     }
 
-    //??????
+    //
     public Integer getComNum() {
         return comNum;
     }
@@ -84,7 +83,7 @@ public class Message extends BmobObject implements MultiItemEntity {
         this.comNum = comNum;
     }
 
-    //???
+    //
     public List<String> getUrls() {
         return urls;
     }
@@ -97,7 +96,7 @@ public class Message extends BmobObject implements MultiItemEntity {
         this.m_message = m_message;
     }
 
-    //????????
+    //
     public User getUser() {
         return user;
     }

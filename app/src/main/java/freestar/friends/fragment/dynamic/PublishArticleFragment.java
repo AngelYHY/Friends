@@ -1,4 +1,4 @@
-package freestar.friends.fragment.dynamic.smallfragment;
+package freestar.friends.fragment.dynamic;
 
 
 import android.content.Intent;
@@ -32,13 +32,13 @@ import freestar.friends.bean.User;
 /**
  * 我的发布 摄论
  */
-public class ArticleFragment extends Fragment {
+public class PublishArticleFragment extends Fragment {
 
     @Bind(R.id.rv)
     RecyclerView mRv;
     private ComArticleAdapter mAdapter;
 
-    public ArticleFragment() {
+    public PublishArticleFragment() {
         // Required empty public constructor
     }
 

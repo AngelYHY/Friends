@@ -30,6 +30,9 @@ import freestar.friends.bean.User;
 import freestar.friends.util.status_bar.BaseActivity;
 import io.rong.imkit.RongIM;
 
+/**
+ * 我的关注
+ */
 public class ConcernActivity extends BaseActivity {
 
     static String id;

@@ -1,4 +1,4 @@
-package freestar.friends.util.profile;
+package freestar.friends.activity.setting;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,6 +6,9 @@ import android.view.View;
 import freestar.friends.R;
 import freestar.friends.util.status_bar.BaseActivity;
 
+/**
+ * 帮助
+ */
 public class HelpActivity extends BaseActivity {
 
     @Override

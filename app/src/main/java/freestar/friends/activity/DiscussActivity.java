@@ -2,8 +2,6 @@ package freestar.friends.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
@@ -28,7 +26,7 @@ import freestar.friends.bean.User;
 import freestar.friends.util.status_bar.BaseActivity;
 
 /**
- * Created by Administrator on 2016/8/21 0021.
+ * 摄论评论
  */
 public class DiscussActivity extends BaseActivity {
     @Bind(R.id.btn_back)
@@ -43,18 +41,6 @@ public class DiscussActivity extends BaseActivity {
     public String objectId;
     public Atlas atlas;
     private Article article;
-    private User author;
-    Handler handler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            if (msg.what == 1) {
-
-            } else if (msg.what == 2) {
-
-            }
-        }
-    };
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -63,7 +49,6 @@ public class DiscussActivity extends BaseActivity {
         ButterKnife.bind(this);
         Intent intent = getIntent();
         object = intent.getSerializableExtra("object");
-        author = (User) intent.getSerializableExtra("user");
         Bundle extra = intent.getExtras();
         Object bundle = extra.getSerializable("bundle");
         if (bundle != null) {

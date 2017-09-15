@@ -20,6 +20,9 @@ import cn.bingoogolapple.bgabanner.BGABannerUtil;
 import freestar.friends.App;
 import freestar.friends.R;
 
+/**
+ * 引导页
+ */
 //依赖 compile 'com.nineoldandroids:library:2.4.0'
 public class GuideActivity extends Activity implements View.OnClickListener {
     private static final String TAG = GuideActivity.class.getSimpleName();

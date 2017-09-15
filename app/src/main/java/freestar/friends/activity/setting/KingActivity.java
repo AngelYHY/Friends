@@ -1,4 +1,4 @@
-package freestar.friends.util.profile;
+package freestar.friends.activity.setting;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -21,6 +21,9 @@ import freestar.friends.R;
 import freestar.friends.bean.User;
 import freestar.friends.util.status_bar.BaseActivity;
 
+/**
+ * 隐私设置
+ */
 public class KingActivity extends BaseActivity {
     @Bind(R.id.button)
     Button button;

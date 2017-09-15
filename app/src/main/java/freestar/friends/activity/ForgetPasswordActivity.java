@@ -29,6 +29,9 @@ import freestar.friends.bean.User;
 import freestar.friends.util.Judge;
 import freestar.friends.util.status_bar.BaseActivity;
 
+/**
+ * 忘记密码
+ */
 public class ForgetPasswordActivity extends BaseActivity {
 
     @Bind(R.id.et_phone)

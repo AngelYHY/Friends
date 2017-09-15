@@ -37,6 +37,9 @@ import freestar.friends.bean.User;
 import freestar.friends.util.fly_heat.PeriscopeLayout;
 import freestar.friends.util.status_bar.StatusBarUtil;
 
+/**
+ * 摄论内容
+ */
 public class ArticleItemActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Bind(R.id.ib_back)

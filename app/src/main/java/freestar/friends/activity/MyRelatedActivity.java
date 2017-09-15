@@ -36,7 +36,6 @@ import freestar.friends.util.status_bar.BaseActivity;
 import freestar.friends.widget.XRecyclerView;
 
 /**
- * Created by Administrator on 2016/7/12.
  * 与我相关
  */
 

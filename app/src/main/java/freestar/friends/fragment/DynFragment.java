@@ -37,7 +37,7 @@ import freestar.friends.adapter.DynamicAdapter;
 import freestar.friends.bean.Message;
 import freestar.friends.bean.User;
 import freestar.friends.activity.MyPublishActivity;
-import freestar.friends.util.profile.MyInfoActivity;
+import freestar.friends.activity.setting.MyInfoActivity;
 
 /**
  * SwipeRefreshLayout.OnRefreshListener
@@ -64,12 +64,12 @@ public class DynFragment extends Fragment implements BaseQuickAdapter.RequestLoa
         ButterKnife.bind(this, view);
         Log.d("FreeStar", "DynFragment→→→onCreateView");
         mSwipeLayout.setOnRefreshListener(this);
-        initview();
+        initView();
         onRefresh();
         return view;
     }
 
-    private void initview() {
+    private void initView() {
         //头
         View headView = LayoutInflater.from(getActivity()).inflate(R.layout.imageview, null);
 

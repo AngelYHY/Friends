@@ -1,4 +1,4 @@
-package freestar.friends.fragment.dynamic.smallfragment;
+package freestar.friends.fragment.dynamic;
 
 
 import android.content.Intent;
@@ -29,7 +29,7 @@ import freestar.friends.adapter.ComAtlasAdapter;
 import freestar.friends.bean.Atlas;
 import freestar.friends.bean.CollectAtlas;
 import freestar.friends.bean.User;
-import freestar.friends.util.profile.CollectActivity;
+import freestar.friends.activity.CollectActivity;
 
 /**
  * 我的收藏 图集

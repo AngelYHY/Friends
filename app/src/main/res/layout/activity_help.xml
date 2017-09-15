@@ -1,48 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".util.profile.HelpActivity">
-    <include layout="@layout/include_top_bar" />
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".activity.setting.HelpActivity">
+
+    <include layout="@layout/include_top_bar"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/ripple_bg"
         >
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginLeft="15dp"
-            android:text="检查更新"
-            android:layout_weight="0.17"
             android:id="@+id/textView9"
-            android:layout_marginStart="17dp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="当前版本：测试版00"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="17dp"
+            android:layout_weight="0.17"
+            android:gravity="center"
+            android:text="检查更新"/>
+
+        <TextView
             android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView9"
             android:layout_below="@+id/textView9"
-            android:layout_alignStart="@+id/textView9" />
+            android:text="当前版本：测试版00"/>
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/ripple_bg"
         >
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:layout_marginLeft="15dp"
-            android:text="关于"
-            android:layout_weight="0.17" />
+            android:layout_weight="0.17"
+            android:gravity="center"
+            android:text="关于"/>
     </RelativeLayout>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package freestar.friends.util.profile;
+package freestar.friends.activity.setting;
 
 import android.Manifest;
 import android.app.DatePickerDialog;
@@ -176,7 +176,7 @@ public class MyInfoActivity extends TakePhotoFragmentActivity {
 
     //安全设置
     public void anqClick(View view) {
-        Intent intent = new Intent(this, AnqActivity.class);
+        Intent intent = new Intent(this, SafeActivity.class);
         startActivity(intent);
     }
 

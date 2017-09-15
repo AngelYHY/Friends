@@ -5,21 +5,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -86,13 +83,12 @@ public class DynDetailActivity extends BaseActivity implements BGANinePhotoLayou
     RecyclerView mRecyclerView;
     @Bind(R.id.swipeLayout)
     SwipeRefreshLayout mSwipeLayout;
+    @Bind(R.id.view)
+    View mView;
 
     private User user;
     private PeriscopeLayout periscope;
     private boolean starLike;
-    private boolean endLike = false;
-    private MessageLike likeMsg;
-    Handler handler;
     View headView;
     int i;
     private BGANinePhotoLayout mCurrentClickNpl;
@@ -185,18 +181,6 @@ public class DynDetailActivity extends BaseActivity implements BGANinePhotoLayou
         //心
         periscope = (PeriscopeLayout) findViewById(R.id.periscope);
 
-        RelativeLayout rl = (RelativeLayout) findViewById(R.id.rl);
-        rl.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                Logger.e("touch 事件");
-                if (contain_layout.getVisibility() == View.VISIBLE) {
-                    contain_layout.setVisibility(View.GONE);
-                }
-                return false;
-            }
-        });
-
         zanbiao.setOnClickListener(this);
         pinglunbiao.setOnClickListener(this);
         simpleDraweeView.setOnClickListener(this);
@@ -205,14 +189,16 @@ public class DynDetailActivity extends BaseActivity implements BGANinePhotoLayou
             @Override
             public void keyBoardShow(int height) {
 //                Toast.makeText(this, "键盘显示 高度" + height, Toast.LENGTH_SHORT).show();
-
+                mView.setVisibility(View.VISIBLE);
+                Logger.e("Visible");
             }
 
             @Override
             public void keyBoardHide(int height) {
 //                Toast.makeText(this, "键盘隐藏 高度" + height, Toast.LENGTH_SHORT).show();
-                Logger.e("gone");
+                Logger.e("Gone");
                 contain_layout.setVisibility(View.GONE);
+                mView.setVisibility(View.GONE);
             }
         });
     }
@@ -253,7 +239,6 @@ public class DynDetailActivity extends BaseActivity implements BGANinePhotoLayou
                                 Log.e("FreeStar", "ArticleItemActivity→→→done:已点赞");
                                 zanbiao.setSelected(true);
                                 starLike = true;
-                                likeMsg = likeM;
                                 Log.e("FreeStar", "ArticleItemActivity→→→done:" + likeM.getObjectId());
                             }
                         }
@@ -306,24 +291,15 @@ public class DynDetailActivity extends BaseActivity implements BGANinePhotoLayou
         conments.requestFocusFromTouch();
     }
 
-//    @Override
-//    public boolean onTouchEvent(MotionEvent event) {
-//        downKeyBoard();
-//        return super.onTouchEvent(event);
-//    }
-
     public void downKeyBoard() {
         Logger.e("event");
-        if (contain_layout.getVisibility() == View.VISIBLE) {
-            contain_layout.setVisibility(View.GONE);
-            InputMethodManager imm2 = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm2.hideSoftInputFromWindow(sumbit_conments.getWindowToken(), 0);
-        }
+        InputMethodManager imm2 = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm2.hideSoftInputFromWindow(sumbit_conments.getWindowToken(), 0);
     }
 
     @Override
     protected void onDestroy() {
-        endLike = zanbiao.isSelected();
+        boolean endLike = zanbiao.isSelected();
         if (starLike != endLike) {
             if (endLike) {
                 message.increment("likeNum"); // 点赞数增1
@@ -452,7 +428,7 @@ public class DynDetailActivity extends BaseActivity implements BGANinePhotoLayou
     }
 
     //    , R.id.dongtai_zan, R.id.dongtai_pinglun, R.id.dongtai_touxiang
-    @OnClick({R.id.back_dongtai, R.id.kj_pl_fb})
+    @OnClick({R.id.back_dongtai, R.id.kj_pl_fb, R.id.view})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.back_dongtai:
@@ -531,6 +507,10 @@ public class DynDetailActivity extends BaseActivity implements BGANinePhotoLayou
                 Intent intent = new Intent(DynDetailActivity.this, UserDataActivity.class);
                 intent.putExtra("user", message.getUser());
                 startActivity(intent);
+                break;
+            case R.id.view:
+                Logger.e("View onClick");
+                downKeyBoard();
                 break;
         }
     }

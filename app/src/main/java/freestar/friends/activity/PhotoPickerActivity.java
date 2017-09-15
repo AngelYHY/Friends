@@ -28,6 +28,9 @@ import freestar.friends.util.sort_rich_editor.adapter.PhotoWallAdapter;
 import freestar.friends.util.sort_rich_editor.components.DensityUtil;
 import freestar.friends.util.sort_rich_editor.view.SelectPopupWindow;
 
+/**
+ * 头像选择
+ */
 public class PhotoPickerActivity extends AppCompatActivity implements View.OnClickListener{
 
     public static final String INTENT_PHOTO_PATHS = "photo_paths";;

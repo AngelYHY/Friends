@@ -1,4 +1,4 @@
-package freestar.friends.util.profile;
+package freestar.friends.activity.setting;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,9 @@ import freestar.friends.R;
 import freestar.friends.bean.User;
 import freestar.friends.util.status_bar.BaseActivity;
 
+/**
+ * 邮箱设置
+ */
 public class EmailActivity extends BaseActivity {
     EditText editText_email;
 
@@ -33,7 +36,7 @@ public class EmailActivity extends BaseActivity {
             public void done(BmobException e) {
                 if (e == null) {
                     Toast.makeText(EmailActivity.this, "修改成功", Toast.LENGTH_SHORT).show();
-                    startActivityForResult(new Intent(EmailActivity.this, AnqActivity.class), 1);
+                    startActivityForResult(new Intent(EmailActivity.this, SafeActivity.class), 1);
                     finish();
                 } else {
                     Toast.makeText(EmailActivity.this, "修改失败" + e.getMessage(), Toast.LENGTH_SHORT).show();

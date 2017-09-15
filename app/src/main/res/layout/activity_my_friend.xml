@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#efedef"
     android:orientation="vertical"
-    tools:context=".util.profile.MyFriendActivity">
+    tools:context=".activity.setting.MyFriendActivity">
 
     <include layout="@layout/include_friend"/>
 

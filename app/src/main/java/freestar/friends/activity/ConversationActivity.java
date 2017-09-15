@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import cn.bingoogolapple.photopicker.activity.BGAPhotoPreviewActivity;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
@@ -21,6 +22,9 @@ import io.rong.imlib.model.Conversation;
 import io.rong.imlib.model.Message;
 import io.rong.imlib.model.UserInfo;
 
+/**
+ * 会话窗口
+ */
 public class ConversationActivity extends BaseActivity implements RongIM.ConversationBehaviorListener {
     //目标 ID
     private String mTargetId;
@@ -84,9 +88,7 @@ public class ConversationActivity extends BaseActivity implements RongIM.Convers
     //长按显示出大图
     @Override
     public boolean onUserPortraitLongClick(Context context, Conversation.ConversationType conversationType, UserInfo userInfo) {
-        Intent intent = new Intent(ConversationActivity.this, MyIconActivity.class);
-        intent.putExtra("user", String.valueOf(userInfo.getPortraitUri()));
-        startActivity(intent);
+        startActivity(BGAPhotoPreviewActivity.newIntent(context, null, String.valueOf(userInfo.getPortraitUri())));
         return false;
     }
 

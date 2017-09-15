@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg">
 
     <android.support.v7.widget.CardView
         android:id="@+id/cv"
@@ -28,7 +28,7 @@
                     android:layout_width="8dp"
                     android:layout_height="match_parent"
                     android:layout_alignParentStart="true"
-                    android:background="#2fa881" />
+                    android:background="#2fa881"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
                     android:text="@string/login"
                     android:textColor="#FFCC00"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
             </RelativeLayout>
 
             <LinearLayout
@@ -64,7 +64,7 @@
                         android:paddingBottom="2dp"
                         android:textColor="#2fa881"
                         android:textCursorDrawable="@drawable/bg_input_cursor"
-                        android:textSize="13sp" />
+                        android:textSize="13sp"/>
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
 
@@ -91,7 +91,7 @@
                         android:paddingBottom="2dp"
                         android:textColor="#2fa881"
                         android:textCursorDrawable="@drawable/bg_input_cursor"
-                        android:textSize="13sp" />
+                        android:textSize="13sp"/>
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -111,7 +111,7 @@
                     android:background="@drawable/bt_shape"
                     android:stateListAnimator="@drawable/state_list_animator_z"
                     android:text="@string/go"
-                    android:textColor="#f4c600" />
+                    android:textColor="#f4c600"/>
             </RelativeLayout>
 
             <LinearLayout
@@ -129,7 +129,7 @@
                     android:clickable="true"
                     android:text="@string/forgot_your_password"
                     android:textColor="#9a9a9a"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"/>
 
                 <TextView
                     android:id="@+id/tv_remember"
@@ -140,14 +140,14 @@
                     android:clickable="true"
                     android:text="记住密码"
                     android:textColor="#9a9a9a"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"/>
 
                 <ImageView
                     android:id="@+id/iv_check"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@mipmap/check_16px_1181749_easyicon"
-                    android:visibility="gone" />
+                    android:visibility="gone"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -163,7 +163,7 @@
         android:layout_marginTop="10dp"
         android:src="@mipmap/zhuce"
         android:transitionName="loginFab"
-        app:fabSize="normal" />
+        app:fabSize="normal"/>
 
 </RelativeLayout>
-<!--18606278518  杨军-->
+    <!--18606278518  杨军-->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="1"
-    tools:context=".util.profile.AnqActivity">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1"
+              tools:context=".activity.setting.SafeActivity">
 
-    <include layout="@layout/include_top_bar" />
+    <include layout="@layout/include_top_bar"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -18,14 +18,14 @@
         android:layout_alignParentTop="true"
         android:layout_gravity="center"
         android:text="账号安全"
-        android:textSize="20dp" />
+        android:textSize="20dp"/>
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.78"
-        android:src="@mipmap/anqq" />
+        android:src="@mipmap/anqq"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -38,7 +38,7 @@
             android:layout_marginLeft="15dp"
             android:layout_weight="0.17"
             android:gravity="center"
-            android:text="我的手机" />
+            android:text="我的手机"/>
 
         <TextView
             android:id="@+id/textView_pht"
@@ -47,7 +47,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
-            android:text="1522" />
+            android:text="1522"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -55,7 +55,7 @@
         android:layout_height="60dp"
         android:background="@drawable/ripple_bg"
         android:onClick="myemailClick"
-    >
+        >
 
         <TextView
             android:layout_width="wrap_content"
@@ -63,7 +63,7 @@
             android:layout_marginLeft="15dp"
             android:layout_weight="0.17"
             android:gravity="center"
-            android:text="我的邮箱" />
+            android:text="我的邮箱"/>
 
         <TextView
             android:id="@+id/textView_myemail"
@@ -72,7 +72,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
-            android:text="net@qq.com" />
+            android:text="net@qq.com"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -88,7 +88,7 @@
             android:layout_marginLeft="15dp"
             android:layout_weight="0.17"
             android:gravity="center"
-            android:text="修改密码" />
+            android:text="修改密码"/>
 
     </RelativeLayout>
 

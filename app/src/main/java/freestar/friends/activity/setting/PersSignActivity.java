@@ -1,4 +1,4 @@
-package freestar.friends.util.profile;
+package freestar.friends.activity.setting;
 
 import android.content.Intent;
 import android.os.Bundle;

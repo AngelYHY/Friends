@@ -1,4 +1,4 @@
-package freestar.friends.util.profile;
+package freestar.friends.activity.setting;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,9 @@ import freestar.friends.R;
 import freestar.friends.bean.User;
 import freestar.friends.util.status_bar.BaseActivity;
 
+/**
+ * 名称设置
+ */
 public class NinameActivity extends BaseActivity {
     private EditText editText_niname;
 

@@ -39,6 +39,9 @@ import freestar.friends.R;
 import freestar.friends.bean.User;
 import freestar.friends.util.Judge;
 
+/**
+ * 注册
+ */
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     int i = 30;

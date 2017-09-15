@@ -1,4 +1,4 @@
-package freestar.friends.fragment.dynamic.smallfragment;
+package freestar.friends.fragment.dynamic;
 
 
 import android.content.Intent;
@@ -32,14 +32,14 @@ import freestar.friends.bean.User;
 /**
  * 我的发布 图集
  */
-public class AtlasFragment extends Fragment {
+public class PublishAtlasFragment extends Fragment {
 
     @Bind(R.id.rv)
     RecyclerView mRv;
     private ComAtlasAdapter mAdapter;
 
 
-    public AtlasFragment() {
+    public PublishAtlasFragment() {
         // Required empty public constructor
     }
 

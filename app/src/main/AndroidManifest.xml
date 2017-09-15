@@ -109,10 +109,8 @@
         android:theme="@style/AppTheme"
         tools:replace="android:icon, android:theme"><![CDATA[
         >
+
         ]]>
-        <activity
-            android:name=".util.profile.SearchActivity"
-            android:screenOrientation="portrait"/>
         <activity
             android:name=".util.takephoto.app.TakePhotoActivity"
             android:screenOrientation="portrait"/>
@@ -188,22 +186,19 @@
             android:value="y745wfm84408v"/>
 
         <activity
-            android:name=".util.profile.NinameActivity"
+            android:name=".activity.setting.NinameActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".util.profile.MyInfoActivity"
+            android:name=".activity.setting.MyInfoActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.MyIconActivity"
+            android:name=".activity.setting.KingActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".util.profile.KingActivity"
+            android:name=".activity.setting.SafeActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".util.profile.AnqActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".util.profile.PersSignActivity"
+            android:name=".activity.setting.PersSignActivity"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.UserDataActivity"
@@ -215,29 +210,23 @@
             android:name=".activity.PicItemActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".util.profile.ContactActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activity.SearchActivity"
-            android:screenOrientation="portrait"/>
-        <activity
             android:name=".activity.DiscussActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysVisible"/>
         <activity
-            android:name=".util.profile.SetupActivity"
+            android:name=".activity.setting.SettingActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".util.profile.HelpActivity"
+            android:name=".activity.setting.HelpActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".util.profile.SetupMessage"
+            android:name=".activity.setting.SetupMessage"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.publish.ArticlePublish"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".util.profile.EmailActivity"
+            android:name=".activity.setting.EmailActivity"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.DiscussAtlasDetailActivity"
@@ -255,7 +244,7 @@
             android:name=".activity.ConcernActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".util.profile.CollectActivity"
+            android:name=".activity.CollectActivity"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.MyPublishActivity"

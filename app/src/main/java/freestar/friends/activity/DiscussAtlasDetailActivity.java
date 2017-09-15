@@ -27,7 +27,7 @@ import freestar.friends.util.status_bar.BaseActivity;
 import freestar.friends.widget.XRecyclerView;
 
 /**
- * Created by Administrator on 2016/7/12.
+ * 图集评论
  */
 
 public class DiscussAtlasDetailActivity extends BaseActivity implements View.OnClickListener, SwipeRefreshLayout.OnRefreshListener, BaseQuickAdapter.RequestLoadMoreListener {
@@ -94,7 +94,7 @@ public class DiscussAtlasDetailActivity extends BaseActivity implements View.OnC
         mAdapter = new DiscussAtlasDetailAdapter();
         mAdapter.openLoadAnimation(1);
         mAdapter.setAutoLoadMoreSize(4);
-        mAdapter.setOnLoadMoreListener(this,mRecyclerView);
+        mAdapter.setOnLoadMoreListener(this, mRecyclerView);
         mRecyclerView.setAdapter(mAdapter);
     }
 

@@ -1,4 +1,4 @@
-package freestar.friends.util.profile;
+package freestar.friends.activity.setting;
 
 import android.app.Service;
 import android.content.Context;
@@ -21,6 +21,9 @@ import freestar.friends.App;
 import freestar.friends.R;
 import freestar.friends.bean.User;
 
+/**
+ * 消息提醒设置
+ */
 public class SetupMessage extends AppCompatActivity {
     @Bind(R.id.button)
     Button button;
@@ -101,15 +104,15 @@ public class SetupMessage extends AppCompatActivity {
                 if (switchSy.isChecked()) {
                     Toast.makeText(SetupMessage.this, "✪ω✪", Toast.LENGTH_SHORT).show();
                 } else {
-                    Vibrator vibrator=(Vibrator)getSystemService(Service.VIBRATOR_SERVICE);
-                    vibrator.vibrate(new long[]{0,1000}, -1);
-                   // Toast.makeText(SetupMessage.this, "声音关", Toast.LENGTH_SHORT).show();
+                    Vibrator vibrator = (Vibrator) getSystemService(Service.VIBRATOR_SERVICE);
+                    vibrator.vibrate(new long[]{0, 1000}, -1);
+                    // Toast.makeText(SetupMessage.this, "声音关", Toast.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.switch3:
                 if (switch3.isChecked()) {
-                    Vibrator vibrator=(Vibrator)getSystemService(Service.VIBRATOR_SERVICE);
-                    vibrator.vibrate(new long[]{0,1000}, -1);
+                    Vibrator vibrator = (Vibrator) getSystemService(Service.VIBRATOR_SERVICE);
+                    vibrator.vibrate(new long[]{0, 1000}, -1);
                     Toast.makeText(SetupMessage.this, "≖‿≖✧", Toast.LENGTH_SHORT).show();
                 } else {
                     //Toast.makeText(SetupMessage.this, "震动关", Toast.LENGTH_SHORT).show();
@@ -117,7 +120,7 @@ public class SetupMessage extends AppCompatActivity {
                 break;
             case R.id.switch4:
                 if (switch4.isChecked()) {
-                   // Toast.makeText(SetupMessage.this, "呼吸灯开", Toast.LENGTH_SHORT).show();
+                    // Toast.makeText(SetupMessage.this, "呼吸灯开", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(SetupMessage.this, "∑(っ °Д °;)っ", Toast.LENGTH_SHORT).show();
                 }
@@ -142,43 +145,43 @@ public class SetupMessage extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         edit = preferences.edit();
-        if (aSwitchmuStart != switchMu.isChecked()){
-            if (switchMu.isChecked()){
+        if (aSwitchmuStart != switchMu.isChecked()) {
+            if (switchMu.isChecked()) {
                 edit.putBoolean("Switchmu", true);
             } else {
-                 edit.putBoolean("Switchmu", false);
+                edit.putBoolean("Switchmu", false);
             }
         }
-        if (aswitch_syStart != switchSy.isChecked()){
-            if (switchSy.isChecked()){
+        if (aswitch_syStart != switchSy.isChecked()) {
+            if (switchSy.isChecked()) {
                 edit.putBoolean("Switchsy", true);
             } else {
                 edit.putBoolean("Switchsy", false);
             }
         }
-        if (aswitch3Start != switch3.isChecked()){
-            if (switch3.isChecked()){
+        if (aswitch3Start != switch3.isChecked()) {
+            if (switch3.isChecked()) {
                 edit.putBoolean("Switch3", true);
             } else {
                 edit.putBoolean("Switch3", false);
             }
         }
-        if (aswitch4Start != switch4.isChecked()){
-            if (switch4.isChecked()){
+        if (aswitch4Start != switch4.isChecked()) {
+            if (switch4.isChecked()) {
                 edit.putBoolean("Switch4", true);
             } else {
                 edit.putBoolean("Switch4", false);
             }
         }
-        if (aswitch5Start != switch5.isChecked()){
-            if (switch5.isChecked()){
+        if (aswitch5Start != switch5.isChecked()) {
+            if (switch5.isChecked()) {
                 edit.putBoolean("Switch5", true);
             } else {
                 edit.putBoolean("Switch5", false);
             }
         }
-        if (aswitch6Start != switch6.isChecked()){
-            if (switch6.isChecked()){
+        if (aswitch6Start != switch6.isChecked()) {
+            if (switch6.isChecked()) {
                 edit.putBoolean("Switch6", true);
             } else {
                 edit.putBoolean("Switch6", false);

@@ -30,6 +30,9 @@ import freestar.friends.util.status_bar.BaseActivity;
 
 import static freestar.friends.R.id.ivDeleteText;
 
+/**
+ * 查找好友
+ */
 public class SearchFriendActivity extends BaseActivity {
 
     @Bind(R.id.etSearch)

@@ -3,10 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <!--<freestar.friends.util.view.XListView-->
-    <!--android:id="@+id/dy_listview"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"/>-->
     <include layout="@layout/refresh_recycler_view"/>
 
 </LinearLayout>

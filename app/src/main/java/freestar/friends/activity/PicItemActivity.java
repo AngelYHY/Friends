@@ -39,7 +39,7 @@ import freestar.friends.util.fly_heat.PeriscopeLayout;
 import freestar.friends.util.status_bar.StatusBarUtil;
 
 /**
- * Created by Administrator on 2016/8/21 0021.
+ * 图集内容
  */
 public class PicItemActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".util.profile.NinameActivity">
+    tools:context=".activity.setting.NinameActivity">
 
     <include layout="@layout/include_top_bar" />
 

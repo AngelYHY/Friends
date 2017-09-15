@@ -1,4 +1,4 @@
-package freestar.friends.util.profile;
+package freestar.friends.activity.setting;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +15,10 @@ import freestar.friends.activity.ForgetPasswordActivity;
 import freestar.friends.bean.User;
 import freestar.friends.util.status_bar.BaseActivity;
 
-public class AnqActivity extends BaseActivity {
+/**
+ * 安全中心
+ */
+public class SafeActivity extends BaseActivity {
     TextView textView_pht, textView_myemail;
 
     @Override
@@ -75,7 +78,7 @@ public class AnqActivity extends BaseActivity {
                 if (e == null) {
                     textView_myemail.setText(user.getEmail());
                 } else {
-                    Toast.makeText(AnqActivity.this, "获得失败" + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SafeActivity.this, "获得失败" + e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
